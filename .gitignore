@@ -1,6 +1,16 @@
 /.phpunit.cache
 /node_modules
-/storage/
+/public/build
+/public/hot
+/public/storage
+/public/front/images/products
+/public/front/images/banners
+/public/front/images/brands
+/public/front/images/categories
+/public/front/images/receipts
+/public/front/images/sizecharts
+/public/front/images/widgets
+/public/front/videos
 /storage/*.key
 /vendor
 .env
