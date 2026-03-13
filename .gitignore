@@ -11,7 +11,7 @@
 /public/front/images/sizecharts
 /public/front/images/widgets
 /public/front/videos
-/storage/*.key
+storage/*.key
 /vendor
 .env
 .env.backup
