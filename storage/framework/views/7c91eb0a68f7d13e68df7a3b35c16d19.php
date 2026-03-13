@@ -1,0 +1,135 @@
+<?php $__env->startSection('content'); ?>
+<?php 
+Use App\Models\ProductImage;
+?>
+<style>
+   
+</style>
+<main>
+   <!-- Breadcrumb area start -->
+   <section class="breadcrumb__area" style="background-image: url('<?php echo e(asset('front/assets/imgs/contactBd.jpg')); ?>');">
+      <div class="container">
+         <div class="row">
+            <div class="col-xxl-12">
+               <div class="breadcrumb__inner">
+                  <div class="breadcrumb__left">
+                     <h1 class="breadcrumb__title">Contact</h1>
+                  </div>
+                  <div class="breadcrumb__right">
+                     <ul>
+                        <li> <a href="<?php echo e(route('home')); ?>">home</a> </li>
+                        <li> <a href="javascript:;">Contact</a> </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Breadcrumb area end -->
+   <!-- contact -->
+   <section class="contact__area-6 pt-100 pb-150">
+      <div class="container">
+         <div class="row mb-2 mb-lg-5">
+            <div class="col-md-6 col-lg-4 col-12">
+               <div class="contact__item">
+                  <i class="fa-solid fa-phone"></i>
+                  <h4 class="title">Call us</h4>
+                  <p>+91 98729 23908</p>
+               </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12">
+               <div class="contact__item">
+                  <i class="fa-solid fa-location-arrow"></i>
+                  <h4 class="title">Address</h4>
+                  <p>C-186 A, Phase VI, Focal Point, Ludhiana, Punjab 141003, India</p>
+               </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12">
+               <div class="contact__item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <h4 class="title">Email</h4>
+                  <a href="mailto:sales@nneworld.com">sales@nneworld.com</a>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <?php if(!empty($cartitems)): ?>
+            <div class="col-12 col-lg-5 flex-lg-column justify-content-lg-center d-lg-inline-flex d-flex oH--flex">
+               <div class="fullWidth text-center posStatic mb-lg-3 py-3 mb-5">
+                  <div class="absLinkTop">
+                     <a href="<?php echo e(route('home')); ?>" class="inline--link underlined">
+                     <i class="ion-plus d-inline-block mr-1"></i>Add More
+                     </a>
+                  </div>
+               </div>
+               <div class="fullWidth WrapperEnquiry bottomSequence d-inline-flex flex-nowrap d-lg-inline-block align-items-stretch align-content-stretch justify-content-start">
+                  <?php $__currentLoopData = $cartitems; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cartitem): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?> 
+                  <div class="fullWidth text-center itemEnquiry">
+                     <div class="centeredImgEnquire text-left iconBefore--enquire">
+                        <div class="fullWidth">
+						<?php 
+						$product_url = route('product',[$cartitem['product_id'],$cartitem['product_url']]);
+						$product_image = ProductImage::where('product_id',$cartitem['product_id'])->orderby('image_order','asc')->first(); ?>
+                           <a href="<?php echo e($product_url); ?>">
+						   <div class="imgHolderEnquire" <?php if(!empty($product_image)): ?> style="background-image: url('<?php echo e(asset('front/assets/images/products/large/'.$product_image['image'])); ?>');" <?php endif; ?>></div>
+                           </a>
+						   <div class="rightDescEnquire">
+                              <a href="<?php echo e($product_url); ?>">
+								  <h6 class="mb-0 fullWidth text-left">
+								  <?php echo e($cartitem['product_name']); ?>
+
+								  </h6>
+							   </a>
+                              <a href="<?php echo e(route('removecartproduct',[$cartitem['id']])); ?>" class="inline--link absLinkTop removeCartProduct">
+                                      <span><i class="fa fa-trash "></i></span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>							
+               </div>
+            </div>
+            <?php else: ?>
+            <div class="col-lg-6 ">
+               <iframe class="w-100 border-radius-25" height="500"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d109577.02430271795!2d75.925862!3d30.878771!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a9d6cfc56018d%3A0x2fe50240ac2d1f9b!2sNavyug%20Namdhari%20Eco%20Drive%20Private%20Limited!5e0!3m2!1sen!2sus!4v1755939717749!5m2!1sen!2sus"></iframe>
+            </div>
+            <?php endif; ?>
+            <div class="col-lg-6 col-12">
+               <div class="blog__form">
+                  <span class="blog__form-title">Leave a reply</span>
+                  <form action="javascript:;" id="contact-form" data-action="<?php echo e(route('savecontact')); ?>">
+                     <?php echo csrf_field(); ?>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <input type="text" name="name" id="name" placeholder="Name">
+                           <p class="error_message" id="input-error-name"></p>
+                        </div>
+                        <div class="col-md-6">
+                           <input type="text" name="email" id="E-mail" placeholder="E-mail">
+                           <p class="error_message" id="input-error-email"></p>
+                        </div>
+                        <div class="col-md-12">
+                           <textarea name="message" id="message" placeholder="Messsage"></textarea>
+                           <p class="error_message" id="input-error-message"></p>
+                        </div>
+                        <div class="contact__submitwrap">
+                           <button class="contact__submit btn-rollover" type="submit">Send now <i
+                              class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                        <div class="col-md-12">
+                           <p id="contact-result"></p>
+                        </div> 
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- /contact -->
+</main>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('front.layout.layout', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH D:\xampp\htdocs\nneworldnew2026\nneworldnew2026\resources\views/front/pages/contactus/contactus.blade.php ENDPATH**/ ?>
