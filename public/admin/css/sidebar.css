@@ -1,0 +1,71 @@
+ /* Sidebar Link Base Styles */
+   .nav-sidebar .nav-link {
+   transition: all 0.3s ease;
+   position: relative;
+   padding-left: 15px; /* Adjust for new bullet design */
+   }
+   /* Hover Effect with Gradient */
+   .nav-sidebar .nav-link:hover {
+   background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient hover background */
+   color: #fff !important; /* White text */
+   border-radius: 5px;
+   padding-left: 20px; /* Indentation on hover for dynamic look */
+   box-shadow: 0px 4px 8px rgba(255, 126, 95, 0.4); /* Subtle glow */
+   }
+   /* Custom Bullet/Icon on Hover */
+   .nav-sidebar .nav-link:hover::before {
+   /*content: '\2022';*/ /* Custom bullet (circle) */
+   content: '';
+   color: #fff; /* White bullet */
+   font-size: 20px; /* Larger size for prominence */
+   position: absolute;
+   left: 5px; /* Position near the text */
+   top: 50%;
+   transform: translateY(-50%);
+   }
+   /* Active Tab Style */
+   .nav-sidebar .nav-link.active {
+   background: linear-gradient(90deg, #00c6ff, #0072ff); /* Blue gradient for active tab */
+   color: #fff !important; /* White text for active */
+   border-radius: 5px;
+   box-shadow: 0px 4px 8px rgba(0, 198, 255, 0.4); /* Glow effect */
+   padding-left: 20px;
+   }
+   /* Custom Bullet/Icon for Active Tab */
+   .nav-sidebar .nav-link.active::before {
+   /*content: '\2714';*/ /* Checkmark icon for active tab */
+   content: ''; /* Remove the checkmark icon */
+   color: #fff; /* White bullet/icon */
+   font-size: 20px;
+   position: absolute;
+   left: 5px;
+   top: 50%;
+   transform: translateY(-50%);
+   }
+   /* Animated Underline Effect on Hover */
+   .nav-sidebar .nav-link::after {
+   content: '';
+   position: absolute;
+   bottom: 3px;
+   left: 15px;
+   right: 15px;
+   height: 2px;
+   background: transparent;
+   transition: all 0.3s ease;
+   }
+   /* Show Underline on Hover */
+   .nav-sidebar .nav-link:hover::after {
+   /*background: #fff;*/ /* White underline */
+   }
+   /* Submenu Items Hover Effect */
+   .nav-sidebar .nav-treeview .nav-item .nav-link:hover {
+   background-color: #ff9e80; /* Soft orange for submenu hover */
+   color: #fff !important;
+   border-radius: 5px;
+   }
+   /* Submenu Active Style */
+   .nav-sidebar .nav-treeview .nav-item .nav-link.active {
+   background-color: #ff7043; /* Deeper orange for active submenu */
+   color: #fff !important;
+   border-radius: 5px;
+   }

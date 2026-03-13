@@ -1,0 +1,42 @@
+/* Action Icon Hover Effect */
+a .fas {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover .fas {
+  color: #1E90FF; /* Vibrant blue color on hover */
+  transform: scale(1.2); /* Slightly enlarge icon */
+}
+
+/* Action Icons for Better Visibility */
+a .fas.fa-toggle-on {
+  color: #28a745; /* Green for Active */
+}
+
+a .fas.fa-toggle-off {
+  color: #dc3545; /* Red for Inactive */
+}
+
+a .fas.fa-edit {
+  color: #ffc107; /* Yellow for Edit */
+}
+
+a .fas.fa-trash {
+  color: #dc3545; /* Red for Delete */
+}
+
+a .fas.fa-unlock {
+  color: #17a2b8; /* Teal for Update Role */
+}
+.red{ color:red; }
+.blue{ color:blue; }
+.view-data .row{ margin-bottom:6px; }
+.modal-title{ color:#0000ff; }
+.close span{ color: blue;font-size: 29px; }
+#popup_slider  { color:blue;margin-left: 20%;  }  
+#popup_slider  img{cursor:pointer;  }  
+
+#form_popup_slider  { color:blue;margin-left: 20%;  }  
+#form_popup_slider  img{cursor:pointer;  } 
+
+#deleteModal .modal-title{ color:#fff; } 

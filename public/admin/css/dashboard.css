@@ -1,0 +1,21 @@
+.info-box:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+  background-color: #f0f8ff; /* Light background color on hover */
+}
+
+.info-box .info-box-text,
+.info-box .info-box-number {
+  transition: all 0.3s ease-in-out;
+}
+
+.info-box:hover .info-box-text,
+.info-box:hover .info-box-number {
+  font-weight: bold; /* Make text bold */
+  color: #007bff; /* Highlight text with primary color */
+}
+
+.info-box .info-box-icon:hover {
+  background-color: rgba(0, 123, 255, 0.8); /* Change icon background on hover */
+}
