@@ -1,0 +1,128 @@
+.loadingDiv {
+		background-color: rgba(0, 0, 0, 0.6);
+		background-image: url('../../../../../front/assets/images/icons/ajax-loader.svg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		height: 100%;
+		opacity: 1;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 10000000;
+}
+
+/* contact page css start */
+.flex-lg-column div.fullWidth.itemEnquiry {
+   margin-bottom: 10px;
+   }
+   .centeredImgEnquire {
+   float: none;
+   display: inline-block;
+   position: relative;
+   max-width: 435px;
+   padding: 2px;
+   border: 1px solid #999;
+   overflow: visible;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   background-clip: padding-box;
+   width: 100%;
+   background-color: #fff;
+   }
+   .imgHolderEnquire {
+   display: inline-block;
+   float: left;
+   overflow: hidden;
+   background-clip: padding-box;
+   width: 140px;
+   height: 140px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   border-right: 1px solid #ddd;
+   margin-right: 10px;
+   }
+   .rightDescEnquire {
+   width: -webkit-calc(100% - 150px);
+   width: -moz-calc(100% - 150px);
+   width: calc(100% - 150px);
+   float: left;
+   display: inline-block;
+   position: relative;
+   padding-top: 7%;
+   padding-left: 15px;
+   }
+   .inline--link.absLinkTop {
+   top: -15px;
+   right: -10px;
+   font-size: 1.75rem;
+   }
+   .absLinkTop {
+   position: absolute;
+   top: 8px;
+   right: 1rem;
+   z-index: 10;
+   }
+   .inline--link {
+   color: inherit;
+   position: relative;
+   display: inline-block;
+   float: none;
+   text-decoration: none;
+   white-space: normal;
+   word-wrap: break-word;
+   font-size: inherit;
+   }
+   .ion-close-circled:before {
+   content: "\f128";
+   }
+   .iconBefore--enquire:before {
+   position: absolute;
+   left: -15px;
+   width: 30px;
+   height: 30px;
+   top: 50%;
+   margin-top: -15px;
+   z-index: 10;
+   background-image: url('../../../../../front/assets/images/icons/checked.svg');
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-attachment: scroll;
+   background-position: center;
+   content: "";
+   display: inline-block;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   border-radius: 50%;
+   background-color: #fff;
+   }
+   .inline--link.absLinkTop {
+	  margin-top:10px;
+   }
+   inline--link:hover, .inline--link:focus, .inline--link:active {
+   color: #ed1c24;
+   }
+   
+  .removeCartProduct span i{ color:var(--main-color-one) !important; font-size:20px; }
+   
+   
+/* contact page css end */
+.pointer{ cursor:pointer; }
+.service__content{
+    display:flex;
+    flex-direction:column;
+    height: 480px;
+}
+.service_description{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.footer__service li a:hover {
+    color: #fff !important;
+}

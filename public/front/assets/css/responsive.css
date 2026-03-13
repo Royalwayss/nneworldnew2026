@@ -1,0 +1,78 @@
+@media all and (max-width: 767px) {
+  .hero{
+    height: 80vh;
+  }
+  .hero-title {
+    font-size: 80px;
+  }
+  .about__imgs .projects {
+    bottom: 0;
+    top: unset;
+  }
+  .about__imgs {
+    text-align: center;
+  }
+  .counter__title {
+    font-size: 22px;
+  }
+  .counter__number {
+    padding-bottom: 10px;
+  }
+  .counter__inner {
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0 12px 60px 12px;
+  }
+  .hero__title a {
+    width: 63px;
+    height: 61px;
+    top: -10px;
+  }
+  .about__area-6 .main-img{
+    margin-bottom: 28px;
+  }
+  .sus .row {
+    margin-top: 2rem;
+}
+  .sus .row .about__content  {
+    margin-top: 20px;
+}
+.hero__area.sustain{
+  padding: 120px 0;
+}
+.counter__item{
+  flex-direction: column;
+  justify-content: center;
+}
+}
+@media all and (max-width: 575px) {
+  .hero-title {
+    font-size: 60px;
+  }
+  .hero-title span {
+    font-size: 18px;
+  }
+  .counter__number {
+    font-size: 42px;
+  }
+  .counter__title {
+    font-size: 18px;
+  }
+  .sec-subtitle {
+    margin-bottom: 8px !important;
+    font-size: 40px;
+  }
+  .hero__title {
+    letter-spacing: 0.1px;
+  }
+  .hero__title a span {
+    width: 35px;
+    height: 35px;
+}
+.hero__title a {
+    width: 47px;
+    height: 47px;
+    top: 0px;
+}
+}
