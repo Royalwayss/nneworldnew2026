@@ -12,6 +12,8 @@
 /public/front/images/widgets
 /public/front/videos
 storage/*.key
+storage/framework/sessions
+storage/framework/views
 /vendor
 .env
 .env.backup
