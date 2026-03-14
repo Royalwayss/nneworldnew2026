@@ -14,6 +14,7 @@
 storage/*.key
 storage/framework/sessions
 storage/framework/views
+public/front/images/products/*.key
 public/front/images/products/large
 public/front/images/products/medium
 /vendor
