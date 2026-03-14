@@ -50,9 +50,8 @@
                               <div class="service__title">{{ $category['category_name'] }}</div>
                            </a>
                            <p>@php echo $category['description']; @endphp</p>
-
                            <a class="db-btn-arrow" href="{{ url($category['category_url']) }}">Read More <i
-                                 class="fa-solid fa-arrow-right"></i>
+                              class="fa-solid fa-arrow-right"></i>
                            </a>
                         </div>
                      </div>
@@ -82,7 +81,6 @@
             </div>
             <h3 class="counter__title color-heading">Team <br>Members </h3>
          </div>
-
       </div>
    </div>
 </section>
@@ -95,11 +93,11 @@
                   <img class="border-radius-25" src="front/assets/imgs/about-3.jpg" alt="img" title="img">
                </div>
                <!-- <div class="image-2">
-                        <img src="front/assets/imgs/about-2.jpg" alt="Image" data-speed="0.85">
-                        </div> -->
+                  <img src="front/assets/imgs/about-2.jpg" alt="Image" data-speed="0.85">
+                  </div> -->
                <div class="bell">
                   <span>
-                     <i class="fa-regular fa-bell text-white"></i>
+                  <i class="fa-regular fa-bell text-white"></i>
                   </span>
                </div>
                <div class="projects">
@@ -129,7 +127,7 @@
                </div>
                <div data-aos="fade-up" data-aos-delay="300">
                   <a class="db-btn-arrow" href="{{ route('aboutus') }}">More Info <i
-                        class="fa-solid fa-arrow-right"></i>
+                     class="fa-solid fa-arrow-right"></i>
                   </a>
                </div>
             </div>
@@ -147,13 +145,14 @@
                   <h2 class="sec-subtitle">Agriculture Range
                   </h2>
                   <h3 class="sec-title" data-aos="fade-up">Custom Agriculture Solutions Tailored to Every Agriculture
-                     Need</h3>
+                     Need
+                  </h3>
                </div>
             </div>
             <div class="col-xxl-5 col-xl-5 col-xl-5">
                <div class="service__text  pt-0">
                   <p class="ms-0" data-aos="fade-left">
-				  At NNE, we manufacture and supply a wide range of high-quality mower components and assemblies. Our product range includes tail wheel hubs, laminated tires, wheel assemblies, forks, and essential service parts. Each component is precision-engineered to ensure durability, reliability, and optimal performance. All products are developed to meet strict quality standards for smooth and efficient mower operation.
+                     At NNE, we manufacture and supply a wide range of high-quality mower components and assemblies. Our product range includes tail wheel hubs, laminated tires, wheel assemblies, forks, and essential service parts. Each component is precision-engineered to ensure durability, reliability, and optimal performance. All products are developed to meet strict quality standards for smooth and efficient mower operation.
                   </p>
                </div>
             </div>
@@ -163,151 +162,143 @@
          <div class="row pt-4">
             <div class="swiper product_slider">
                <div class="swiper-wrapper">
-                                    				  <div class="swiper-slide">
+                  <div class="swiper-slide">
                      <div class="service__item style2">
                         <div class="service__content">
                            <div class="icon-box">
-                                                            <img src="https://nneworld.rtpltech.in/front/assets/images/category/category-173683.jpg"
+                              <img src="{{ asset('front/assets/images/category/category-173683.jpg') }}"
                                  alt="Finish Mower Assembly" title="Finish Mower Assembly">
-                                                         </div>
-                           <a href="https://nneworld.rtpltech.in/finish-mower-assembly">
+                           </div>
+                           <a href="{{ url('finish-mower-assembly') }}">
                               <div class="service__title">Finish Mower Assembly</div>
                            </a>
                            <p class="service_description">Complete finish mower units engineered for smooth, precise, and professional-grade cutting.</p>
-
-                           <a class="db-btn-arrow" href="https://nneworld.rtpltech.in/finish-mower-assembly">Read More <i
-                                 class="fa-solid fa-arrow-right"></i>
+                           <a class="db-btn-arrow" href="{{ url('finish-mower-assembly') }}">Read More <i
+                              class="fa-solid fa-arrow-right"></i>
                            </a>
                         </div>
                      </div>
                   </div>
-				                                       				  <div class="swiper-slide">
+                  <div class="swiper-slide">
                      <div class="service__item style2">
                         <div class="service__content">
                            <div class="icon-box">
-                                                            <img src="https://nneworld.rtpltech.in/front/assets/images/category/category-267063.png"
+                              <img src="{{ asset('front/assets/images/category/category-267063.png') }}"
                                  alt="Tail Wheel Hub" title="Tail Wheel Hub">
-                                                         </div>
-                           <a href="https://nneworld.rtpltech.in/tail-wheel-hub">
+                           </div>
+                           <a href="{{ url('tail-wheel-hub') }}">
                               <div class="service__title">Tail Wheel Hub</div>
                            </a>
                            <p class="service_description">Durable tail wheel hubs designed for reliable support and long-lasting field performance.</p>
-
-                           <a class="db-btn-arrow" href="https://nneworld.rtpltech.in/tail-wheel-hub">Read More <i
-                                 class="fa-solid fa-arrow-right"></i>
+                           <a class="db-btn-arrow" href="{{ url('tail-wheel-hub') }}">Read More <i
+                              class="fa-solid fa-arrow-right"></i>
                            </a>
                         </div>
                      </div>
                   </div>
-				                                       				  <div class="swiper-slide">
+                  <div class="swiper-slide">
                      <div class="service__item style2">
                         <div class="service__content">
                            <div class="icon-box">
-                                                            <img src="https://nneworld.rtpltech.in/front/assets/images/category/category-575630.png"
+                              <img src="{{ asset('front/assets/images/category/category-575630.png') }}"
                                  alt="Tail Wheel &amp; Hub Assemblies" title="Tail Wheel &amp; Hub Assemblies">
-                                                         </div>
-                           <a href="https://nneworld.rtpltech.in/tail-wheel-hub-assemblies">
+                           </div>
+                           <a href="{{ url('tail-wheel-hub-assemblies') }}">
                               <div class="service__title">Tail Wheel &amp; Hub Assemblies</div>
                            </a>
                            <p class="service_description">Pre-assembled tail wheel and hub units for easy installation and dependable operation.</p>
-
-                           <a class="db-btn-arrow" href="https://nneworld.rtpltech.in/tail-wheel-hub-assemblies">Read More <i
-                                 class="fa-solid fa-arrow-right"></i>
+                           <a class="db-btn-arrow" href="{{ url('tail-wheel-hub-assemblies') }}">Read More <i
+                              class="fa-solid fa-arrow-right"></i>
                            </a>
                         </div>
                      </div>
                   </div>
-				                                       				  <div class="swiper-slide">
+                  <div class="swiper-slide">
                      <div class="service__item style2">
                         <div class="service__content">
                            <div class="icon-box">
-                                                            <img src="https://nneworld.rtpltech.in/front/assets/images/category/category-434924.png"
+                              <img src="{{ asset('front/assets/images/category/category-434924.png') }}"
                                  alt="Laminated Tires" title="Laminated Tires">
-                                                         </div>
-                           <a href="https://nneworld.rtpltech.in/laminated-tires">
+                           </div>
+                           <a href="{{ url('laminated-tires') }}">
                               <div class="service__title">Laminated Tires</div>
                            </a>
                            <p class="service_description">Heavy-duty laminated tires built to resist punctures and withstand tough terrain conditions.</p>
-
-                           <a class="db-btn-arrow" href="https://nneworld.rtpltech.in/laminated-tires">Read More <i
-                                 class="fa-solid fa-arrow-right"></i>
+                           <a class="db-btn-arrow" href="{{ url('laminated-tires') }}">Read More <i
+                              class="fa-solid fa-arrow-right"></i>
                            </a>
                         </div>
                      </div>
                   </div>
-				                                       				  <div class="swiper-slide">
+                  <div class="swiper-slide">
                      <div class="service__item style2">
                         <div class="service__content">
                            <div class="icon-box">
-                                                            <img src="https://nneworld.rtpltech.in/front/assets/images/category/category-592409.jpg"
+                              <img src="{{ asset('front/assets/images/category/category-592409.jpg') }}"
                                  alt="Service Parts" title="Service Parts">
-                                                         </div>
-                           <a href="https://nneworld.rtpltech.in/service-parts">
+                           </div>
+                           <a href="{{ url('service-parts') }}">
                               <div class="service__title">Service Parts</div>
                            </a>
                            <p class="service_description">High-quality replacement parts to keep your equipment running efficiently and reliably.</p>
-
-                           <a class="db-btn-arrow" href="https://nneworld.rtpltech.in/service-parts">Read More <i
-                                 class="fa-solid fa-arrow-right"></i>
+                           <a class="db-btn-arrow" href="{{ url('service-parts') }}">Read More <i
+                              class="fa-solid fa-arrow-right"></i>
                            </a>
                         </div>
                      </div>
                   </div>
-				                                       				  <div class="swiper-slide">
+                  <div class="swiper-slide">
                      <div class="service__item style2">
                         <div class="service__content">
                            <div class="icon-box">
-                                                            <img src="https://nneworld.rtpltech.in/front/assets/images/category/category-603442.jpg"
+                              <img src="{{ asset('front/assets/images/category/category-603442.jpg') }}"
                                  alt="Finish Mower Wheel" title="Finish Mower Wheel">
-                                                         </div>
-                           <a href="https://nneworld.rtpltech.in/finish-mower-wheel">
+                           </div>
+                           <a href="{{ url('finish-mower-wheel') }}">
                               <div class="service__title">Finish Mower Wheel</div>
                            </a>
                            <p class="service_description">Strong and stable mower wheels designed for smooth movement and consistent cutting height.</p>
-
-                           <a class="db-btn-arrow" href="https://nneworld.rtpltech.in/finish-mower-wheel">Read More <i
-                                 class="fa-solid fa-arrow-right"></i>
+                           <a class="db-btn-arrow" href="{{ url('finish-mower-wheel') }}">Read More <i
+                              class="fa-solid fa-arrow-right"></i>
                            </a>
                         </div>
                      </div>
                   </div>
-				                                       				  <div class="swiper-slide">
+                  <div class="swiper-slide">
                      <div class="service__item style2">
                         <div class="service__content">
                            <div class="icon-box">
-                                                            <img src="https://nneworld.rtpltech.in/front/assets/images/category/category-830607.jpg"
+                              <img src="{{ asset('front/assets/images/category/category-830607.jpg') }}"
                                  alt="Tail Wheel Assemblies" title="Tail Wheel Assemblies">
-                                                         </div>
-                           <a href="https://nneworld.rtpltech.in/tail-wheel-assemblies">
+                           </div>
+                           <a href="{{ url('tail-wheel-assemblies') }}">
                               <div class="service__title">Tail Wheel Assemblies</div>
                            </a>
                            <p class="service_description">Complete tail wheel systems engineered for balance, durability, and field stability.</p>
-
-                           <a class="db-btn-arrow" href="https://nneworld.rtpltech.in/tail-wheel-assemblies">Read More <i
-                                 class="fa-solid fa-arrow-right"></i>
+                           <a class="db-btn-arrow" href="{{ url('tail-wheel-assemblies') }}">Read More <i
+                              class="fa-solid fa-arrow-right"></i>
                            </a>
                         </div>
                      </div>
                   </div>
-				                                       				  <div class="swiper-slide">
+                  <div class="swiper-slide">
                      <div class="service__item style2">
                         <div class="service__content">
                            <div class="icon-box">
-                                                            <img src="https://nneworld.rtpltech.in/front/assets/images/category/category-281953.jpg"
+                              <img src="{{ asset('front/assets/images/category/category-281953.jpg') }}"
                                  alt="Tail Wheel Forks" title="Tail Wheel Forks">
-                                                         </div>
-                           <a href="https://nneworld.rtpltech.in/tail-wheel-forks">
+                           </div>
+                           <a href="{{ url('tail-wheel-forks') }}">
                               <div class="service__title">Tail Wheel Forks</div>
                            </a>
                            <p class="service_description">Robust tail wheel forks built for enhanced strength, stability, and long-term performance.</p>
-
-                           <a class="db-btn-arrow" href="https://nneworld.rtpltech.in/tail-wheel-forks">Read More <i
-                                 class="fa-solid fa-arrow-right"></i>
+                           <a class="db-btn-arrow" href="{{ url('tail-wheel-forks') }}">Read More <i
+                              class="fa-solid fa-arrow-right"></i>
                            </a>
                         </div>
                      </div>
                   </div>
-				                                    </div>
+               </div>
             </div>
          </div>
       </div>
@@ -415,13 +406,12 @@
       <div class="hero__top">
          <h1 class="hero__title" data-aos="fade-up">
             <span class="visibleText">Sustainability Is</span> <br> <a href="" id="hero_video"> <span><i
-                     class="fa-solid fa-play"></i></span></a> <span class="visibleText">Our Standard</span>
+               class="fa-solid fa-play"></i></span></a> <span class="visibleText">Our Standard</span>
          </h1>
-          <div class="hero__contact cxufadeUp2">
+         <div class="hero__contact cxufadeUp2">
             <a href="https://nneworld.rtpltech.in/sustainability">
-               <span><i class="fa-solid fa-arrow-right"></i></span>
+            <span><i class="fa-solid fa-arrow-right"></i></span>
             </a>
-
             <div class="text">
                <p class="pointer" onclick="window.location.href='https://nneworld.rtpltech.in/sustainability'">Read More</p>
             </div>
@@ -441,21 +431,21 @@
       </video>
    </div>
    <!-- <img class="shape-1" src="front/assets/imgs/shape/1.png" alt="img" title="img">
-         <img class="shape-2" src="front/assets/imgs/shape/2.png" alt="img" title="img">
-         <img class="shape-3" src="front/assets/imgs/shape/3.png" alt="img" title="img">
-         <img class="shape-4 cxuSpin-slow" src="front/assets/imgs/shape/4.png" alt="img" title="img">
-         <img class="shape-5" src="front/assets/imgs/shape/5.png" alt="img" title="img"> -->
+      <img class="shape-2" src="front/assets/imgs/shape/2.png" alt="img" title="img">
+      <img class="shape-3" src="front/assets/imgs/shape/3.png" alt="img" title="img">
+      <img class="shape-4 cxuSpin-slow" src="front/assets/imgs/shape/4.png" alt="img" title="img">
+      <img class="shape-5" src="front/assets/imgs/shape/5.png" alt="img" title="img"> -->
 </section>
 <section class="who__area" style="background-image: url('front/assets/imgs/hero/00.png');">
    <div class="who__area_inner infra pt-5 pb-5">
       <div class="container mt-xl-5 mb-xl-5">
          <div class="row">
             <div class="sec-title-wrap pb-3" data-aos="fade-up">
-                     <h2 class="sec-subtitle" data-aos="fade-up">Infrastructure
-                     </h2>
-                     <h3 class="sec-title" data-aos="fade-right">Strong Infrastructure That Drives Innovation
-                     </h3>
-                  </div>
+               <h2 class="sec-subtitle" data-aos="fade-up">Infrastructure
+               </h2>
+               <h3 class="sec-title" data-aos="fade-right">Strong Infrastructure That Drives Innovation
+               </h3>
+            </div>
             <div class="col-xxl-6 col-xl-6 col-lg-12">
                <div class="who__left">
                   <div class="who__features">
@@ -546,8 +536,7 @@
             <div class="brand__inner p-0">
                <div class="swiper brand__slider">
                   <div class="swiper-wrapper">
-                     
-					 <div class="swiper-slide">
+                     <div class="swiper-slide">
                         <div class="brand__slide">
                            <img src="front/assets/imgs/brand/acer.svg" alt="img" title="img">
                         </div>
@@ -557,7 +546,7 @@
                            <img src="front/assets/imgs/brand/Decathlon.png" alt="img" title="img">
                         </div>
                      </div>
-                                         <div class="swiper-slide">
+                     <div class="swiper-slide">
                         <div class="brand__slide">
                            <img src="front/assets/imgs/brand/firefox.jpg" alt="img" title="img">
                         </div>
@@ -567,32 +556,32 @@
                            <img src="front/assets/imgs/brand/huffy.svg" alt="img" title="img">
                         </div>
                      </div>
-                   					 <div class="swiper-slide">
+                     <div class="swiper-slide">
                         <div class="brand__slide">
                            <img src="front/assets/imgs/brand/hero-cycles.jpg" alt="img" title="img">
                         </div>
                      </div>
-					  <div class="swiper-slide">
+                     <div class="swiper-slide">
                         <div class="brand__slide">
                            <img src="front/assets/imgs/brand/mcleod.png" alt="img" title="img">
                         </div>
                      </div>
-					 <div class="swiper-slide">
+                     <div class="swiper-slide">
                         <div class="brand__slide">
                            <img src="front/assets/imgs/brand/sun-baby.png" alt="img" title="img">
                         </div>
                      </div>
-					 <div class="swiper-slide">
+                     <div class="swiper-slide">
                         <div class="brand__slide">
                            <img src="front/assets/imgs/brand/tandem.png" alt="img" title="img">
                         </div>
                      </div>
-					 <div class="swiper-slide">
+                     <div class="swiper-slide">
                         <div class="brand__slide">
                            <img src="front/assets/imgs/brand/toronto.png" alt="img" title="img">
                         </div>
                      </div>
-					 <div class="swiper-slide">
+                     <div class="swiper-slide">
                         <div class="brand__slide">
                            <img src="front/assets/imgs/brand/trinity.png" alt="img" title="img">
                         </div>
@@ -679,12 +668,13 @@
          <div class="col-xxl-7 col-xl-7 col-lg-7">
             <div class="newsletter__right ps-xxl-5">
                <form action="javascript:;" data-action="{{ route('addsubscriber') }}" class="ps-xxl-5"
-                  id="newsletter-form">@csrf
+                  id="newsletter-form">
+                  @csrf
                   <input class="border-radius-50" type="email" name="email" id="newsletter-email"
                      placeholder="Enter Your Email">
                   <button type="submit"
                      class="submit btn-rollover border-radius-50 border-radius-50-hover bg-base">Subscribe
-                     Now</button>
+                  Now</button>
                   <p id="newsletter-message"></p>
                </form>
             </div>
