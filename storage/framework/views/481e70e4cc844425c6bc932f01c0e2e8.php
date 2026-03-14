@@ -12,14 +12,14 @@
                      <div class="footer__service">
                         <h2 class="footer__title">Useful Links</h2>
                         <ul>
-                           <li>
-                              <a href="https://nneworld.rtpltech.in/about-us">About Us</a>
+                          <li>
+                              <a href="<?php echo e(route('aboutus')); ?>">About Us</a>
                            </li>
                            <li>
-                              <a href="https://nneworld.rtpltech.in/processes">Processes </a>
+                              <a href="<?php echo e(route('processes')); ?>">Processes </a>
                            </li>
                            <li>
-                              <a href="https://nneworld.rtpltech.in/sustainability">Sustainability</a>
+                              <a href="<?php echo e(route('sustainability')); ?>">Sustainability</a>
                            </li>
 						   <li>
                               <a href="https://nneworld.com/about-video/">Virtual Tour</a>
