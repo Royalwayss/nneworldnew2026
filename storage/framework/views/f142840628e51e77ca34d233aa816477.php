@@ -12,4 +12,4 @@
       <link rel="stylesheet" href="<?php echo e(asset('front/assets/css/progressbar.css')); ?>">
       <link rel="stylesheet" href="<?php echo e(asset('front/assets/css/master.css')); ?>?v=2.7">
       <link rel="stylesheet" href="<?php echo e(asset('front/assets/css/responsive.css')); ?>?v=2.7">
-      <link rel="stylesheet" href="<?php echo e(asset('front/assets/css/custom.css')); ?>?v=2.8"><?php /**PATH D:\xampp\htdocs\nneworldnew2026\nneworldnew2026\resources\views/front/elements/style.blade.php ENDPATH**/ ?>
+      <link rel="stylesheet" href="<?php echo e(asset('front/assets/css/custom.css')); ?>?v=2.9"><?php /**PATH D:\xampp\htdocs\nneworldnew2026\nneworldnew2026\resources\views/front/elements/style.blade.php ENDPATH**/ ?>

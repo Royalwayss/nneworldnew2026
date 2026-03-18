@@ -1,10 +1,5 @@
 @extends('front.layout.layout')
 @section('content')
-<style>
-.breadcrumb__right li.active a {
-    color: var(--main-color-one);
-}
-</style>
 <main>
 
   <!-- Breadcrumb area start -->

@@ -4,38 +4,7 @@ $get_categories = Category::get_categories();
 $agri_categories = Category::agri_categories();
 ?>
 <style>
-/* Main dropdown */
-.main-dropdown {
-    position: absolute;
-    display: none;
-    background: #fff;
-    min-width: 200px;
-}
 
-/* Show main dropdown on hover */
-.has-dropdown:hover .main-dropdown {
-    display: block;
-}
-
-/* Parent for sub dropdown */
-.has-sub-dropdown {
-    position: relative;
-}
-
-/* Sub dropdown (RIGHT SIDE) */
-.sub-dropdown {
-    position: absolute;
-    top: 0;
-    left: 100% !important;   /* 👈 pushes it to the right */
-    display: none;
-    background: var(--black-4) !important;
-    min-width: 200px;
-}
-
-/* Show sub dropdown on hover */
-.has-sub-dropdown:hover .sub-dropdown {
-    display: block;
-}
 </style>
  <!-- Scroll to top -->
       <button id="scroll_top" class="scroll-top">
