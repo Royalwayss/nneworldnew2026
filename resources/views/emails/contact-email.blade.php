@@ -89,6 +89,20 @@
                            <td width='65%' align='left' valign='top' class='style3'>{{ $data['name'] }}</td>
 
                         </tr>
+						
+						
+						
+						
+						  <tr>
+
+                           <td width='30%' align='left' valign='top' class='style2'>Mobile:</td>
+
+                           <td width='5%' align='left' valign='top' class='style2'>:</td>
+
+                           <td width='65%' align='left' valign='top' class='style3'>{{ @$data['mobile'] }}</td>
+
+                        </tr>
+						
 
                         <tr>
 

@@ -106,17 +106,36 @@ class IndexController extends Controller
 	
 	   public function saveContact(Request $request) {
         if ($request->ajax()) {
-            $validator = Validator::make($request->all(), [
-                'name' => 'required|string|max:255',
-                'email' => 'required|string|email|max:255',
-                'message' => 'required'
-            ], [
-                'email.email' => 'This email is not a valid email address'
-            ]);
+           $validator = Validator::make($request->all(), [
+			'name' => 'required|string|max:255',
+			 'mobile' => 'required|numeric|digits_between:8,12',
+			'email' => 'required|string|email|max:255',
+			'message' => 'required'
+			], [
+			// Custom messages for 'name'
+			'name.required' => 'Please enter your name',
+			'name.string' => 'Name must be a valid string',
+			'name.max' => 'Name cannot be more than 255 characters',
+
+			// Custom messages for 'mobile'
+			'mobile.required' => 'Please enter your mobile number',
+			'mobile.numeric' => 'Mobile number must contain only digits',
+			'mobile.digits_between' => 'Mobile number must be between 8 and 12 digits',
+
+			// Custom messages for 'email'
+			'email.required' => 'Please enter your email',
+			'email.string' => 'Email must be a valid string',
+			'email.email' => 'This email is not a valid email address',
+			'email.max' => 'Email cannot be more than 255 characters',
+
+			// Custom messages for 'message'
+			'message.required' => 'Please enter your message',
+			]);
 
              if ($validator->passes()) {
 				$contact = new Contact;
 				$contact->name = $request->name;
+				$contact->mobile = $request->mobile;
 				$contact->email = $request->email;
 				$contact->message = $request->message;
 				$contact->save();

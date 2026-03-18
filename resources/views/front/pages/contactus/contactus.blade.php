@@ -104,15 +104,20 @@ Use App\Models\ProductImage;
                      @csrf
                      <div class="row">
                         <div class="col-md-6">
-                           <input type="text" name="name" id="name" placeholder="Name">
+                           <input type="text" name="name" id="name" placeholder="Name*">
                            <p class="error_message" id="input-error-name"></p>
                         </div>
                         <div class="col-md-6">
-                           <input type="text" name="email" id="E-mail" placeholder="E-mail">
+                           <input type="text" name="mobile" id="Mobile" placeholder="Mobile*">
+                           <p class="error_message" id="input-error-mobile"></p>
+                        </div>
+						<div class="col-md-12">
+                           <input type="text" name="email" id="E-mail" placeholder="E-mail*">
                            <p class="error_message" id="input-error-email"></p>
                         </div>
+						 
                         <div class="col-md-12">
-                           <textarea name="message" id="message" placeholder="Messsage"></textarea>
+                           <textarea name="message" id="message" placeholder="Messsage*"></textarea>
                            <p class="error_message" id="input-error-message"></p>
                         </div>
                         <div class="contact__submitwrap">
