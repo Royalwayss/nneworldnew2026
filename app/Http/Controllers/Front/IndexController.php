@@ -142,12 +142,15 @@ class IndexController extends Controller
 				$contact_id = $contact->id;
                 
 				$cartitems = Cart::cartitems(); 
-				foreach($cartitems as $cartitem){
-					$product_enquiry = new ProductEnquiry;
-					$product_enquiry->contact_id =$contact_id;
-					$product_enquiry->product_id =$cartitem['product_id'];
-					$product_enquiry->save();
+				if(!empty($cartitems)){
+					foreach($cartitems as $cartitem){
+						$product_enquiry = new ProductEnquiry;
+						$product_enquiry->contact_id =$contact_id;
+						$product_enquiry->product_id =$cartitem['product_id'];
+						$product_enquiry->save();
+					}
 			    }
+				
 				
 				
 				if (env('MAIL_MODE') == "live") {
