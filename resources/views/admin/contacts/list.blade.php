@@ -62,7 +62,8 @@ use App\Models\User;
                   <tr>
                     <th>ID</th>
                       <th>Name</th>
-                      <th>Email</th>
+                      <th>Mobile</th>
+					  <th>Email</th>
                       <th>Message</th>
 					  <th>Date</th>
 					  <th>Action</th>
@@ -108,6 +109,7 @@ use App\Models\User;
     columns: [
         { data: 'id', name: 'id' },
         { data: 'name', name: 'name' },
+        { data: 'mobile', name: 'mobile' },
         { data: 'email', name: 'email' },
         { data: 'message', name: 'message' },
         { data: 'created_at', name: 'created_at' },

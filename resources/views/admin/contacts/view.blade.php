@@ -6,6 +6,11 @@
 		<div class="col-8">{{ $data['name'] }}</div>
 	</div>
 	<div class="row">
+		<div class="col-3"><strong>Mobile</strong></div>
+		<div class="col-1">:</div>
+		<div class="col-8">{{ $data['mobile'] }}</div>
+	</div>
+	<div class="row">
 		<div class="col-3"><strong>Email</strong></div>
 		<div class="col-1">:</div>
 		<div class="col-8">{{ $data['email'] }}</div>
