@@ -1,6 +1,10 @@
 @extends('front.layout.layout')
 @section('content')
-
+<style>
+.breadcrumb__right li.active a {
+    color: var(--main-color-one);
+}
+</style>
 <main>
 
   <!-- Breadcrumb area start -->
@@ -16,8 +20,10 @@
             <div class="breadcrumb__right">
               <ul>
                 <li> <a href="{{ route('home') }}">home</a> </li>
-                <li> <a href="{{ url($productdetails['category']['category_url']) }}">{{ $productdetails['category']['category_name'] }}</a> </li>
-                <li> <a href="">{{ $productdetails['product_name'] }}</a> </li>
+                @foreach($breadcrumb as $breadcrumb_val)
+				<li> <a href="{{ url($breadcrumb_val['category_url']) }}">{{ $breadcrumb_val['category_name'] }}</a> </li>
+                @endforeach
+				<li class="active"> <a href="javascript:;">{{ $productdetails['product_name'] }}</a> </li>
               </ul>
             </div>
           </div>

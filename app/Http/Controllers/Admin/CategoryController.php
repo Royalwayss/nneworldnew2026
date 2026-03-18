@@ -123,7 +123,7 @@ class CategoryController extends Controller
 					$data['message'] = [];
 					$popup_slider = '';
 				} 
-			$data['categories'] = Category::where('parent_id',NULL)->orderby('category_name','asc')->get();
+			$data['categories'] = Category::with('sub_categories_all')->where('parent_id',NULL)->orderby('category_name','asc')->get();
 			$html = (String)View::make('admin.categories.add-edit-form',$data);
 			return response()->json(['status'=>true,'html'=>$html,'popup_slider'=>$popup_slider]);
 		
@@ -159,11 +159,12 @@ class CategoryController extends Controller
 				 $data = $request->all();  
 				 if(empty($id)){
 					 $category = new Category;
+					 $category->category_type = 'normal-products';
 				 }else{
 					 $category = Category::find($id);
 				 }
 				 
-				$category->category_type = $data['category_type'];
+				
 				$category->category_name = $data['category_name'];
 				$category->category_url = $data['category_url'];
 				$category->description = trim($data['description']); 

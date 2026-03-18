@@ -1,8 +1,42 @@
 <?php 
 Use App\Models\Category;
-$get_categories = Category::get_categories();
+$get_categories = Category::get_categories(); 
 $agri_categories = Category::agri_categories();
 ?>
+<style>
+/* Main dropdown */
+.main-dropdown {
+    position: absolute;
+    display: none;
+    background: #fff;
+    min-width: 200px;
+}
+
+/* Show main dropdown on hover */
+.has-dropdown:hover .main-dropdown {
+    display: block;
+}
+
+/* Parent for sub dropdown */
+.has-sub-dropdown {
+    position: relative;
+}
+
+/* Sub dropdown (RIGHT SIDE) */
+.sub-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100% !important;   /* 👈 pushes it to the right */
+    display: none;
+    background: var(--black-4) !important;
+    min-width: 200px;
+}
+
+/* Show sub dropdown on hover */
+.has-sub-dropdown:hover .sub-dropdown {
+    display: block;
+}
+</style>
  <!-- Scroll to top -->
       <button id="scroll_top" class="scroll-top">
           <i class="fa-solid fa-arrow-up"></i>
@@ -32,8 +66,22 @@ $agri_categories = Category::agri_categories();
                         <a href="javacript:;">Products</a>
                         <ul>
 						    <?php $__currentLoopData = $get_categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                              <li><a href="<?php echo e(url($category['category_url'])); ?>"><?php echo e($category['category_name']); ?></a></li>
-						    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                              <li>
+							    <a href="<?php echo e(url($category['category_url'])); ?>"><?php echo e($category['category_name']); ?></a>
+						            <?php if(!empty($category['sub_categories'])): ?>
+										<ul>
+											<?php $__currentLoopData = $category['sub_categories']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sub): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+												<li>
+													<a href="<?php echo e(url($sub['category_url'])); ?>">
+														<?php echo e($sub['category_name']); ?>
+
+													</a>
+												</li>
+											<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+										</ul>
+									<?php endif; ?>
+								</li>
+							<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </ul>
                      </li>
                      <li><a href="<?php echo e(route('home')); ?>#brands">Brands</a></li>
@@ -121,29 +169,41 @@ $agri_categories = Category::agri_categories();
                            <li><a href="https://forest-factory.eco/">Forest Factory</a></li>
                         </ul>
                      </li>
-                     <li class="has-dropdown">
-                        <a href="javascript:;">Products</a>
-                        <ul class="main-dropdown">
-                           <?php $__currentLoopData = $get_categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                              <li><a href="<?php echo e(url($category['category_url'])); ?>"><?php echo e($category['category_name']); ?></a></li>
-						         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                        </ul>
-                     </li>
-                       <li class="has-dropdown">
-                        <a href="#">Agri Products</a>
-                        <ul class="main-dropdown">
-                           <?php $__currentLoopData = $agri_categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                              <li><a href="<?php echo e(url($category['category_url'])); ?>"><?php echo e($category['category_name']); ?></a></li>
-						         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                        </ul>
-                     </li>
+                    <li class="has-dropdown">
+						<a href="javascript:;">Products</a>
+						<ul class="main-dropdown">
+							<?php $__currentLoopData = $get_categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+								<li class="has-sub-dropdown">
+									<a href="<?php echo e(url($category['category_url'])); ?>">
+										<?php echo e($category['category_name']); ?>
+
+									</a>
+
+									<?php if(!empty($category['sub_categories'])): ?>
+										<ul class="sub-dropdown">
+											<?php $__currentLoopData = $category['sub_categories']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sub): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+												<li>
+													<a href="<?php echo e(url($sub['category_url'])); ?>">
+														<?php echo e($sub['category_name']); ?>
+
+													</a>
+												</li>
+											<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+										</ul>
+									<?php endif; ?>
+
+								</li>
+							<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+						</ul>
+					</li>
+                      
                      <li><a href="<?php echo e(route('home')); ?>#brands">Brands</a></li>
                      <li><a href="https://tracking.nneworld.com/login">Tracing</a></li>
                      <li class="has-dropdown">
                         <a href="javacript:;">Stories</a>
                         <ul class="main-dropdown">
-                           <li><a href="https://nneworld.com/stories-omm-holi/">Omm Holii</a></li>
-                           <li><a href="https://nneworld.com/article-collaboration/">NNE x CIXI</a></li>
+                           <li><a href="<?php echo e(url('stories-omm-holi')); ?>">Omm Holii</a></li>
+                           <li><a href="<?php echo e(url('article-collaboration')); ?>">NNE x CIXI</a></li>
                         </ul>
                      </li>
                      <li><a href="<?php echo e(route('contactus')); ?>">Contact Us</a></li>

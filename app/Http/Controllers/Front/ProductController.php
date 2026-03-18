@@ -63,14 +63,19 @@ class ProductController extends Controller
         }
     }
 
-    public function detail($id,$url,){
+    public function detail($id,$url){
         $response = Product::CheckProduct($id,$url,);
         /*echo "<pre>"; print_r($response); die;*/
         if(empty($response['status'])){
              abort(404); die; exit;
         }
         $getcatdetails = Category::getcatdetails($response['productdetails']['category']['category_url']);
-        if($response['status']){ 
+       
+	    $category = Category::with('parent')->where('id',$response['productdetails']['category']['id'])->first();
+
+		$breadcrumb = Category::getBreadcrumb($category);
+		
+		if($response['status']){ 
             $getProductURL = $response['productdetails']['product_url'];
             Session::put('previousurl',"/product/".$getProductURL."/".$response['productdetails']['id']);
             $productdetails = $response['productdetails'];
@@ -86,7 +91,7 @@ class ProductController extends Controller
                 Session::put('recentSession',$recentSession);
             }
            
-            return view('front.pages.products.details.index')->with(compact('title','meta_title','meta_description','productdetails'));
+            return view('front.pages.products.details.index')->with(compact('title','meta_title','meta_description','breadcrumb','productdetails'));
         }else{
             return redirect('/');
         }

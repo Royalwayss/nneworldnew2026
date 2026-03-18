@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-     public static function get_categories(){
+    public static function get_categories(){
 		$plans = [];
 		$categories = Category::with('sub_categories')->select('id','category_name','category_url','description','image')->where('parent_id',NULL)->where('category_type','normal-products')->where('status','1')->orderby('sortorder','asc')->get()->toArray();
 		return $categories;
@@ -21,6 +21,9 @@ class Category extends Model
 	
 	public function sub_categories(){
     	return $this->hasMany('App\Models\Category','parent_id')->where('status','1')->orderby('sortorder','asc');
+    }
+	public function sub_categories_all(){
+    	return $this->hasMany('App\Models\Category','parent_id')->orderby('sortorder','asc');
     }
 	
 	public static function getcatdetails($catseo){
@@ -67,8 +70,22 @@ class Category extends Model
 	}
 
 
+   public function parent()
+	{
+		return $this->belongsTo(Category::class, 'parent_id');
+	}
+	
+	public static function getBreadcrumb($category)
+	{
+    $breadcrumb = [];
 
+    while ($category) {
+        $breadcrumb[] = $category;
+        $category = $category->parent;
+    }
+    $breadcrumb = json_decode(json_encode($breadcrumb),true);
+    return array_reverse($breadcrumb);
 	
-	
+	}
 	
 }

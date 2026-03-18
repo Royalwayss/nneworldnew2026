@@ -1,8 +1,42 @@
 @php 
 Use App\Models\Category;
-$get_categories = Category::get_categories();
+$get_categories = Category::get_categories(); 
 $agri_categories = Category::agri_categories();
 @endphp
+<style>
+/* Main dropdown */
+.main-dropdown {
+    position: absolute;
+    display: none;
+    background: #fff;
+    min-width: 200px;
+}
+
+/* Show main dropdown on hover */
+.has-dropdown:hover .main-dropdown {
+    display: block;
+}
+
+/* Parent for sub dropdown */
+.has-sub-dropdown {
+    position: relative;
+}
+
+/* Sub dropdown (RIGHT SIDE) */
+.sub-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100% !important;   /* 👈 pushes it to the right */
+    display: none;
+    background: var(--black-4) !important;
+    min-width: 200px;
+}
+
+/* Show sub dropdown on hover */
+.has-sub-dropdown:hover .sub-dropdown {
+    display: block;
+}
+</style>
  <!-- Scroll to top -->
       <button id="scroll_top" class="scroll-top">
           <i class="fa-solid fa-arrow-up"></i>
@@ -32,8 +66,21 @@ $agri_categories = Category::agri_categories();
                         <a href="javacript:;">Products</a>
                         <ul>
 						    @foreach($get_categories as $category)
-                              <li><a href="{{ url($category['category_url']) }}">{{  $category['category_name'] }}</a></li>
-						    @endforeach
+                              <li>
+							    <a href="{{ url($category['category_url']) }}">{{  $category['category_name'] }}</a>
+						            @if(!empty($category['sub_categories']))
+										<ul>
+											@foreach($category['sub_categories'] as $sub)
+												<li>
+													<a href="{{ url($sub['category_url']) }}">
+														{{ $sub['category_name'] }}
+													</a>
+												</li>
+											@endforeach
+										</ul>
+									@endif
+								</li>
+							@endforeach
                         </ul>
                      </li>
                      <li><a href="{{ route('home') }}#brands">Brands</a></li>
@@ -121,22 +168,32 @@ $agri_categories = Category::agri_categories();
                            <li><a href="https://forest-factory.eco/">Forest Factory</a></li>
                         </ul>
                      </li>
-                     <li class="has-dropdown">
-                        <a href="javascript:;">Products</a>
-                        <ul class="main-dropdown">
-                           @foreach($get_categories as $category)
-                              <li><a href="{{ url($category['category_url']) }}">{{  $category['category_name'] }}</a></li>
-						         @endforeach
-                        </ul>
-                     </li>
-                       <li class="has-dropdown">
-                        <a href="#">Agri Products</a>
-                        <ul class="main-dropdown">
-                           @foreach($agri_categories as $category)
-                              <li><a href="{{ url($category['category_url']) }}">{{  $category['category_name'] }}</a></li>
-						         @endforeach
-                        </ul>
-                     </li>
+                    <li class="has-dropdown">
+						<a href="javascript:;">Products</a>
+						<ul class="main-dropdown">
+							@foreach($get_categories as $category)
+								<li class="has-sub-dropdown">
+									<a href="{{ url($category['category_url']) }}">
+										{{ $category['category_name'] }}
+									</a>
+
+									@if(!empty($category['sub_categories']))
+										<ul class="sub-dropdown">
+											@foreach($category['sub_categories'] as $sub)
+												<li>
+													<a href="{{ url($sub['category_url']) }}">
+														{{ $sub['category_name'] }}
+													</a>
+												</li>
+											@endforeach
+										</ul>
+									@endif
+
+								</li>
+							@endforeach
+						</ul>
+					</li>
+                      
                      <li><a href="{{ route('home') }}#brands">Brands</a></li>
                      <li><a href="https://tracking.nneworld.com/login">Tracing</a></li>
                      <li class="has-dropdown">

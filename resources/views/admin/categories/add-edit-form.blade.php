@@ -6,7 +6,7 @@
 				 <div class="row">
 				 
 				 
-				  <div class="form-group col-6">
+				  <div class="form-group col-6" style="display:none">
 					<label for="category_name">Category For<span class="red_star"> *</span></label>
 					<select type="textbox"  class="form-control forminput"   id="category_type" name="category_type">
 					    <option value="normal-products" @if(!empty($id) && $row['category_type'] == 'normal-products') selected @endif>Normal Products</option>
@@ -19,12 +19,15 @@
 				 
 				 
 				 
-				 <div class="form-group col-6">
+				 <div class="form-group col-6" >
 					<label for="parent_id">Select Parent Category<span class="red_star"> *</span></label>
 					<select id="parent_id" name="parent_id" class="form-control forminput">
 					      <option value="ROOT">Main Category</option>
 						  @foreach($categories as $category)
-						  <option value="{{ $category['id'] }}" @if(!empty($id) && $row['parent_id'] == $category['id']) selected @endif >{{ $category['category_name'] }}  </option>
+						  <option value="{{ $category['id'] }}" @if(!empty($id) && $row['parent_id'] == $category['id']) selected @endif ><span style="font-size: 40px; color: black;">&#9679;</span> &nbsp;&nbsp;&nbsp;{{ $category['category_name'] }}  </option>
+						   @foreach($category['sub_categories_all'] as $sub_category)
+						     <option value="{{ $sub_category['id'] }}" @if(!empty($id) && $row['parent_id'] == $sub_category['id']) selected @endif >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;  {{ $sub_category['category_name'] }}  </option>
+						   @endforeach
 						  @endforeach
 					</select>
 				    <p class="error-message" id="error-parent_id"></p>
