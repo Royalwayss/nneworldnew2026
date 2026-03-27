@@ -21,7 +21,7 @@ $agri_categories = Category::agri_categories();
             </div>
             <div class="offcanvas__menu">
                <div class="offcanvas-menu">
-                  <ul>
+                  <ul >
                      <li>
                         <a href="{{ route('aboutus') }}">About</a>
                         <ul>
@@ -53,7 +53,7 @@ $agri_categories = Category::agri_categories();
                         </ul>
                      </li>
                      <li><a href="{{ route('home') }}#brands">Brands</a></li>
-                     <li><a href="https://tracking.nneworld.com/login">Tracing</a></li>
+                     <!-- <li><a href="https://tracking.nneworld.com/login">Tracing</a></li> -->
                      <li><a href="https://forest-factory.eco/">Forest Factory</a></li>
                      <li>
                         <a href="javacript:;">Stories</a>
@@ -65,6 +65,15 @@ $agri_categories = Category::agri_categories();
                      <li><a href="{{ route('contactus') }}">Contact Us</a></li>
                   </ul>
                </div>
+               <div class="footer__social-3">
+               <ul class="d-block ">
+                  <li>
+                     <a class="mt-4" href="https://www.facebook.com/people/Navyug-Namdhari-Ecosystems-PvtLtd/100087155512253/">
+                     <i class="fa-brands fa-facebook-f"></i>
+                     </a>
+                  </li>
+               </ul>
+            </div>
             </div>
             <div class="offcanvas__map">
                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6848.564018919881!2d75.925862!3d30.878771!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a9d6cfc56018d%3A0x2fe50240ac2d1f9b!2sNavyug%20Namdhari%20Eco%20Drive%20Private%20Limited!5e0!3m2!1sen!2sus!4v1753072393164!5m2!1sen!2sus"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -99,18 +108,8 @@ $agri_categories = Category::agri_categories();
                <div class="footer__social-3">
                   <ul>
                      <li>
-                        <a href="javacript:;">
+                        <a href="https://www.facebook.com/people/Navyug-Namdhari-Ecosystems-PvtLtd/100087155512253/">
                         <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="javacript:;">
-                        <i class="fa-brands fa-twitter"></i>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="javacript:;">
-                        <i class="fa-brands fa-instagram"></i>
                         </a>
                      </li>
                   </ul>
@@ -164,7 +163,7 @@ $agri_categories = Category::agri_categories();
 					</li>
                       
                      <li><a href="{{ route('home') }}#brands">Brands</a></li>
-                     <li><a href="https://tracking.nneworld.com/login">Tracing</a></li>
+                     <!-- <li><a href="https://tracking.nneworld.com/login">Tracing</a></li> -->
                      <li class="has-dropdown">
                         <a href="javacript:;">Stories</a>
                         <ul class="main-dropdown">

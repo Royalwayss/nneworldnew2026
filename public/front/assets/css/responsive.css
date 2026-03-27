@@ -2,6 +2,12 @@
   .hero{
     height: 80vh;
   }
+  .contact__item{
+    height: auto;
+  }
+  .mean-container .mean-nav{
+    margin-bottom: 20px;
+  }
   .hero-title {
     font-size: 80px;
   }

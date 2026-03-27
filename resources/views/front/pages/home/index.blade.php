@@ -18,7 +18,7 @@
                <div class="service__title-wrap" data-aos="fade-up">
                   <h2 class="sec-subtitle">Our Categories
                   </h2>
-                  <h3 class="sec-title" data-aos="fade-up">Custom Bicycle Solutions Tailored to Every Need</h3>
+                  <h3 class="sec-title" data-aos="fade-up">Micro Mobility Solutions Tailored to Every Need</h3>
                </div>
             </div>
             <div class="col-xxl-5 col-xl-5 col-xl-5">
@@ -136,7 +136,7 @@
       <img src="front/assets/imgs/shape/6.png" alt="img" title="img" class="shape">
    </div>
 </section>
-<section class="service__area pt-150 pb-130">
+<!-- <section class="service__area pt-150 pb-130">
    <div class="container">
       <div class="bg-light1 border-radius-25 pt-120 px-lg-5 px-4 pb-90 pb-120">
          <div class="row pb-120">
@@ -303,7 +303,7 @@
          </div>
       </div>
    </div>
-</section>
+</section> -->
 <section class="process__area-4 bg-light1 pt-100 pb-100">
    <div class="container">
       <div class="row">
@@ -405,8 +405,10 @@
    <div class="hero__inner">
       <div class="hero__top">
          <h1 class="hero__title" data-aos="fade-up">
-            <span class="visibleText">Sustainability Is</span> <br> <a href="" id="hero_video"> <span><i
-               class="fa-solid fa-play"></i></span></a> <span class="visibleText">Our Standard</span>
+            <span class="visibleText">Beyond Sustainability.</span> <br>
+             <a href="javascript::void()" data-bs-toggle="modal" data-bs-target="#videoPopup"> <span><i
+               class="fa-solid fa-play"></i></span></a>
+                <span class="visibleText">Towards Regeneration.</span>
          </h1>
          <div class="hero__contact cxufadeUp2">
             <a href="https://nneworld.rtpltech.in/sustainability">
@@ -417,6 +419,7 @@
             </div>
          </div>
       </div>
+      
       <div class="hero__btm">
          <div class="">
             <p>We design products and processes that reduce environmental impact and promote a better tomorrow. From
@@ -425,16 +428,19 @@
          </div>
       </div>
    </div>
-   <div class="hero__video">
-      <video autoplay loop muted>
+   <div class="modal fade" id="videoPopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+       <video autoplay loop muted class="w-100">
          <source src="front/assets/video/factory.mp4" type="video/mp4">
       </video>
-   </div>
-   <!-- <img class="shape-1" src="front/assets/imgs/shape/1.png" alt="img" title="img">
-      <img class="shape-2" src="front/assets/imgs/shape/2.png" alt="img" title="img">
-      <img class="shape-3" src="front/assets/imgs/shape/3.png" alt="img" title="img">
-      <img class="shape-4 cxuSpin-slow" src="front/assets/imgs/shape/4.png" alt="img" title="img">
-      <img class="shape-5" src="front/assets/imgs/shape/5.png" alt="img" title="img"> -->
+      </div>
+
+    </div>
+  </div>
+</div>
+
 </section>
 <section class="who__area" style="background-image: url('front/assets/imgs/hero/00.png');">
    <div class="who__area_inner infra pt-5 pb-5">
@@ -526,13 +532,13 @@
 <section class="brand__area pt-150 pb-150">
    <div class="container">
       <div class="row align-items-center">
-         <div class="col-lg-3 col-12">
+         <div class="col-lg-4 col-12">
             <div class="sec-title-wrap pb-3" data-aos="fade-up">
-               <h2 class="sec-subtitle mb-0">Our Customers
+               <h2 class="sec-subtitle mb-0">Our Associated Brands
                </h2>
             </div>
          </div>
-         <div class="col-lg-9 col-12">
+         <div class="col-lg-8 col-12 as-brand">
             <div class="brand__inner p-0">
                <div class="swiper brand__slider">
                   <div class="swiper-wrapper">
@@ -543,7 +549,7 @@
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/Decathlon.png" alt="img" title="img">
+                           <img src="front/assets/imgs/brand/dc.jpg" alt="img" title="img">
                         </div>
                      </div>
                      <div class="swiper-slide">
@@ -586,6 +592,47 @@
                            <img src="front/assets/imgs/brand/trinity.png" alt="img" title="img">
                         </div>
                      </div>
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/cb.jpg" alt="img" title="img">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/motorad.jpg" alt="img" title="img">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/ff.jpg" alt="img" title="img">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/afr.jpg" alt="img" title="img">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/tandem.jpg" alt="img" title="img">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/disney.jpg" alt="img" title="img">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/marvel.jpg" alt="img" title="img">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/tvs.jpg" alt="img" title="img">
+                        </div>
+                     </div>
+                     
                   </div>
                </div>
             </div>
@@ -661,22 +708,40 @@
 <section class="newsletter__area bg-light1 pt-120 pb-120">
    <div class="container">
       <div class="row">
-         <div class="col-xxl-5 col-xl-5 col-lg-5 align-self-center">
-            <h2 class="sec-subtitle" data-aos="fade-up">Newsletter</h2>
-            <h3 class="sec-title pb-0" data-aos="fade-right">Get Latest Updates</h3>
+         <div class="col-xxl-4 col-xl-4 col-lg-4 align-self-center">
+            <h3 class="sec-title pb-0" data-aos="fade-right">Certification</h3>
          </div>
          <div class="col-xxl-7 col-xl-7 col-lg-7">
-            <div class="newsletter__right ps-xxl-5">
-               <form action="javascript:;" data-action="{{ route('addsubscriber') }}" class="ps-xxl-5"
-                  id="newsletter-form">
-                  @csrf
-                  <input class="border-radius-50" type="email" name="email" id="newsletter-email"
-                     placeholder="Enter Your Email">
-                  <button type="submit"
-                     class="submit btn-rollover border-radius-50 border-radius-50-hover bg-base">Subscribe
-                  Now</button>
-                  <p id="newsletter-message"></p>
-               </form>
+            <div class="brand__inner p-0">
+               <div class="swiper brand__slider">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/logo/certified-1.png" alt="img" title="img">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/logo/certified-2.png" alt="img" title="img">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/logo/certified-3.png" alt="img" title="img">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/logo/certified-4.png" alt="img" title="img">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/logo/certified-5.png" alt="img" title="img">
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </div>

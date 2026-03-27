@@ -2107,7 +2107,7 @@ header.pos-abs {
   background-image: url(../imgs/hero/bg-1.png);
 }
 .hero__area.sustain {
-  padding: 220px 0;
+    padding: 70px 0 180px 0;
 }
 .hero__area.sustain .hero__btm {
   display: block;
@@ -11254,4 +11254,24 @@ HOME FIVE FOOTER
 }
 .sus .row{
   margin-top: 5rem;
+}
+.newsletter__area .brand__slide{
+    width: 120px;        /* same width for all */
+    height: 120px;        /* same height for all */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter__area .brand__slide img, .as-brand .brand__slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;   /* VERY IMPORTANT */
+}
+.as-brand .brand__slide{
+    width: 180px;        /* same width for all */
+    height: auto;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
