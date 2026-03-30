@@ -18,6 +18,37 @@
 .flex-lg-column div.fullWidth.itemEnquiry {
     margin-bottom: 10px;
 }
+.video-placeholder video, .image-placeholder img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px #ededed;
+}
+ul#sustainTabs li {
+    list-style: none;
+}
+.sus .sustain__section ul {
+    padding-left: 24px;
+
+}
+.sus .sustain__section ul li {
+    list-style: circle;
+}
+.hero-p{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+.sustain__section.full-width{
+    margin-top: 70px;
+}
+#sustainTabs .nav-item .nav-link.active, #sustainTabs .nav-item .show>.nav-link{
+    background-color: #b69974;
+}
+#sustainTabs + .tab-content {
+    background-color: #b699741a;
+    padding: 1rem 3rem 2rem;
+}
 .centeredImgEnquire {
     display: inline-block;
     position: relative;

@@ -28,183 +28,382 @@
     <!-- contact -->
     <section class="contact__area-6 pb-150">
         <div class="container sus">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12 col-12 order-2 order-sm-1">
-                    <div class="susImg">
-                        <img data-aos="fade-right" src="{{ asset('front/assets/imgs/sustain-1.jpg') }}" alt="Image ">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-12 order-1 order-sm-2">
-                    <div class="about__content pt-0">
-                        <h2 class="sec-subtitle" data-aos="fade-up" data-aos-delay="100">Path to Peace and Progress
-                        </h2>
-                        <h3 class="sec-title" data-aos="fade-up" data-aos-delay="200">Building justice and
-                            collaboration
-                            for a sustainable future</h3>
-                    </div>
-                    <p data-aos="fade-up">At NNE, we believe in the power of collaboration. We seek to partner with businesses and
-                        associates who share our values and ethics. Whether it’s our employees, manufacturers, or
-                        suppliers, we carefully choose individuals and organisations that share the principles and
-                        virtues that we hold close to our hearts.</p>
-                    <p data-aos="fade-up">We actively seek to collaborate with people that abide by the law and adhere to ethical business
-                        practices whilst striving to ensure that their association with us is both positive and pleasant
-                        by implementing regulations and policies that are flexible. </p>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="about__content pt-0">
-                        <h2 class="sec-subtitle" data-aos="fade-up" data-aos-delay="100">Embracing Sustainability
-                        </h2>
-                        <h3 class="sec-title" data-aos="fade-up" data-aos-delay="200">Empowering responsible choices
-                            in consumption and production</h3>
-                    </div>
-                    <p data-aos="fade-up">We believe in the importance of ensuring a sustainable future, and we take our responsibility to
-                        mother nature very seriously. We take our responsibility towards the environment seriously,
-                        particularly when it comes to water conservation. We have implemented effective measures, such
-                        as water harvesting, to reuse the water consumed in our Paint Plant. Through these efforts, we
-                        have successfully reduced our annual water consumption from 2.70 million liters to a mere 0.13
-                        million liters. This significant reduction conserves water and ensures its availability to the
-                        communities in the surrounding areas.</p>
-                    <p data-aos="fade-up">Understanding the urgent need to address the depletion of water levels caused by excessive
-                        groundwater extraction and unsustainable agricultural practices, NNE has developed a long-term
-                        plan to contribute to this cause. As part of this plan, we are dedicated to substantially
-                        increasing our Water Recycling capacity, which is currently at 5%. By implementing advanced
-                        recycling techniques, we aim to further reduce our water footprint and positively impact the
-                        environment.</p>
-                    <p data-aos="fade-up">NNE remains committed to sustainable practices that safeguard our precious water resources and
-                        support the well-being of local communities. Through our ongoing efforts, we strive to set a new
-                        benchmark for responsible water management in the industry.</p>
-                </div>
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="susImg">
-                        <img data-aos="fade-left" src="{{ asset('front/assets/imgs/sustain-2.jpg') }}" alt="Image ">
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
 
-                <div class="col-lg-6 col-md-12 col-12 order-2 order-sm-1">
-                    <div class="susImg">
-                        <img data-aos="fade-right" src="{{ asset('front/assets/imgs/sustain-3.jpg') }}" alt="Image ">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-12 order-1 order-sm-2">
-                    <div class="about__content pt-0">
-                        <h2 class="sec-subtitle" data-aos="fade-up" data-aos-delay="100">Climate Action
-                        </h2>
-                        <h3 class="sec-title" data-aos="fade-up" data-aos-delay="200">Uniting efforts to protect our
-                            planet</h3>
-                    </div>
-                    <p data-aos="fade-up">We only associate with people who like us, are on a mission with a clear vision to make the
-                        planet greener and peaceful. Over the years, we have been successfully working tirelessly and
-                        passionately to break new grounds to change the current environmental & ecological issues that
-                        need immediate attention. </p>
-                </div>
-            </div>
-            <div class="row align-items-center">
 
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="about__content pt-0">
-                        <h2 class="sec-subtitle" data-aos="fade-up" data-aos-delay="100">Redefining Water Conservation
-                        </h2>
-                        <h3 class="sec-title" data-aos="fade-up" data-aos-delay="200">Transforming farming practices
-                            for a sustainable future</h3>
+            <!-- Intro -->
+            <div class="sustain__section">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="content text-center">
+                            <h2 class="sec-subtitle">Sustainability at NNE</h2>
+                            <h2 class="sec-title">Beyond Sustainability. Towards Regeneration.</h2>
+                            <p class="hero-p">
+                                At NNE, sustainability is not a checkbox – it’s a transformation. We don’t just reduce
+                                impact; we actively <strong>Restore ecosystems, Empower communities and Redesign
+                                    manufacturing for the future</strong>.
+                            </p>
+                        </div>
                     </div>
-                    <p data-aos="fade-up">The extraction of groundwater for agricultural purposes, especially for water-intensive crops
-                        like wheat and rice, remains a primary contributor to the depletion of water resources. In
-                        Punjab, approximately 60 to 70 per cent of cultivated land is dedicated to wheat-rice
-                        cultivation, further exacerbating the issue.</p>
-                    <p data-aos="fade-up">Considering the pressing global challenges we face today, including poverty, hunger, inequality,
-                        and climate change, it is crucial that we take immediate action. Our team of visionary leaders
-                        at NNE is united in their commitment to steer us towards a common goal.</p>
-                    <p data-aos="fade-up">Our mission is to redefine water conservation practices and transform obsolete farming methods.
-                        By addressing the excessive reliance on groundwater for agriculture, we aim to pioneer
-                        sustainable solutions that mitigate water scarcity and promote ecological balance. We understand
-                        that water conservation and responsible farming practices are essential for the well-being of
-                        our planet and its inhabitants.</p>
-                    <p data-aos="fade-up">Over the years, we have worked tirelessly and passionately to implement changes that will
-                        positively address climate issues. At NNE we actively seek out individuals and organisations who
-                        are working towards the common goal of preserving and nurturing the Earth’s ability to sustain
-                        life in all its beautiful diversity. </p>
-                    <p data-aos="fade-up">Through innovative strategies and collaborative partnerships, we work to create a more
-                        sustainable future for generations to come. By reimagining how we conserve water and reform
-                        outdated farming practices, we can help contribute to a world where poverty and hunger are
-                        alleviated, inequality is reduced, and the impacts of climate change are mitigated.</p>
-                    <p data-aos="fade-up">Join our team of visionaries today on this transformative journey working towards a common goal
-                        that prioritises the well-being of our planet and its inhabitants. United, we can overcome these
-                        challenges and achieve one common goal.</p>
-                </div>
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="susImg">
-                        <img data-aos="fade-left" src="{{ asset('front/assets/imgs/sustain-4.jpg') }}" alt="Image ">
+                    <div class="col-lg-6">
+                        <div class="image-placeholder">
+                            <!-- IMAGE HERE -->
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center">
 
-                <div class="col-lg-6 col-md-12 col-12 order-2 order-sm-1">
-                    <div class="susImg">
-                        <img data-aos="fade-right" src="{{ asset('front/assets/imgs/sustain-5.jpg') }}" alt="Image ">
+            <!-- Forest Factory -->
+            <div class="sustain__section">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <h2 class="sec-subtitle">The Forest Factory</h2>
+                            <h3 class="sec-title">Where Industry Meets Ecology</h3>
+                            <p>Our “Factory of Tomorrow” is built around a radical idea: manufacturing and nature can
+                                coexist.</p>
+                            <ul>
+                                <li><strong>15+ acres</strong> dedicated to forest development</li>
+                                <li><strong>5+ km</strong> bike test track integrated within green ecosystems</li>
+                                <li>Designed to become <strong>carbon neutral by 2030/31</strong></li>
+                                <li>Built to create a new industrial standard</li>
+                            </ul>
+                            <p>This is not a factory with trees.<br>This is a forest that manufactures responsibly.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-12 order-1 order-sm-2">
-                    <div class="about__content pt-0">
-                        <h2 class="sec-subtitle" data-aos="fade-up" data-aos-delay="100">Confronting the Environmental
-                            Crisis
-                        </h2>
-                        <h3 class="sec-title" data-aos="fade-up" data-aos-delay="200">Stubble burning’s impact
-                            on rising CO₂ emissions</h3>
+                    <div class="col-lg-6">
+                        <div class="video-placeholder">
+                            <video muted autoplay playsinline loop controls
+                                src="{{ asset('front/assets/imgs/bg.mp4') }}"></video>
+                        </div>
                     </div>
-                    <p data-aos="fade-up">Stubble burning, also known as crop residue burning, significantly contributes to environmental
-                        pollution. Burning crop residues releases a staggering number of harmful emissions into the
-                        atmosphere. To put it into perspective, this practice results in the release of 149.24 million
-                        tonnes of carbon dioxide (CO2), over 9 million tons of carbon monoxide (CO), 0.25 million tonnes
-                        of sulphur oxides (SOX), 1.28 million tonnes of particulate matter, and 0.07 million tonnes of
-                        black carbon. These emissions contribute to air pollution and have far-reaching consequences,
-                        such as the haze in Delhi and the melting of Himalayan glaciers.</p>
-                    <p data-aos="fade-up">At NNE, we recognise the urgent need to combat this environmental challenge. That’s why we are
-                        committed to leveraging renewable and sustainable resources to reduce our carbon footprint.
-                        Currently, we operate on 35% solar energy, and our goal is to increase it to 50% in the near
-                        future. Renewable energy solutions are continuously advancing, becoming more cost-effective,
-                        reliable, and efficient. We must shift away from our reliance on fossil fuels, which are
-                        detrimental to the planet and its ecosystems.</p>
                 </div>
             </div>
-            <div class="row align-items-center">
 
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="about__content pt-0">
-                        <h2 class="sec-subtitle" data-aos="fade-up" data-aos-delay="100">Empowering Our Workforce
-                        </h2>
-                        <h3 class="sec-title" data-aos="fade-up" data-aos-delay="200">Fostering growth, security,
-                            and well-being at NNE</h3>
+            <!-- Carbon Sink -->
+            <div class="sustain__section">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <h2 class="sec-subtitle">Carbon Sink Initiative</h2>
+                            <h3 class="sec-title">We Don’t Offset. We Absorb.</h3>
+                            <p>Through our carbon sink project, we actively capture carbon – not just reduce emissions.
+                            </p>
+                            <ul>
+                                <li><strong>15-acre</strong> forest already developed</li>
+                                <li>Target: <strong>100+ acres by 2030</strong></li>
+                                <li>Carbon stored through soil, trees, and biodiversity systems</li>
+                            </ul>
+                            <p>We are engineering a future where industries become net contributors to the planet.</p>
+                        </div>
                     </div>
-                    <p data-aos="fade-up">At NNE, we cultivate an environment that enables our 1000+ strong workforce to excel on all
-                        levels and confidently advance in their careers. Our priority is to provide a supportive
-                        atmosphere where employees can focus on their professional growth without worrying about job
-                        security.</p>
-                    <p data-aos="fade-up">We believe in the importance of personalised development, which is why each employee at NNE has a
-                        career graph. Through ongoing performance evaluations, we identify areas for improvement and
-                        bridge the gap between their current performance and desired growth. </p>
-                    <p data-aos="fade-up">Our approach includes specialised training programs that cater to technical upgradation and the
-                        enhancement of soft skills. Moreover, we conduct psychological analysis to proactively address
-                        any stress points during employment, ensuring a harmonious work experience.</p>
-                    <p data-aos="fade-up">By facilitating tailored training initiatives, we empower our workforce to reach their full
-                        potential and succeed in their roles. At NNE, we are committed to fostering professional
-                        excellence and providing a secure foundation for our employees’ professional journeys.</p>
-                </div>
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="susImg">
-                        <img data-aos="fade-left" src="{{ asset('front/assets/imgs/sustain-6.jpg') }}" alt="Image ">
+                    <div class="col-lg-6">
+                        <div class="image-placeholder">
+                            <img src="{{ asset('front/assets/imgs/carbon-sink.jpg') }}" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <!-- Circular Economy -->
+            <div class="sustain__section">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <h2 class="sec-subtitle">Circular Economy in Action</h2>
+                            <h3 class="sec-title">From Waste to Value</h3>
+                            <p>We redesign materials and processes to eliminate waste at the source.</p>
+                            <ul>
+                                <li><strong>100% recycled rubber</strong> used in laminated wheels</li>
+                                <li><strong>~350 tons</strong> annual carbon footprint reduction</li>
+                                <li>Material innovation reducing steel thickness <strong>(5mm → 3.2mm)</strong></li>
+                                <li><strong>~85 tons</strong> of additional emission reduction annually</li>
+                            </ul>
+                            <p>For us, sustainability means closing loops, not managing waste.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-placeholder">
+                            <img src="{{ asset('front/assets/imgs/ce.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Renewable Energy -->
+            <div class="sustain__section">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <h2 class="sec-subtitle">Renewable Energy Transition</h2>
+                            <h3 class="sec-title">Powering the Shift to Clean Energy</h3>
+                            <p>We are rapidly transitioning towards renewable energy across operations:</p>
+                            <ul>
+                                <li><strong>25% renewable by 2026</strong></li>
+                                <li><strong>80% by 2027</strong></li>
+                                <li><strong>100% by 2028</strong></li>
+                            </ul>
+                            <p>Our goal is clear: energy independence with zero environmental compromise.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-placeholder">
+                            <img src="{{ asset('front/assets/imgs/renew.jpg') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- People Air Water Soil -->
+            <div class="sustain__section full-width">
+
+                <div class="content text-center mb-4">
+                    <h2 class="sec-subtitle">People. Air. Water. Soil.</h2>
+                    <h3 class="sec-title">Reviving the Fundamentals of Life</h3>
+                    <p class="hero-p">
+                        We believe real sustainability begins where impact is the highest – people and agriculture.
+                        That’s where ecosystems are shaped, and that’s where transformation truly scales.
+                    </p>
+                </div>
+
+                <!-- Nav Tabs -->
+                <ul class="nav nav-pills justify-content-center mb-4 flex-wrap" id="sustainTabs" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#people">PEOPLE</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#air">AIR</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#water">WATER</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#soil">SOIL</button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content">
+
+                    <!-- PEOPLE -->
+                    <div class="tab-pane fade show active" id="people">
+                        <div class="row align-items-center g-4 mt-2">
+
+                            <div class="col-lg-6 col-12">
+                                <div class="content">
+                                    <h4 class="sec-title">PEOPLE: Driving Change at the Source</h4>
+                                    <ul>
+                                        <li>~50% of India’s land and population is engaged in agriculture.</li>
+                                        <li>That’s larger than the entire EU population.</li>
+                                        <li>By educating and empowering farmers, we create an exponential environmental
+                                            impact.</li>
+                                        <li>Our approach focuses on awareness, training, and behavioural change at the
+                                            grassroots.</li>
+                                        <li>Because when people change, systems follow.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="image-placeholder">
+                                    <img src="{{ asset('front/assets/imgs/people.jpg') }}" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- AIR -->
+                    <div class="tab-pane fade" id="air">
+                        <div class="row align-items-center g-4 mt-2">
+
+                            <div class="col-lg-6 col-12">
+                                <div class="content">
+                                    <h4 class="sec-title">AIR: Eliminating the Root Cause</h4>
+                                    <p>We don’t just measure emissions – we work to eliminate them at the source.</p>
+                                    <ul>
+                                        <li>Burning 1 ton of paddy straw releases ~1.5 tons of greenhouse gases</li>
+                                        <li>~1,460 kg CO₂ per ton (major contributor to global warming)</li>
+                                        <li>~60 kg CO (toxic, impacts oxygen transport in the body)</li>
+                                        <li>3–12 kg particulate matter (PM2.5/PM10) harmful to the lungs</li>
+                                        <li>~199 kg ash and additional trace gases (SO₂, CH₄, NOx)</li>
+                                    </ul>
+                                    <p><strong>Our Action:</strong></p>
+                                    <ul>
+                                        <li>Stubble management across: 33 acres (2021) → 2782 acres (2025) → 3000-acre
+                                            target (2026)</li>
+                                        <li>Converting agricultural waste into Bio-CNG fuel</li>
+                                        <li>GPS-based field tracking for transparency and efficiency</li>
+                                    </ul>
+                                    <p>We’re not reducing pollution.<br>We’re preventing it from being created.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="image-placeholder">
+                                    <img src="{{ asset('front/assets/imgs/air.jpg') }}" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- WATER -->
+                    <div class="tab-pane fade" id="water">
+                        <div class="row align-items-center g-4 mt-2">
+
+                            <div class="col-lg-6 col-12">
+                                <div class="content">
+                                    <h4 class="sec-title">WATER: Smarter, Sustainable Farming</h4>
+                                    <ul>
+                                        <li>5-acre research facility dedicated to alternative farming</li>
+                                        <li>Target: 50% reduction in water consumption by 2027</li>
+                                        <li>Promoting techniques that reduce dependency on water-intensive practices
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="image-placeholder">
+                                    <img src="{{ asset('front/assets/imgs/water.jpg') }}" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- SOIL -->
+                    <div class="tab-pane fade" id="soil">
+                        <div class="row align-items-center g-4 mt-2">
+
+                            <div class="col-lg-6 col-12">
+                                <div class="content">
+                                    <h4 class="sec-title">SOIL: Regeneration, Not Just Preservation</h4>
+                                    <ul>
+                                        <li>300% increase in soil organic matter within 48 months</li>
+                                        <li>Training farmers to improve fertility and yield sustainably</li>
+                                        <li>Enhancing long-term agricultural productivity</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="image-placeholder">
+                                    <img src="{{ asset('front/assets/imgs/soil.jpg') }}" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Society -->
+            <div class="sustain__section">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <h2 class="sec-subtitle">Society & Community (SCR)</h2>
+                            <h3 class="sec-title">Sustainability That Includes People</h3>
+                            <p>Our initiatives extend beyond the environment into social impact:</p>
+                            <ul>
+                                <li>Tree plantation drives</li>
+                                <li>Free health check-ups</li>
+                                <li>Cancer awareness programs</li>
+                                <li>Farmer education & soil conservation</li>
+                                <li>Plastic-free campaigns</li>
+                                <li>Skill development programs</li>
+                            </ul>
+                            <p>We believe sustainability is incomplete without human progress.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-placeholder">
+                            <img src="{{ asset('front/assets/imgs/scr.jpg') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forest Development -->
+            <div class="sustain__section">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <h2 class="sec-subtitle">Forest Development</h2>
+                            <h3 class="sec-title">Engineering Living Ecosystems</h3>
+                            <ul>
+                                <li><strong>9,500+</strong>plants grown (2021–2025)</li>
+                                <li><strong>20-acre</strong> forest with 46+ species</li>
+                                <li><strong>Nitrogen-fixing</strong> ecosystems improve soil health</li>
+                                <li><strong>80% water savings</strong> through drip irrigation</li>
+                            </ul>
+                            <p>This is sustainability designed to sustain itself.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-placeholder">
+                            <img src="{{ asset('front/assets/imgs/forest-dev.jpg') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- One Earth -->
+            <div class="sustain__section">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <h2 class="sec-subtitle">One Earth Initiative</h2>
+                            <h3 class="sec-title">Scaling Impact, One Tree at a Time</h3>
+                            <ul>
+                                <li>1 tree planted for every e-bike export</li>
+                                <li>1 tree for every push bike shipment</li>
+                                <li>20,000+ trees planted</li>
+                                <li>Target: 1 million trees by 2030</li>
+                            </ul>
+                            <p>Because every product we ship should leave the planet better than before.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-placeholder">
+                            <img src="{{ asset('front/assets/imgs/1e.jpg') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Philosophy -->
+            <div class=" center">
+                <div class="content text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                        <h2 class="sec-subtitle">Our Philosophy</h2>
+                        <h4 class="sec-title">People. Planet. Progress.</h4>
+                        <ul>
+                            <li>People are empowered</li>
+                            <li>Planet is restored</li>
+                            <li>Progress is redefined</li>
+                        </ul>
+                        <p class="hero-p">
+                            We align with global sustainability frameworks while creating our own path – where:
+                        </p>
+                        <p class="hero-p">
+                            We don’t treat sustainability as an environmental function.
+                            We treat it as a human movement – powered by people, proven through impact.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </section>
     <!-- /contact -->
 
 
 
-@endsection
+    @endsection
