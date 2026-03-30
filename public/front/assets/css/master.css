@@ -2553,7 +2553,7 @@ header.pos-abs {
     }
 }
 .hero__title {
-    font-size: 100px;
+    /* font-size: 100px; */
     line-height: 1;
     font-weight: 700;
     letter-spacing: -3px;
@@ -2562,8 +2562,8 @@ header.pos-abs {
 }
 @media (max-width: 1199px) {
     .hero__title {
-        font-size: 72px;
-        line-height: 1.2;
+        font-size: 62px;
+        line-height: 1.4;
     }
 }
 @media (max-width: 991px) {
@@ -2584,7 +2584,7 @@ header.pos-abs {
     border-radius: 34px;
     border: 1px solid var(--black-2);
     position: relative;
-    top: -25px;
+    top: -12px;
 }
 @media (max-width: 1199px) {
     .hero__title a {
@@ -11142,7 +11142,7 @@ h2.projectd__details-title {
         width: 950px;
     }
     .hero__title {
-        font-size: 75px;
+        font-size: 62px;
     }
     .footer_two_area .footer__address {
         padding-left: 0;

@@ -85,7 +85,7 @@ $agri_categories = Category::agri_categories();
                         <span>
                         <i class="fa-solid fa-location-dot"></i>
                         </span>
-                        <p class="text-white">C-186-A, Focal Point Phase 6, Focal Point, Ludhiana, Punjab 141010</p>
+                        <p class="text-white">C-186-A, Focal Point Phase 6, Focal Point, Ludhiana, Punjab 141003</p>
                      </li>
                      <li>
                         <span>

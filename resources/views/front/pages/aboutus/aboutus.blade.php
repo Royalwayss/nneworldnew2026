@@ -32,7 +32,8 @@
             <div class="row">
                 <div class="col-xxl-6 col-xl-6 col-xl-6 col-md-6">
                     <div class="main-img">
-                        <img class="m-0" data-aos="fade-right" data-aos-delay="100" src="{{ asset('front/assets/imgs/aboutMission.jpg') }}" alt="Image">
+                        <img class="m-0" data-aos="fade-right" data-aos-delay="100"
+                            src="{{ asset('front/assets/imgs/aboutMission.jpg') }}" alt="Image">
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-xl-6 col-md-6">
@@ -111,13 +112,23 @@
                                 </div>
                                 <div class="who__content">
                                     <h4 class="title">Our Purpose </h4>
-                                    <p>At Navyug Namdhari Eco Drive, our purpose is to create meaningful environmental impact by adopting sustainable manufacturing practices and advancing micro-mobility solutions. We aim to redefine the future of transportation by making it smarter, cleaner, and more accessible – while committing to becoming <strong>carbon negative by 2030.</strong> Our vision is to be the difference in how mobility supports both people and the planet. </p>
+                                    <p>At Navyug Namdhari Eco Drive, our purpose is to create meaningful environmental
+                                        impact by adopting sustainable manufacturing practices and advancing
+                                        micro-mobility solutions. We aim to redefine the future of transportation by
+                                        making it smarter, cleaner, and more accessible – while committing to becoming
+                                        <strong>carbon negative by 2030.</strong> Our vision is to be the difference in
+                                        how mobility supports both people and the planet.
+                                    </p>
                                 </div>
                             </div>
                             <div class="who__feature d-block" data-aos="fade-right" data-aos-delay="200">
                                 <div class="who__content">
                                     <h4 class="title">OUR Mission</h4>
-                                    <p> Our mission is to build long-term value for our stakeholders while addressing one of humanity’s most pressing challenges – sustainable mobility. We strive to go beyond conventional bicycles by developing intelligent, future-ready transportation solutions that balance profitability with responsibility. For us, progress means innovation with purpose. </p>
+                                    <p> Our mission is to build long-term value for our stakeholders while addressing
+                                        one of humanity’s most pressing challenges – sustainable mobility. We strive to
+                                        go beyond conventional bicycles by developing intelligent, future-ready
+                                        transportation solutions that balance profitability with responsibility. For us,
+                                        progress means innovation with purpose. </p>
                                 </div>
                             </div>
                             <div class="who__feature d-block" data-aos="fade-right" data-aos-delay="200">
@@ -125,11 +136,15 @@
                                     <h4 class="title">Our Values</h4>
                                     <p>Everything we do at NNE is guided by four core pillars:</p>
                                     <ul>
-  <li><strong>Innovation</strong> – Constantly pushing boundaries in design, technology and engineering.</li>
-  <li><strong>Eco-Friendly Thinking</strong> – Embedding sustainability into every process and product.</li>
-  <li><strong>Smart Customer Value</strong> – Delivering meaningful, practical and scalable solutions.</li>
-  <li><strong>Respect</strong> – For people, partnerships, communities and the environment.</li>
-</ul>
+                                        <li><strong>Innovation</strong> – Constantly pushing boundaries in design,
+                                            technology and engineering.</li>
+                                        <li><strong>Eco-Friendly Thinking</strong> – Embedding sustainability into every
+                                            process and product.</li>
+                                        <li><strong>Smart Customer Value</strong> – Delivering meaningful, practical and
+                                            scalable solutions.</li>
+                                        <li><strong>Respect</strong> – For people, partnerships, communities and the
+                                            environment.</li>
+                                    </ul>
 
                                     <p> These values shape our culture, decisions and long-term direction. </p>
                                 </div>
@@ -140,7 +155,8 @@
                 <div class="col-xxl-6 col-xl-6 col-lg-6">
                     <div class="who__right">
                         <div class="main-img">
-                            <img class="m-0" data-aos="fade-up" data-aos-delay="100" src="{{ asset('front/assets/imgs/mision.jpg') }}" alt="Image">
+                            <img class="m-0" data-aos="fade-up" data-aos-delay="100"
+                                src="{{ asset('front/assets/imgs/mision.jpg') }}" alt="Image">
                         </div>
                         <img src="{{ asset('front/assets/imgs/shape/7.png') }}" alt="Shape" class="shape">
                         <img src="{{ asset('front/assets/imgs/shape/12.png') }}" alt="Shape" class="shape-2">
@@ -154,6 +170,22 @@
 
 
 
+    <section class="who__area-6 pt-170 pb-120">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="about__content pt-0">
+                        <h3 class="sec-title" data-aos="fade-right" data-aos-delay="200">Our Journey
+                        </h3>
+                    </div>
+                    <img class="m-0" data-aos="fade-up" data-aos-delay="100"
+                                src="{{ asset('front/assets/imgs/journey.jpg') }}" alt="Image">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 </main>
 
