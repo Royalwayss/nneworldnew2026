@@ -95,7 +95,8 @@ Use App\Models\ProductImage;
             </div>
             <div class="col-12 col-md-12 col-lg-5 ">
                <div class="fullWidth WrapperEnquiry bottomSequence ">
-                  @foreach($cartitems as $cartitem)
+                  @if(!empty($cartitems))
+				  @foreach($cartitems as $cartitem)
                   <div class="fullWidth text-center itemEnquiry">
                      <div class="centeredImgEnquire text-left ">
                         <div class="fullWidth">
@@ -122,6 +123,7 @@ Use App\Models\ProductImage;
                      </div>
                   </div>
                   @endforeach
+                  @endif
                </div>
             </div>
 

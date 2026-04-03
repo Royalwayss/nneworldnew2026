@@ -60,7 +60,7 @@
                               <span>
                               <i class="fa-solid fa-paper-plane"></i>
                               </span>
-                              <p>C-186-A, Focal Point Phase 6, Focal Point, Ludhiana, Punjab 141010</p>
+                              <p>C-186-A, Focal Point Phase 6, Focal Point, Ludhiana, Punjab 141003</p>
                            </li>
                            <li>
                               <span>

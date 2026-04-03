@@ -10,6 +10,6 @@
       <link rel="stylesheet" href="<?php echo e(asset('front/assets/css/magnific-popup.css')); ?>">
       <link rel="stylesheet" href="<?php echo e(asset('front/assets/css/aos.css')); ?>">
       <link rel="stylesheet" href="<?php echo e(asset('front/assets/css/progressbar.css')); ?>">
-      <link rel="stylesheet" href="<?php echo e(asset('front/assets/css/master.css')); ?>?v=2.7">
-      <link rel="stylesheet" href="<?php echo e(asset('front/assets/css/responsive.css')); ?>?v=2.7">
-      <link rel="stylesheet" href="<?php echo e(asset('front/assets/css/custom.css')); ?>?v=2.9"><?php /**PATH D:\xampp\htdocs\nneworldnew2026\nneworldnew2026\resources\views/front/elements/style.blade.php ENDPATH**/ ?>
+      <link rel="stylesheet" href="<?php echo e(asset('front/assets/css/master.css')); ?>?v=3.2">
+      <link rel="stylesheet" href="<?php echo e(asset('front/assets/css/responsive.css')); ?>?v=3.0">
+      <link rel="stylesheet" href="<?php echo e(asset('front/assets/css/custom.css')); ?>?v=3.1"><?php /**PATH D:\xampp\htdocs\nneworldnew2026\nneworldnew2026\resources\views/front/elements/style.blade.php ENDPATH**/ ?>
