@@ -69,9 +69,15 @@ $agri_categories = Category::agri_categories();
                <ul class="d-block ">
                   <li>
                      <a class="mt-4" href="https://www.facebook.com/people/Navyug-Namdhari-Ecosystems-PvtLtd/100087155512253/">
-                     <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
                      </a>
                   </li>
+				  <li>
+                        <a class="mt-4" href="https://in.linkedin.com/company/navyug-group-nng">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                     </li>
+				  
                </ul>
             </div>
             </div>
@@ -112,6 +118,11 @@ $agri_categories = Category::agri_categories();
                         <i class="fa-brands fa-facebook-f"></i>
                         </a>
                      </li>
+					 <li>
+                        <a href="https://in.linkedin.com/company/navyug-group-nng">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                     </li>
                   </ul>
                </div>
             </div>
@@ -140,7 +151,7 @@ $agri_categories = Category::agri_categories();
 						<a href="javascript:;">Products</a>
 						<ul class="main-dropdown">
 							@foreach($get_categories as $category)
-								<li class="has-sub-dropdown">
+								<li class="has-sub-dropdown @if(!empty($category['sub_categories'])) has-dropdown @endif">
 									<a href="{{ url($category['category_url']) }}">
 										{{ $category['category_name'] }}
 									</a>

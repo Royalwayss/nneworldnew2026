@@ -70,9 +70,15 @@ $agri_categories = Category::agri_categories();
                <ul class="d-block ">
                   <li>
                      <a class="mt-4" href="https://www.facebook.com/people/Navyug-Namdhari-Ecosystems-PvtLtd/100087155512253/">
-                     <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
                      </a>
                   </li>
+				  <li>
+                        <a class="mt-4" href="https://in.linkedin.com/company/navyug-group-nng">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                     </li>
+				  
                </ul>
             </div>
             </div>
@@ -113,6 +119,11 @@ $agri_categories = Category::agri_categories();
                         <i class="fa-brands fa-facebook-f"></i>
                         </a>
                      </li>
+					 <li>
+                        <a href="https://in.linkedin.com/company/navyug-group-nng">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                     </li>
                   </ul>
                </div>
             </div>
@@ -141,7 +152,7 @@ $agri_categories = Category::agri_categories();
 						<a href="javascript:;">Products</a>
 						<ul class="main-dropdown">
 							<?php $__currentLoopData = $get_categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-								<li class="has-sub-dropdown">
+								<li class="has-sub-dropdown <?php if(!empty($category['sub_categories'])): ?> has-dropdown <?php endif; ?>">
 									<a href="<?php echo e(url($category['category_url'])); ?>">
 										<?php echo e($category['category_name']); ?>
 

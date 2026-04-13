@@ -370,27 +370,27 @@
                <div class="swiper brand__slider">
                   <div class="swiper-wrapper">
                      <div class="swiper-slide">
-                        <div class="brand__slide gray">
+                        <div class="brand__slide">
                            <img src="front/assets/imgs/brand/orbishox.png" alt="img" title="img">
                         </div>
                      </div>
                      <div class="swiper-slide">
-                        <div class="brand__slide gray">
+                        <div class="brand__slide ">
                            <img src="front/assets/imgs/brand/orlando.png" alt="img" title="img">
                         </div>
                      </div>
                      <div class="swiper-slide">
-                        <div class="brand__slide gray">
+                        <div class="brand__slide">
                            <img src="front/assets/imgs/brand/speevo.png" alt="img" title="img">
                         </div>
                      </div>
                      <div class="swiper-slide">
-                        <div class="brand__slide gray">
+                        <div class="brand__slide"> <!-- gray -->
                            <img src="front/assets/imgs/brand/Verdant-bikes.png" alt="img" title="img">
                         </div>
                      </div>
                      <div class="swiper-slide">
-                        <div class="brand__slide gray">
+                        <div class="brand__slide">
                            <img src="front/assets/imgs/brand/omm.svg" alt="img" title="img">
                         </div>
                      </div>
@@ -544,8 +544,10 @@
                   <div class="swiper-wrapper">
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/acer.svg" alt="img" title="img">
-                        </div>
+                          <a target="_blank" href="https://www.acer.com/in-en">
+						  <img src="front/assets/imgs/brand/acer.svg" alt="img" title="img">
+                          </a>
+						</div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
@@ -554,22 +556,30 @@
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/firefox.jpg" alt="img" title="img">
+                           <a target="_blank" href="https://www.firefox.com/en-US/"> 
+						   <img src="front/assets/imgs/brand/firefox.jpg" alt="img" title="img">
+                           </a>
+						</div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <a target="_blank" href="https://www.huffy.com/">  
+						   <img src="front/assets/imgs/brand/huffy.svg" alt="img" title="img">
+						   </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/huffy.svg" alt="img" title="img">
+                          <a target="_blank" href="https://www.herocycles.com/">     
+						   <img src="front/assets/imgs/brand/hero-cycles.jpg" alt="img" title="img">
+						   </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/hero-cycles.jpg" alt="img" title="img">
-                        </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="brand__slide">
+						 <a target="_blank" href="https://www.mcleodaccessories.com.au/">     
                            <img src="front/assets/imgs/brand/mcleod.png" alt="img" title="img">
+						    </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
@@ -577,19 +587,19 @@
                            <img src="front/assets/imgs/brand/sun-baby.png" alt="img" title="img">
                         </div>
                      </div>
+                    
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/tandem.png" alt="img" title="img">
-                        </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="brand__slide">
+						 <a target="_blank" href="https://www.torontobicycles.com/">  
                            <img src="front/assets/imgs/brand/toronto.png" alt="img" title="img">
+						    </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
+						 <a target="_blank" href=" https://trinitycyclesindia.com/">   
                            <img src="front/assets/imgs/brand/trinity.png" alt="img" title="img">
+						   </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
@@ -602,34 +612,40 @@
                            <img src="front/assets/imgs/brand/motorad.jpg" alt="img" title="img">
                         </div>
                      </div>
+                    
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/ff.jpg" alt="img" title="img">
+                          <a target="_blank" href="https://africrooze.com/en/">    
+						   <img src="front/assets/imgs/brand/afr.jpg" alt="img" title="img">
+						   </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/afr.jpg" alt="img" title="img">
-                        </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="brand__slide">
+						  <a target="_blank" href="https://tandemgroupplc.co.uk/">     
                            <img src="front/assets/imgs/brand/tandem.jpg" alt="img" title="img">
+						   </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/disney.jpg" alt="img" title="img">
+                            <a target="_blank" href="https://www.disney.in/">   
+						   <img src="front/assets/imgs/brand/disney.jpg" alt="img" title="img">
+						   </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/marvel.jpg" alt="img" title="img">
+                            <a target="_blank" href="https://www.marvel.com">   
+						   <img src="front/assets/imgs/brand/marvel.jpg" alt="img" title="img">
+						   </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/tvs.jpg" alt="img" title="img">
+                            <a target="_blank" href="https://www.tvsmotor.com/">   
+						   <img src="front/assets/imgs/brand/tvs.jpg" alt="img" title="img">
+						   </a>
                         </div>
                      </div>
                      
