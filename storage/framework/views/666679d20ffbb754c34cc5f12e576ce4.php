@@ -78,6 +78,12 @@ $agri_categories = Category::agri_categories();
                         <i class="fa-brands fa-linkedin"></i>
                         </a>
                      </li>
+					<li>
+                        <a class="mt-4" href="https://www.instagram.com/navyug.namdhari?igsh=MWZseWRqOW54dXBwYg==">
+                        <i class="fa-brands fa-instagram"></i>
+                        </a>
+                     </li> 
+					
 				  
                </ul>
             </div>
@@ -124,6 +130,11 @@ $agri_categories = Category::agri_categories();
                         <i class="fa-brands fa-linkedin"></i>
                         </a>
                      </li>
+					 <li>
+                        <a href="https://www.instagram.com/navyug.namdhari?igsh=MWZseWRqOW54dXBwYg==">
+                        <i class="fa-brands fa-instagram"></i>
+                        </a>
+                     </li> 
                   </ul>
                </div>
             </div>

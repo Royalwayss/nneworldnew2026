@@ -543,19 +543,21 @@
                   <div class="swiper-wrapper">
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                          <a target="_blank" href="https://www.acer.com/in-en">
+                          <a target="_blank" href="https://acerelectric.in/">
 						  <img src="front/assets/imgs/brand/acer.svg" alt="img" title="img">
                           </a>
 						</div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/dc.jpg" alt="img" title="img">
+                           <a target="_blank" href="https://www.decathlon.in/"> 
+						   <img src="front/assets/imgs/brand/dc.jpg" alt="img" title="img">
+						   </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.firefox.com/en-US/"> 
+                           <a target="_blank" href="https://firefoxlife.com/"> 
 						   <img src="front/assets/imgs/brand/firefox.jpg" alt="img" title="img">
                            </a>
 						</div>
@@ -583,7 +585,9 @@
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
+						 <a target="_blank" href="https://sunbaby.pl/">      
                            <img src="front/assets/imgs/brand/sun-baby.png" alt="img" title="img">
+						    </a>
                         </div>
                      </div>
                     
@@ -596,42 +600,50 @@
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
+						 <a target="_blank" href="https://trinitycyclesindia.com/">   
                            <img src="front/assets/imgs/brand/trinity.png" alt="img" title="img">
+						   </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
+						<a target="_blank" href="https://www.tgc.bike/">    
                            <img src="front/assets/imgs/brand/cb.jpg" alt="img" title="img">
+						   </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/motorad.jpg" alt="img" title="img">
+						   <a target="_blank" href="https://www.emotorad.com/">   
+                              <img src="front/assets/imgs/brand/motorad.jpg" alt="img" title="img">
+						   </a>
                         </div>
                      </div>
                     
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                          <a target="_blank" href="https://africrooze.com/en/">    
+                          <a target="_blank" href="https://africrooze.com/">    
 						   <img src="front/assets/imgs/brand/afr.jpg" alt="img" title="img">
 						   </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
+						  <a target="_blank" href="https://www.tgc.bike/">     
                            <img src="front/assets/imgs/brand/tandem.jpg" alt="img" title="img">
+						   </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                            <a target="_blank" href="https://www.disney.in/">   
+                            <a target="_blank" href="https://www.huffy.com/">   
 						   <img src="front/assets/imgs/brand/disney.jpg" alt="img" title="img">
 						   </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                            <a target="_blank" href="https://www.marvel.com">   
+                            <a target="_blank" href="https://www.huffy.com/">   
 						   <img src="front/assets/imgs/brand/marvel.jpg" alt="img" title="img">
 						   </a>
                         </div>
