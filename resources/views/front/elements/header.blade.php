@@ -67,17 +67,17 @@ $agri_categories = Category::agri_categories();
          <div class="footer__social-3">
             <ul class="d-block ">
                <li>
-                  <a class="mt-4" href="https://www.facebook.com/people/Navyug-Namdhari-Ecosystems-PvtLtd/100087155512253/">
+                  <a class="mt-4" target="_blank" href="https://www.facebook.com/people/Navyug-Namdhari-Ecosystems-PvtLtd/100087155512253/">
                   <i class="fa-brands fa-facebook-f"></i>
                   </a>
                </li>
                <li>
-                  <a class="mt-4" href="https://in.linkedin.com/company/navyug-group-nng">
+                  <a class="mt-4" target="_blank" href="https://in.linkedin.com/company/navyug-group-nng">
                   <i class="fa-brands fa-linkedin"></i>
                   </a>
                </li>
                <li>
-                  <a class="mt-4" href="https://www.instagram.com/navyug.namdhari?igsh=MWZseWRqOW54dXBwYg==">
+                  <a class="mt-4" target="_blank" href="https://www.instagram.com/navyug.namdhari?igsh=MWZseWRqOW54dXBwYg==">
                   <i class="fa-brands fa-instagram"></i>
                   </a>
                </li>
@@ -117,17 +117,17 @@ $agri_categories = Category::agri_categories();
          <div class="footer__social-3">
             <ul>
                <li>
-                  <a href="https://www.facebook.com/people/Navyug-Namdhari-Ecosystems-PvtLtd/100087155512253/">
+                  <a target="_blank" href="https://www.facebook.com/people/Navyug-Namdhari-Ecosystems-PvtLtd/100087155512253/">
                   <i class="fa-brands fa-facebook-f"></i>
                   </a>
                </li>
                <li>
-                  <a href="https://in.linkedin.com/company/navyug-group-nng">
+                  <a target="_blank" href="https://in.linkedin.com/company/navyug-group-nng">
                   <i class="fa-brands fa-linkedin"></i>
                   </a>
                </li>
                <li>
-                  <a href="https://www.instagram.com/navyug.namdhari?igsh=MWZseWRqOW54dXBwYg==">
+                  <a target="_blank" href="https://www.instagram.com/navyug.namdhari?igsh=MWZseWRqOW54dXBwYg==">
                   <i class="fa-brands fa-instagram"></i>
                   </a>
                </li>
