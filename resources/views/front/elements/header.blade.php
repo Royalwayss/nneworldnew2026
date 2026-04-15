@@ -136,7 +136,7 @@ $agri_categories = Category::agri_categories();
       </div>
    </div>
 </div>
-<!-- Offcanvas area end -->
+<!-- Offcanvas area end --> 
 <header class="header__area pos-abs plr-100">
    <div class="header__inner">
       <div class="header__logo">

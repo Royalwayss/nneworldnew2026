@@ -302,7 +302,7 @@
          </div>
       </div>
    </div>
-</section> -->
+   </section> -->
 <section class="process__area-4 bg-light1 pt-100 pb-100">
    <div class="container">
       <div class="row">
@@ -384,7 +384,8 @@
                         </div>
                      </div>
                      <div class="swiper-slide">
-                        <div class="brand__slide"> <!-- gray -->
+                        <div class="brand__slide">
+                           <!-- gray -->
                            <img src="front/assets/imgs/brand/Verdant-bikes.png" alt="img" title="img">
                         </div>
                      </div>
@@ -405,9 +406,9 @@
       <div class="hero__top">
          <h1 class="hero__title" data-aos="fade-up">
             <span class="visibleText">Beyond Sustainability.</span> <br>
-             <a href="javascript::void()" data-bs-toggle="modal" data-bs-target="#videoPopup"> <span><i
+            <a href="javascript::void()" data-bs-toggle="modal" data-bs-target="#videoPopup"> <span><i
                class="fa-solid fa-play"></i></span></a>
-                <span class="visibleText">Towards Regeneration.</span>
+            <span class="visibleText">Towards Regeneration.</span>
          </h1>
          <div class="hero__contact cxufadeUp2">
             <a href="https://nneworld.rtpltech.in/sustainability">
@@ -418,7 +419,6 @@
             </div>
          </div>
       </div>
-      
       <div class="hero__btm">
          <div class="">
             <p>We design products and processes that reduce environmental impact and promote a better tomorrow. From
@@ -428,18 +428,16 @@
       </div>
    </div>
    <div class="modal fade" id="videoPopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-body">
-       <video autoplay loop muted class="w-100">
-         <source src="front/assets/video/factory.mp4" type="video/mp4">
-      </video>
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+            <div class="modal-body">
+               <video autoplay loop muted class="w-100">
+                  <source src="front/assets/video/factory.mp4" type="video/mp4">
+               </video>
+            </div>
+         </div>
       </div>
-
-    </div>
-  </div>
-</div>
-
+   </div>
 </section>
 <section class="who__area" style="background-image: url('front/assets/imgs/hero/00.png');">
    <div class="who__area_inner infra pt-5 pb-5">
@@ -543,119 +541,116 @@
                   <div class="swiper-wrapper">
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                          <a target="_blank" href="https://acerelectric.in/">
-						  <img src="front/assets/imgs/brand/acer.svg" alt="img" title="img">
-                          </a>
-						</div>
+                           <a target="_blank" href="https://acerelectric.in/">
+                           <img src="front/assets/imgs/brand/acer.svg" alt="img" title="img">
+                           </a>
+                        </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
                            <a target="_blank" href="https://www.decathlon.in/"> 
-						   <img src="front/assets/imgs/brand/dc.jpg" alt="img" title="img">
-						   </a>
+                           <img src="front/assets/imgs/brand/dc.jpg" alt="img" title="img">
+                           </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
                            <a target="_blank" href="https://firefoxlife.com/"> 
-						   <img src="front/assets/imgs/brand/firefox.jpg" alt="img" title="img">
+                           <img src="front/assets/imgs/brand/firefox.jpg" alt="img" title="img">
                            </a>
-						</div>
+                        </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
                            <a target="_blank" href="https://www.huffy.com/">  
-						   <img src="front/assets/imgs/brand/huffy.svg" alt="img" title="img">
-						   </a>
+                           <img src="front/assets/imgs/brand/huffy.svg" alt="img" title="img">
+                           </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                          <a target="_blank" href="https://www.herocycles.com/">     
-						   <img src="front/assets/imgs/brand/hero-cycles.jpg" alt="img" title="img">
-						   </a>
+                           <a target="_blank" href="https://www.herocycles.com/">     
+                           <img src="front/assets/imgs/brand/hero-cycles.jpg" alt="img" title="img">
+                           </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-						 <a target="_blank" href="https://www.mcleodaccessories.com.au/">     
+                           <a target="_blank" href="https://www.mcleodaccessories.com.au/">     
                            <img src="front/assets/imgs/brand/mcleod.png" alt="img" title="img">
-						    </a>
+                           </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-						 <a target="_blank" href="https://sunbaby.pl/">      
+                           <a target="_blank" href="https://sunbaby.pl/">      
                            <img src="front/assets/imgs/brand/sun-baby.png" alt="img" title="img">
-						    </a>
+                           </a>
                         </div>
                      </div>
-                    
                      <div class="swiper-slide">
                         <div class="brand__slide">
-						 <a target="_blank" href="https://www.torontobicycles.com/">  
+                           <a target="_blank" href="https://www.torontobicycles.com/">  
                            <img src="front/assets/imgs/brand/toronto.png" alt="img" title="img">
-						    </a>
+                           </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-						 <a target="_blank" href="https://trinitycyclesindia.com/">   
+                           <a target="_blank" href="https://trinitycyclesindia.com/">   
                            <img src="front/assets/imgs/brand/trinity.png" alt="img" title="img">
-						   </a>
+                           </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-						<a target="_blank" href="https://www.tgc.bike/">    
+                           <a target="_blank" href="https://www.tgc.bike/">    
                            <img src="front/assets/imgs/brand/cb.jpg" alt="img" title="img">
-						   </a>
+                           </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-						   <a target="_blank" href="https://www.emotorad.com/">   
-                              <img src="front/assets/imgs/brand/motorad.jpg" alt="img" title="img">
-						   </a>
-                        </div>
-                     </div>
-                    
-                     <div class="swiper-slide">
-                        <div class="brand__slide">
-                          <a target="_blank" href="https://africrooze.com/">    
-						   <img src="front/assets/imgs/brand/afr.jpg" alt="img" title="img">
-						   </a>
+                           <a target="_blank" href="https://www.emotorad.com/">   
+                           <img src="front/assets/imgs/brand/motorad.jpg" alt="img" title="img">
+                           </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-						  <a target="_blank" href="https://www.tgc.bike/">     
+                           <a target="_blank" href="https://africrooze.com/">    
+                           <img src="front/assets/imgs/brand/afr.jpg" alt="img" title="img">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <a target="_blank" href="https://www.tgc.bike/">     
                            <img src="front/assets/imgs/brand/tandem.jpg" alt="img" title="img">
-						   </a>
+                           </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                            <a target="_blank" href="https://www.huffy.com/">   
-						   <img src="front/assets/imgs/brand/disney.jpg" alt="img" title="img">
-						   </a>
+                           <a target="_blank" href="https://www.huffy.com/">   
+                           <img src="front/assets/imgs/brand/disney.jpg" alt="img" title="img">
+                           </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                            <a target="_blank" href="https://www.huffy.com/">   
-						   <img src="front/assets/imgs/brand/marvel.jpg" alt="img" title="img">
-						   </a>
+                           <a target="_blank" href="https://www.huffy.com/">   
+                           <img src="front/assets/imgs/brand/marvel.jpg" alt="img" title="img">
+                           </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                            <a target="_blank" href="https://www.tvsmotor.com/">   
-						   <img src="front/assets/imgs/brand/tvs.jpg" alt="img" title="img">
-						   </a>
+                           <a target="_blank" href="https://www.tvsmotor.com/">   
+                           <img src="front/assets/imgs/brand/tvs.jpg" alt="img" title="img">
+                           </a>
                         </div>
                      </div>
-                     
                   </div>
                </div>
             </div>
