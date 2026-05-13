@@ -12,4 +12,4 @@
       <link rel="stylesheet" href="{{ asset('front/assets/css/progressbar.css') }}">
       <link rel="stylesheet" href="{{ asset('front/assets/css/master.css') }}?v=3.2">
       <link rel="stylesheet" href="{{ asset('front/assets/css/responsive.css') }}?v=3.0">
-      <link rel="stylesheet" href="{{ asset('front/assets/css/custom.css') }}?v=3.1">
+      <link rel="stylesheet" href="{{ asset('front/assets/css/custom.css') }}?v=3.2">
