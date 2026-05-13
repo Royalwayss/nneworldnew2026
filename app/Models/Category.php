@@ -6,9 +6,20 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-    public static function get_categories(){
-		$plans = [];
-		$categories = Category::with('sub_categories')->select('id','category_name','category_url','description','image')->where('parent_id',NULL)->where('category_type','normal-products')->where('status','1')->orderby('sortorder','asc')->get()->toArray();
+    public static function get_categories()
+	{
+		$categories = Category::with([
+			'sub_categories',
+			'sub_categories.sub_categories'
+		])
+		->select('id', 'category_name', 'category_url', 'description', 'image')
+		->whereNull('parent_id')
+		->where('category_type', 'normal-products')
+		->where('status', '1')
+		->orderBy('sortorder', 'asc')
+		->get()
+		->toArray();
+
 		return $categories;
 	}
 
@@ -86,6 +97,33 @@ class Category extends Model
     $breadcrumb = json_decode(json_encode($breadcrumb),true);
     return array_reverse($breadcrumb);
 	
+	}
+	
+	
+	public static function getCategoryPath($catId)
+	{
+		$category = Category::find($catId);
+
+		if (!$category) {
+			return '';
+		}
+
+		$breadcrumb = [];
+
+		// Get all parent categories
+		while ($category) {
+
+			$breadcrumb[] = $category;
+
+			if ($category->parent_id) {
+				$category = Category::find($category->parent_id);
+			} else {
+				break;
+			}
+		}
+        $breadcrumb = json_decode(json_encode($breadcrumb),true);  
+		// Reverse array to show root → child
+		return array_reverse($breadcrumb);
 	}
 	
 }

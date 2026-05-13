@@ -32,9 +32,12 @@
                <option value="">Choose ... </option>
                @foreach($categories as $category)
                <option value="{{ $category['id'] }}" @if(!empty($id) && $product['category_id'] == $category['id'] ) selected @endif >&#9679;&nbsp;{{ $category['category_name'] }}</option>
-               @foreach($category['sub_categories'] as $sub_category)
-               <option value="{{ $sub_category['id'] }}" @if(!empty($id) && $product['category_id'] == $sub_category['id'] ) selected @endif>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&raquo;&raquo;{{ $sub_category['category_name'] }}</option>
-               @endforeach
+				   @foreach($category['sub_categories'] as $sub_category)
+				   <option value="{{ $sub_category['id'] }}" @if(!empty($id) && $product['category_id'] == $sub_category['id'] ) selected @endif>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&raquo;&raquo;{{ $sub_category['category_name'] }}</option>
+					   @foreach($sub_category['sub_categories'] as $sub_category2)
+					   <option value="{{ $sub_category2['id'] }}" @if(!empty($id) && $product['category_id'] == $sub_category2['id'] ) selected @endif>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&raquo;&raquo;{{ $sub_category2['category_name'] }}</option>
+					   @endforeach
+				   @endforeach
                @endforeach
             </select>
             <p class="error-message" id="error-category_id"></p>

@@ -181,3 +181,15 @@ inline--link:hover,
     display: block;
 }
 /*  header sub category css end */
+
+.sub-dropdown2 {
+    position: absolute;
+    top: 0;
+    left: 100% !important; /* 👈 pushes it to the right */
+    display: none;
+    background: var(--black-4) !important;
+    min-width: 200px;
+}
+.has-sub-dropdown2:hover .sub-dropdown2 {
+    display: block;
+}

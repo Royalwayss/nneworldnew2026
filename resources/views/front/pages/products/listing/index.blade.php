@@ -17,7 +17,10 @@
                         <div class="breadcrumb__right">
                             <ul>
                                 <li> <a href="{{ route('home') }}">home</a> </li>
-                                <li> <a href="">{{ $catdetails['category_name'] }}</a> </li>
+                                
+								@foreach($rootCategory as $rootcat)
+								<li> <a href="{{ $rootcat['category_url'] }}">{{ $rootcat['category_name'] }}</a> </li>
+								@endforeach
                             </ul>
                         </div>
                     </div>

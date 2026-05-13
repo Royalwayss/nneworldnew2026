@@ -27,8 +27,9 @@ class ProductController extends Controller
             Session::put('previousurl',$catseo);
 			$listing_type = "Categories";
             $catids = $response['catids'];
-            //dd($catids);
-           
+            $catId = $response['catdetail']['id'];
+            $rootCategory = Category::getCategoryPath($catId);
+            
             $getproducts = Product::with(['product_image'])->wherein('products.category_id',$catids)->where('products.status','1')->join('categories','categories.id','=','products.category_id')->select('products.*');
             $getproducts = $getproducts->whereExists( function ($query)  {
                 $query->from('categories')
@@ -59,7 +60,7 @@ class ProductController extends Controller
                 'total_products' => count($products)
             ]);
         }else{  
-            return view('front.pages.products.listing.index')->with(compact('catdetails','catseo','products','pagination_links','total_products'));
+            return view('front.pages.products.listing.index')->with(compact('catdetails','rootCategory','catseo','products','pagination_links','total_products'));
         }
     }
 

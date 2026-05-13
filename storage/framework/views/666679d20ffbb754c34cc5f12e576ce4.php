@@ -44,6 +44,15 @@ $agri_categories = Category::agri_categories();
                               <?php echo e($sub['category_name']); ?>
 
                               </a>
+							  
+							  <?php if(!empty($sub['sub_categories'])): ?>
+							    <ul>
+							      <?php $__currentLoopData = $sub['sub_categories']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sub2): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+								   <li> <a href="<?php echo e(url($sub2['category_url'])); ?>"><?php echo e($sub2['category_name']); ?></a></li>
+							      <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
+							   </ul>
+							  <?php endif; ?>
+							  
                            </li>
                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </ul>
@@ -158,7 +167,7 @@ $agri_categories = Category::agri_categories();
                </li>
                <li class="has-dropdown">
                   <a href="javascript:;">Products</a>
-                  <ul class="main-dropdown">
+                  <ul class="main-dropdown"> <?php //pd($get_categories); ?>
                      <?php $__currentLoopData = $get_categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                      <li class="has-sub-dropdown <?php if(!empty($category['sub_categories'])): ?> has-dropdown <?php endif; ?>">
                         <a href="<?php echo e(url($category['category_url'])); ?>">
@@ -168,11 +177,18 @@ $agri_categories = Category::agri_categories();
                         <?php if(!empty($category['sub_categories'])): ?>
                         <ul class="sub-dropdown">
                            <?php $__currentLoopData = $category['sub_categories']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sub): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                           <li>
+                           <li class="has-sub-dropdown2 <?php if(!empty($sub['sub_categories'])): ?> has-dropdown <?php endif; ?>">
                               <a href="<?php echo e(url($sub['category_url'])); ?>">
                               <?php echo e($sub['category_name']); ?>
 
                               </a>
+							   <?php if(!empty($sub['sub_categories'])): ?>
+							    <ul class="sub-dropdown2">
+							      <?php $__currentLoopData = $sub['sub_categories']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sub2): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+								   <li> <a href="<?php echo e(url($sub2['category_url'])); ?>"><?php echo e($sub2['category_name']); ?></a></li>
+							      <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
+							   </ul>
+							   <?php endif; ?>
                            </li>
                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </ul>
