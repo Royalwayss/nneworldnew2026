@@ -450,3 +450,36 @@ $(document).ready(function () {
     attributeFilter: ['class']
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const filterItems = document.querySelectorAll('.filter-item');
+    const filterSidebar = document.getElementById('filterSidebar');
+    const filterOverlay = document.getElementById('filterOverlay');
+    const filterToggleBtn = document.getElementById('filterToggleBtn');
+    const filterCloseBtn = document.getElementById('filterCloseBtn');
+
+    filterItems.forEach(function (item) {
+        const title = item.querySelector('.filter-title');
+
+        title.addEventListener('click', function () {
+            item.classList.toggle('active');
+        });
+    });
+
+    function openFilter() {
+        filterSidebar.classList.add('active');
+        filterOverlay.classList.add('active');
+        document.body.classList.add('filter-open');
+    }
+
+    function closeFilter() {
+        filterSidebar.classList.remove('active');
+        filterOverlay.classList.remove('active');
+        document.body.classList.remove('filter-open');
+    }
+
+    filterToggleBtn.addEventListener('click', openFilter);
+    filterCloseBtn.addEventListener('click', closeFilter);
+    filterOverlay.addEventListener('click', closeFilter);
+});
