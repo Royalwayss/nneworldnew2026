@@ -53,6 +53,7 @@ use App\Models\User;
                       <th>ID</th>
                       <th>Name</th>
                       <th>Input Type</th>
+                      <th>Is Filterable</th>
                       <th>Is Default</th>
                       <th>Status</th>
 					   <th>Action</th>
@@ -111,9 +112,10 @@ use App\Models\User;
         { data: 'id', name: 'id' },
         { data: 'name', name: 'name' },
         { data: 'type', name: 'type' },
+        { data: 'is_filterable', name: 'is_filterable' },
         { data: 'is_default', name: 'is_default' },
         { data: 'status', name: 'status' },
-        { data: 'actions', name: 'actions', orderable: false, searchable: false }
+        { data: 'actions', name: 'actions', orderable: true, searchable: false }
        
        
     ]

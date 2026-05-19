@@ -61,19 +61,26 @@
 		  
 		  
 		  
-		  <div class="form-group col-4">
+		  <div class="form-group col-3">
 			 <label for="sort_order">Sort<span class="red_star"> *</span></label>
 			 <input type="number"  class="form-control forminput"   id="sort_order" name="sort_order" placeholder="Component Sort" @if(!empty($id)) value="{{ $row['sort_order'] }}" @endif >
 			 <p class="error-message" id="error-sort_order"></p>
 		  </div>
-		  <div class="form-group col-md-4">
+		  <div class="form-group col-md-3">
 			 <label for="is_default">Is Default </label>
 			 <select id="is_default" name="is_default" class="form-control forminput">
 			 <option value="0" @if(!empty($id) && $row['is_default'] == '0' ) selected @endif >No</option>
 			 <option value="1" @if(!empty($id) && $row['is_default'] == '1' ) selected @endif >Yes</option>
 			 </select> 	  
 		  </div>
-		  <div class="form-group col-md-4">
+		  <div class="form-group col-md-3">
+			 <label for="is_filterable">Is Filterable </label>
+			 <select id="is_filterable" name="is_filterable" class="form-control forminput">
+			 <option value="0" @if(!empty($id) && $row['is_filterable'] == '0' ) selected @endif >No</option>
+			 <option value="1" @if(!empty($id) && $row['is_filterable'] == '1' ) selected @endif >Yes</option>
+			 </select> 	  
+		  </div>
+		  <div class="form-group col-md-3">
 			 <label for="status">Status </label>
 			 <select id="status" name="status" class="form-control forminput">
 			 <option value="1" @if(!empty($id) && $row['status'] == '1' ) selected @endif >Active</option>

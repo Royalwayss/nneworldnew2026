@@ -42,5 +42,36 @@ class Product extends Model
     }
 
 	
+	 public static function filters($catIds){ 
+        $get_filters = Component::select('components.id','components.name','product_components.value','product_components.id as component_value_id ')
+			->where('components.status','1')
+			->where('components.is_filterable','1')
+			->join('product_components','product_components.component_id','=','components.id')
+			->join('products','products.id','=','product_components.product_id')
+			->join('categories','categories.id','=','products.category_id')
+			->where('products.status','1')
+			->whereIn('categories.id',$catIds)
+			->where('categories.status','1')
+			->groupBy('components.id','product_components.value')
+			->get();
+		
+        $get_filters = json_decode(json_encode($get_filters),true);
+       
+        
+		$filters = [];
+		foreach($get_filters as $filter){ 
+			
+			$filters[$filter['id']]['name'] = $filter['name'];
+			$filters[$filter['id']]['id'] = $filter['id'];
+			$filters[$filter['id']]['values'][$filter['component_value_id ']] = $filter['value'];
+		} 
+		return $filters;
+		
+		
+		
+    }
+	
+	
+	
 	
 }

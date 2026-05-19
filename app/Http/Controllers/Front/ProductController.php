@@ -24,14 +24,66 @@ class ProductController extends Controller
         $response = Category::getcatdetails($catseo); 
         $sortname ="";$selPrice="";$proage="";
         if($response['status']){
-            Session::put('previousurl',$catseo);
+            
+			
+			//check filters
+			
+			$component_IDs = [];
+
+				foreach ($request->query() as $key => $value) {
+
+					if (str_starts_with($key, 'component-')) {
+
+						$component_IDs = array_merge(
+							$component_IDs,
+							explode('~', $value)
+						);
+					}
+				}
+
+			$sort = '';
+			
+			if($request->input('sort')){
+				$sort = $request->input('sort');
+			}
+			
+			$selected_filters['component_IDs'] = $component_IDs;
+			$selected_filters['sort'] = $sort;
+			
+			Session::put('previousurl',$catseo);
 			$listing_type = "Categories";
             $catids = $response['catids'];
             $catId = $response['catdetail']['id'];
             $rootCategory = Category::getCategoryPath($catId);
-            
+            $filters = Product::filters($catids); 
             $getproducts = Product::with(['product_image'])->wherein('products.category_id',$catids)->where('products.status','1')->join('categories','categories.id','=','products.category_id')->select('products.*');
-            $getproducts = $getproducts->whereExists( function ($query)  {
+            
+			if($component_IDs){
+				
+				$getproducts = $getproducts->join('product_components','product_components.product_id','=','products.id');
+				$getproducts = $getproducts->wherein('product_components.id',$component_IDs);
+				$getproducts = $getproducts->groupby('products.id');
+			}
+			
+			
+			if($sort != ''){
+				
+				if($sort == 'atoz'){
+					$getproducts = $getproducts->orderby('products.product_name','asc');
+				}else if($sort == 'ztoa'){
+					$getproducts = $getproducts->orderby('products.product_name','desc');
+				}else if($sort == 'latest'){
+					$getproducts = $getproducts->where('products.newly_launched','1');
+				}
+				
+				
+				
+			}
+			
+			
+			
+			
+			$getproducts = $getproducts->whereExists( function ($query)  {
                 $query->from('categories')
                 ->whereRaw('products.category_id = categories.id');
             })->paginate(100); 
@@ -56,11 +108,11 @@ class ProductController extends Controller
         if($request->ajax()){
 			$ajax_call = true;
             return response()->json([
-                'view' => (String)View::make('front.pages.products.listing.include.product-list')->with(compact('products','catseo','catdetails','pagination_links','sortname','catseo','listing_type','catids','getfilters','ajax_call')),
+                'view' => (String)View::make('front.pages.products.listing.include.product-list')->with(compact('products','catseo','catdetails','pagination_links','total_products','filters','selected_filters')),
                 'total_products' => count($products)
             ]);
         }else{  
-            return view('front.pages.products.listing.index')->with(compact('catdetails','rootCategory','catseo','products','pagination_links','total_products'));
+            return view('front.pages.products.listing.index')->with(compact('catdetails','rootCategory','catseo','products','pagination_links','total_products','filters','selected_filters'));
         }
     }
 

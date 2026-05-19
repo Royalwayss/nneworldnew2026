@@ -13,14 +13,14 @@
    <div class="container">
       <div class="bg-light1 border-radius-25 pt-120 px-lg-5 px-4 pb-90 pb-120">
          <div class="row pb-120">
-            <div class="col-xxl-7 col-xl-7 col-xl-7">
+            <div class="col-12">
                <div class="service__title-wrap" data-aos="fade-up">
                   <h2 class="sec-subtitle">Our Categories
                   </h2>
-                  <h3 class="sec-title" data-aos="fade-up">Micro Mobility Solutions Tailored to Every Need</h3>
                </div>
             </div>
-            <div class="col-xxl-5 col-xl-5 col-xl-5">
+            <!-- <div class="col-xxl-5 col-xl-5 col-xl-5">
+               <h3 class="sec-title" data-aos="fade-up">Micro Mobility Solutions Tailored to Every Need</h3>
                <div class="service__text  pt-0">
                   <p class="ms-0" data-aos="fade-left">Explore our wide range of solutions including OEM & ODM bicycle
                      manufacturing,
@@ -28,7 +28,7 @@
                      enhancing your product line, our categories cover everything from innovation to scalability.
                   </p>
                </div>
-            </div>
+            </div> -->
          </div>
       </div>
       <div class="service-inner px-lg-5 px-4">
@@ -58,27 +58,6 @@
                   <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                </div>
             </div>
-         </div>
-      </div>
-   </div>
-</section>
-<section class="counter__area bg-white">
-   <div class="container">
-      <div class="row counter__inner">
-         <div class="col-4 counter__item" data-aos="fade-right">
-            <div class="counter__number counter_slow style2">75+
-            </div>
-            <h3 class="counter__title color-heading">Years of <br> Experience </h3>
-         </div>
-         <div class="col-4 counter__item" data-aos="fade-right" data-aos-delay="300">
-            <div class="counter__number counter_slow style2">25+
-            </div>
-            <h3 class="counter__title color-heading">Countries <br> Network</h3>
-         </div>
-         <div class="col-4 counter__item" data-aos="fade-right" data-aos-delay="600">
-            <div class="counter__number counter_slow style2">1000+
-            </div>
-            <h3 class="counter__title color-heading">Team <br>Members </h3>
          </div>
       </div>
    </div>
@@ -135,6 +114,71 @@
       <img src="front/assets/imgs/shape/6.png" alt="img" title="img" class="shape">
    </div>
 </section>
+<section class="counter__area bg-white">
+   <div class="container">
+      <div class="row counter__inner">
+         <div class="col-lg-3 col-md-6 col-6 counter__item" data-aos="fade-right">
+            <div class="counter__number counter_slow style2">75+
+            </div>
+            <h3 class="counter__title color-heading">Years of <br> Experience </h3>
+         </div>
+         <div class="col-lg-3 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="300">
+            <div class="counter__number counter_slow style2">25+
+            </div>
+            <h3 class="counter__title color-heading">Countries <br> Global Footprint</h3>
+         </div>
+         <div class="col-lg-3 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="600">
+            <div class="counter__number counter_slow style2">1000+
+            </div>
+            <h3 class="counter__title color-heading">Team <br>Members </h3>
+         </div>
+         <div class="col-lg-3 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="600">
+            <div class="counter__number counter_slow style2">40,000+
+            </div>
+            <h3 class="counter__title color-heading">sq. m <br>Manufacturing Facility </h3>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="hero__area sustain">
+   <div class="hero__inner">
+      <div class="hero__top">
+         <h1 class="hero__title" data-aos="fade-up">
+            <span class="visibleText">Beyond Sustainability.</span> <br>
+            <a href="javascript::void()" data-bs-toggle="modal" data-bs-target="#videoPopup"> <span><i
+               class="fa-solid fa-play"></i></span></a>
+            <span class="visibleText">Towards Regeneration.</span>
+         </h1>
+         <div class="hero__contact cxufadeUp2">
+            <a href="https://nneworld.rtpltech.in/sustainability">
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <div class="text">
+               <p class="pointer" onclick="window.location.href='https://nneworld.rtpltech.in/sustainability'">Read More</p>
+            </div>
+         </div>
+      </div>
+      <div class="hero__btm">
+         <div class="">
+            <p>We design products and processes that reduce environmental impact and promote a better tomorrow. From
+               responsible sourcing to eco-conscious packaging, we're driven by purpose and guided by innovation.
+            </p>
+         </div>
+      </div>
+   </div>
+   <div class="modal fade" id="videoPopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+            <div class="modal-body">
+               <video autoplay loop muted class="w-100">
+                  <source src="front/assets/video/factory.mp4" type="video/mp4">
+               </video>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
 <!-- <section class="service__area pt-150 pb-130">
    <div class="container">
       <div class="bg-light1 border-radius-25 pt-120 px-lg-5 px-4 pb-90 pb-120">
@@ -401,44 +445,7 @@
       </div>
    </div>
 </section>
-<section class="hero__area sustain">
-   <div class="hero__inner">
-      <div class="hero__top">
-         <h1 class="hero__title" data-aos="fade-up">
-            <span class="visibleText">Beyond Sustainability.</span> <br>
-            <a href="javascript::void()" data-bs-toggle="modal" data-bs-target="#videoPopup"> <span><i
-               class="fa-solid fa-play"></i></span></a>
-            <span class="visibleText">Towards Regeneration.</span>
-         </h1>
-         <div class="hero__contact cxufadeUp2">
-            <a href="https://nneworld.rtpltech.in/sustainability">
-            <span><i class="fa-solid fa-arrow-right"></i></span>
-            </a>
-            <div class="text">
-               <p class="pointer" onclick="window.location.href='https://nneworld.rtpltech.in/sustainability'">Read More</p>
-            </div>
-         </div>
-      </div>
-      <div class="hero__btm">
-         <div class="">
-            <p>We design products and processes that reduce environmental impact and promote a better tomorrow. From
-               responsible sourcing to eco-conscious packaging, we're driven by purpose and guided by innovation.
-            </p>
-         </div>
-      </div>
-   </div>
-   <div class="modal fade" id="videoPopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-         <div class="modal-content">
-            <div class="modal-body">
-               <video autoplay loop muted class="w-100">
-                  <source src="front/assets/video/factory.mp4" type="video/mp4">
-               </video>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
+
 <section class="who__area" style="background-image: url('front/assets/imgs/hero/00.png');">
    <div class="who__area_inner infra pt-5 pb-5">
       <div class="container mt-xl-5 mb-xl-5">
@@ -541,112 +548,114 @@
                   <div class="swiper-wrapper">
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://acerelectric.in/">
+                           <!-- <a target="_blank" href="https://acerelectric.in/"> -->
+                           <a target="_blank" href="javascript::void()">
+                           <!-- <img src="front/assets/imgs/brand/acer.svg" alt="img" title="img"> -->
                            <img src="front/assets/imgs/brand/acer.svg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.decathlon.in/"> 
+                           <!-- <a target="_blank" href="https://www.decathlon.in/">  -->
+                           <a target="_blank" href="javascript::void()"> 
                            <img src="front/assets/imgs/brand/dc.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://firefoxlife.com/"> 
+                           <!-- <a target="_blank" href="https://firefoxlife.com/">  -->
+                           <a target="_blank" href="javascript::void()"> 
                            <img src="front/assets/imgs/brand/firefox.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.huffy.com/">  
+                           <!-- <a target="_blank" href="https://www.huffy.com/">   -->
+                           <a target="_blank" href="javascript::void()">  
                            <img src="front/assets/imgs/brand/huffy.svg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.herocycles.com/">     
+                           <!-- <a target="_blank" href="https://www.herocycles.com/">      -->
+                           <a target="_blank" href="javascript::void()">     
                            <img src="front/assets/imgs/brand/hero-cycles.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.mcleodaccessories.com.au/">     
-                           <img src="front/assets/imgs/brand/mcleod.png" alt="img" title="img">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="brand__slide">
-                           <a target="_blank" href="https://sunbaby.pl/">      
+                           <!-- <a target="_blank" href="https://sunbaby.pl/">       -->
+                           <a target="_blank" href="javascript::void()">      
                            <img src="front/assets/imgs/brand/sun-baby.png" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.torontobicycles.com/">  
+                           <!-- <a target="_blank" href="https://www.torontobicycles.com/">   -->
+                           <a target="_blank" href="javascript::void()">  
                            <img src="front/assets/imgs/brand/toronto.png" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://trinitycyclesindia.com/">   
+                           <!-- <a target="_blank" href="https://trinitycyclesindia.com/">    -->
+                           <a target="_blank" href="javascript::void()">   
                            <img src="front/assets/imgs/brand/trinity.png" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.tgc.bike/">    
+                           <!-- <a target="_blank" href="https://www.tgc.bike/">     -->
+                           <a target="_blank" href="javascript::void()">    
                            <img src="front/assets/imgs/brand/cb.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.emotorad.com/">   
+                           <!-- <a target="_blank" href="https://www.emotorad.com/">    -->
+                           <a target="_blank" href="javascript::void()">   
                            <img src="front/assets/imgs/brand/motorad.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://africrooze.com/">    
+                           <!-- <a target="_blank" href="https://africrooze.com/">     -->
+                           <a target="_blank" href="javascript::void()">    
                            <img src="front/assets/imgs/brand/afr.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
+                     
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.tgc.bike/">     
-                           <img src="front/assets/imgs/brand/tandem.jpg" alt="img" title="img">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="brand__slide">
-                           <a target="_blank" href="https://www.huffy.com/">   
+                           <!-- <a target="_blank" href="https://www.huffy.com/">    -->
+                           <a target="_blank" href="javascript::void()">   
                            <img src="front/assets/imgs/brand/disney.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.huffy.com/">   
+                           <!-- <a target="_blank" href="https://www.huffy.com/">    -->
+                           <a target="_blank" href="javascript::void()">   
                            <img src="front/assets/imgs/brand/marvel.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.tvsmotor.com/">   
+                           <!-- <a target="_blank" href="https://www.tvsmotor.com/">    -->
+                           <a target="_blank" href="javascript::void()">   
                            <img src="front/assets/imgs/brand/tvs.jpg" alt="img" title="img">
                            </a>
                         </div>

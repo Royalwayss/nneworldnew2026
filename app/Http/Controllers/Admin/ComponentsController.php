@@ -52,6 +52,20 @@ class ComponentsController extends Controller
 
 
                 })
+				
+				
+				
+				
+				
+				->addColumn('is_filterable', function ($category) {
+                    if(!empty($category->is_filterable)){
+							return 'Yes';
+					}else{
+						    return 'No';
+					}
+				
+				})
+				
 				->addColumn('is_default', function ($category) {
                     if(!empty($category->is_default)){
 							return 'Yes';
@@ -172,6 +186,15 @@ class ComponentsController extends Controller
 				}else{
 					$component->options = NULL;
 				}
+				
+				
+				
+				if(isset($data['is_filterable']) && $data['is_filterable'] == '1'){
+					$component->is_filterable = '1';
+				}else{
+					$component->is_filterable = '0';
+				}	
+				
 				if(isset($data['status']) && $data['status'] == '1'){
 					$component->status = '1';
 				}else{
