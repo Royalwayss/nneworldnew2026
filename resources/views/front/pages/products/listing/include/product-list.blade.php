@@ -1,6 +1,6 @@
             @if(!empty($total_products))
 			<div class="product-count">
-             <strong> Showing <span id="total-products">{{ $total_products }}</span> @if($total_products > 1) products @else product @endif </strong>
+             <strong> Showing <span id="total-products">{{ $total_products }}</span> @if($total_products > 1) Products @else Product @endif </strong>
             </div>
 			@endif
 		   <div class="portfolio__list-6">
