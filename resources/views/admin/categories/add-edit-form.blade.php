@@ -46,6 +46,25 @@
 				<p class="error-message" id="error-category_url"></p>
 			  </div>
 			  
+			  
+			  
+			   <div class="form-group col-6" >
+					<label for="tag_id">Select Tag</label>
+					<select id="tag_id" name="tag_id" class="form-control forminput">
+					     <option value="">Select</option>
+						  @foreach($tags as $tag)
+						  <option value="{{ $tag['id'] }}" @if(!empty($id) && $row['tag_id'] == $tag['id']) selected @endif ><span style="font-size: 40px; color: black;">&#9679;</span> &nbsp;&nbsp;&nbsp;{{ $tag['tag_name'] }}  </option>
+						  @endforeach
+					</select>
+				    <p class="error-message" id="error-tag_id"></p>
+				  </div> 
+			  
+			  
+			  
+			  
+			  
+			  
+			  
 			   <div class="form-group col-6">
 				<label for="image">Image (Recommended size 311 x 212)<span class="red_star"> *</span></label>
 				<input type="file"  class="form-control forminput"   id="image" name="image">
@@ -102,13 +121,12 @@
 
 
 			  
-			  <div>
-			  <div>
-			  <div class="row ">
+			 
+			  
 			   <div class="form-group col-12 text-right">
 					 <button type="submit" class="btn btn-primary bottom-submit-btn save-btn" > @if(!empty($id)) Save @else Add @endif Category</button> 
 			   </div>		  
-			  </div>
+			  
 			
 		
 	</form>

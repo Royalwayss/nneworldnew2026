@@ -114,25 +114,30 @@
       <img src="front/assets/imgs/shape/6.png" alt="img" title="img" class="shape">
    </div>
 </section>
-<section class="counter__area bg-white">
+<section class="counter__area bg-light1">
    <div class="container">
-      <div class="row counter__inner">
-         <div class="col-lg-3 col-md-6 col-6 counter__item" data-aos="fade-right">
+      <div class="row counter__inner g-4 justify-content-center text-center ">
+         <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right">
             <div class="counter__number counter_slow style2">75+
             </div>
             <h3 class="counter__title color-heading">Years of <br> Experience </h3>
          </div>
-         <div class="col-lg-3 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="300">
+         <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="300">
             <div class="counter__number counter_slow style2">25+
             </div>
             <h3 class="counter__title color-heading">Countries <br> Global Footprint</h3>
          </div>
-         <div class="col-lg-3 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="600">
+         <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="300">
+            <div class="counter__number counter_slow style2">86%
+            </div>
+            <h3 class="counter__title color-heading">Happiness <br>Index</h3>
+         </div>
+         <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="600">
             <div class="counter__number counter_slow style2">1000+
             </div>
             <h3 class="counter__title color-heading">Team <br>Members </h3>
          </div>
-         <div class="col-lg-3 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="600">
+         <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="600">
             <div class="counter__number counter_slow style2">40,000+
             </div>
             <h3 class="counter__title color-heading">sq. m <br>Manufacturing Facility </h3>
@@ -149,6 +154,12 @@
                class="fa-solid fa-play"></i></span></a>
             <span class="visibleText">Towards Regeneration.</span>
          </h1>
+         <div class="hero__btm">
+         <div class="">
+            <p>From responsible sourcing to eco-conscious packaging, we're driven by purpose and guided by innovation
+            </p>
+         </div>
+      </div>
          <div class="hero__contact cxufadeUp2">
             <a href="https://nneworld.rtpltech.in/sustainability">
             <span><i class="fa-solid fa-arrow-right"></i></span>
@@ -158,13 +169,7 @@
             </div>
          </div>
       </div>
-      <div class="hero__btm">
-         <div class="">
-            <p>We design products and processes that reduce environmental impact and promote a better tomorrow. From
-               responsible sourcing to eco-conscious packaging, we're driven by purpose and guided by innovation.
-            </p>
-         </div>
-      </div>
+      
    </div>
    <div class="modal fade" id="videoPopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -548,25 +553,21 @@
                   <div class="swiper-wrapper">
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <!-- <a target="_blank" href="https://acerelectric.in/"> -->
-                           <a target="_blank" href="javascript::void()">
-                           <!-- <img src="front/assets/imgs/brand/acer.svg" alt="img" title="img"> -->
+                           <a target="_blank" href="https://acerelectric.in/">
                            <img src="front/assets/imgs/brand/acer.svg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <!-- <a target="_blank" href="https://www.decathlon.in/">  -->
-                           <a target="_blank" href="javascript::void()"> 
+                           <a target="_blank" href="https://www.decathlon.in/"> 
                            <img src="front/assets/imgs/brand/dc.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <!-- <a target="_blank" href="https://firefoxlife.com/">  -->
-                           <a target="_blank" href="javascript::void()"> 
+                           <a target="_blank" href="https://firefoxlife.com/"> 
                            <img src="front/assets/imgs/brand/firefox.jpg" alt="img" title="img">
                            </a>
                         </div>
@@ -581,8 +582,7 @@
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <!-- <a target="_blank" href="https://www.herocycles.com/">      -->
-                           <a target="_blank" href="javascript::void()">     
+                           <a target="_blank" href="https://www.herocycles.com/">     
                            <img src="front/assets/imgs/brand/hero-cycles.jpg" alt="img" title="img">
                            </a>
                         </div>
@@ -597,16 +597,14 @@
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <!-- <a target="_blank" href="https://www.torontobicycles.com/">   -->
-                           <a target="_blank" href="javascript::void()">  
+                           <a target="_blank" href="https://www.torontobicycles.com/">  
                            <img src="front/assets/imgs/brand/toronto.png" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <!-- <a target="_blank" href="https://trinitycyclesindia.com/">    -->
-                           <a target="_blank" href="javascript::void()">   
+                           <a target="_blank" href="https://trinitycyclesindia.com/">   
                            <img src="front/assets/imgs/brand/trinity.png" alt="img" title="img">
                            </a>
                         </div>
@@ -621,8 +619,7 @@
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <!-- <a target="_blank" href="https://www.emotorad.com/">    -->
-                           <a target="_blank" href="javascript::void()">   
+                           <a target="_blank" href="https://www.emotorad.com/">   
                            <img src="front/assets/imgs/brand/motorad.jpg" alt="img" title="img">
                            </a>
                         </div>
@@ -654,8 +651,7 @@
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <!-- <a target="_blank" href="https://www.tvsmotor.com/">    -->
-                           <a target="_blank" href="javascript::void()">   
+                           <a target="_blank" href="https://www.tvsmotor.com/">   
                            <img src="front/assets/imgs/brand/tvs.jpg" alt="img" title="img">
                            </a>
                         </div>

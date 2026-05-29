@@ -10,6 +10,7 @@ use Intervention\Image\Drivers\Gd\Driver;
 use Illuminate\Http\Request;
 use App\Models\AdminsRole;
 use App\Models\Category;
+use App\Models\Tag;
 use App\Models\Module;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -36,8 +37,10 @@ class CategoryController extends Controller
         
         if ($request->ajax()) { //
                 $query = Category::query();
-               
-                $query = $query->where('is_delete','0');
+                $query = $query->select('categories.*','tags.tag_name');
+                $query = $query->leftJoin('tags', 'tags.id', '=', 'categories.tag_id');
+
+                $query = $query->where('categories.is_delete','0');
                
             return DataTables::of($query)
                ->addColumn('image', function ($category) {
@@ -88,7 +91,7 @@ class CategoryController extends Controller
                 ->rawColumns(['image','status','actions'])
                 ->make(true);
         }
-
+        
         return view('admin.categories.list', compact('usersModule'));
     }
 
@@ -124,6 +127,7 @@ class CategoryController extends Controller
 					$popup_slider = '';
 				} 
 			$data['categories'] = Category::with('sub_categories_all')->where('parent_id',NULL)->orderby('category_name','asc')->get();
+			$data['tags'] = Tag::where('status','1')->orderby('tag_name','asc')->get();
 			$html = (String)View::make('admin.categories.add-edit-form',$data);
 			return response()->json(['status'=>true,'html'=>$html,'popup_slider'=>$popup_slider]);
 		
@@ -173,6 +177,13 @@ class CategoryController extends Controller
 				}else{
 					$category->parent_id = $data['parent_id'];
 				}
+				
+				if($data['tag_id'] == ''){
+					$category->tag_id = NULL;
+				}else{
+					$category->tag_id = $data['tag_id'];
+				}
+				
 				if(isset($data['status']) && $data['status'] == '1'){
 					$category->status = 1;
 				}else{

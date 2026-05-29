@@ -34,20 +34,28 @@ $agri_categories = Category::agri_categories();
             <a href="javacript:;">Products</a>
             <ul>
               @foreach($get_categories as $category)
-              <li>
-                <a href="{{ url($category['category_url']) }}">{{ $category['category_name'] }}</a>
+              <li class="mob-has-dropdown">
+                <a href="{{ url($category['category_url']) }}">{{ $category['category_name'] }}{{ $category['category_name'] }}
+                      @if(!empty($category['tag']))
+					  <sup>{{ $category['tag']['tag_name'] }}</sup>
+					  @endif</a>
                 @if(!empty($category['sub_categories']))
                 <ul>
                   @foreach($category['sub_categories'] as $sub)
-                  <li>
+                   <li class="mob-has-dropdown">
                     <a href="{{ url($sub['category_url']) }}">
                       {{ $sub['category_name'] }}
+					  @if(!empty($sub['tag']))
+					  <sup>{{ $sub['tag']['tag_name'] }}</sup>
+					  @endif
                     </a>
 
                     @if(!empty($sub['sub_categories']))
                     <ul>
                       @foreach($sub['sub_categories'] as $sub2)
-                      <li> <a href="{{ url($sub2['category_url']) }}">{{ $sub2['category_name'] }}</a></li>
+                       <li class="mob-has-dropdown"> <a href="{{ url($sub2['category_url']) }}">{{ $sub2['category_name'] }} @if(!empty($sub2['tag']))
+					  <sup>{{ $sub2['tag']['tag_name'] }}</sup>
+					  @endif</a></li>
                       @endforeach
                     </ul>
                     @endif
@@ -166,11 +174,14 @@ $agri_categories = Category::agri_categories();
           </li>
           <li class="has-dropdown">
             <a href="javascript:;">Products</a>
-            <ul class="main-dropdown"> <?php //pd($get_categories); ?>
+            <ul class="main-dropdown"> 
               @foreach($get_categories as $category)
               <li class="has-sub-dropdown @if(!empty($category['sub_categories'])) has-dropdown @endif">
                 <a href="{{ url($category['category_url']) }}">
                   {{ $category['category_name'] }}
+				   @if(!empty($category['tag']))
+					  <sup>{{ $category['tag']['tag_name'] }}</sup>
+					  @endif
                 </a>
                 @if(!empty($category['sub_categories']))
                 <ul class="sub-dropdown">
@@ -178,12 +189,18 @@ $agri_categories = Category::agri_categories();
                   <li class="has-sub-dropdown2 @if(!empty($sub['sub_categories'])) has-dropdown @endif">
                     <a href="{{ url($sub['category_url']) }}">
                       {{ $sub['category_name'] }}
-                      <sup>New</sup>
+                      @if(!empty($sub['tag']))
+					  <sup>{{ $sub['tag']['tag_name'] }}</sup>
+					  @endif
                     </a>
                     @if(!empty($sub['sub_categories']))
                     <ul class="sub-dropdown2">
                       @foreach($sub['sub_categories'] as $sub2)
-                      <li> <a href="{{ url($sub2['category_url']) }}">{{ $sub2['category_name'] }}</a></li>
+                      <li> <a href="{{ url($sub2['category_url']) }}">{{ $sub2['category_name'] }}
+					  @if(!empty($sub2['tag']))
+					  <sup>{{ $sub2['tag']['tag_name'] }}</sup>
+					  @endif
+					  </a></li>
                       @endforeach
                     </ul>
                     @endif

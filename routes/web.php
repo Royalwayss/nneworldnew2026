@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\ProdoctsController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ComponentsController;
+use App\Http\Controllers\Admin\TagsController;
 use App\Http\Controllers\Admin\ContactsController;
 use App\Http\Controllers\Admin\SubscribersController;
 
@@ -74,6 +75,13 @@ Route::prefix('/admin')->namespace('App\Http\Controllers\Admin')->group(function
 			
 			/*Subscribers Routes */
 			Route::match(['get', 'post'],'/subscribers', [SubscribersController::class, 'subscribers'])->name('subscribers');
+			 
+			 
+			/* Tags Routes */
+			Route::get('tags',[TagsController::class,'tags'])->name('tags'); 
+			Route::post('addedit-tag/{id?}',[TagsController::class,'addeditTag'])->name('addedittag'); 
+			Route::post('save-tag/{id?}',[TagsController::class,'saveTag'])->name('savetag'); 
+			 
 			 
 			 
 			/* Visitors Route */

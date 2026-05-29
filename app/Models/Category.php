@@ -9,10 +9,11 @@ class Category extends Model
     public static function get_categories()
 	{
 		$categories = Category::with([
+			'Tag',
 			'sub_categories',
 			'sub_categories.sub_categories'
 		])
-		->select('id', 'category_name', 'category_url', 'description', 'image')
+		->select('id', 'category_name', 'category_url', 'description','tag_id', 'image')
 		->whereNull('parent_id')
 		->where('category_type', 'normal-products')
 		->where('status', '1')
@@ -30,8 +31,13 @@ class Category extends Model
 	}
 	
 	
+	public function tag()
+	{
+		return $this->belongsTo(\App\Models\Tag::class, 'tag_id', 'id')
+					->where('status', '1');
+	}
 	public function sub_categories(){
-    	return $this->hasMany('App\Models\Category','parent_id')->where('status','1')->orderby('sortorder','asc');
+    	return $this->hasMany('App\Models\Category','parent_id')->with('tag')->where('status','1')->orderby('sortorder','asc');
     }
 	public function sub_categories_all(){
     	return $this->hasMany('App\Models\Category','parent_id')->orderby('sortorder','asc');

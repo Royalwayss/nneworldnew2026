@@ -1499,6 +1499,23 @@ header.pos-abs {
     position: relative;
     padding-right: 30px;
 }
+
+.mob-has-dropdown sub,.has-dropdown sup {
+    color: var(--main-color-one);
+    animation: slowBlink 1.6s ease-in-out infinite;
+}
+ 
+@keyframes slowBlink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.25;
+    }
+}
+
+
+
 .main-menu .has-dropdown:hover::after {
     color: var(--main-color-one);
 }

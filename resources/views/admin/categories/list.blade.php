@@ -88,8 +88,9 @@ tr.heading_enable {
 					  <th>Category For</th>
                       <th>Name</th>
                       <th>Parent Category</th>
+                      <th>Tag</th>
                       <th>Status</th>
-					            <th>Action</th>
+					   <th>Action</th>
                   </tr>
                   </thead>
                  
@@ -129,12 +130,13 @@ tr.heading_enable {
     },
     order: [[0, "desc"]],
     columns: [
-        { data: 'id', name: 'id' },
-        { data: 'image', name: 'image' },
-        { data: 'category_type', name: 'category_type' },
-        { data: 'category_name', name: 'category_name' },
-        { data: 'parent_id', name: 'parent_id' },
-        { data: 'status', name: 'status' },
+        { data: 'id', name: 'categories.id' },
+        { data: 'image', name: 'categories.image' },
+        { data: 'category_type', name: 'categories.category_type' },
+        { data: 'category_name', name: 'categories.category_name' },
+        { data: 'parent_id', name: 'categories.parent_id' },
+        { data: 'tag_name', name: 'tags.tag_name' },
+        { data: 'status', name: 'categories.status' },
         { data: 'actions', name: 'actions', orderable: false, searchable: false }
        
        

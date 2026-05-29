@@ -26,29 +26,38 @@ $agri_categories = Category::agri_categories();
             <ul>
               <li><a href="<?php echo e(route('processes')); ?>">Processes</a></li>
               <li><a href="<?php echo e(route('sustainability')); ?>">Sustainability</a></li>
-              <li><a href="<?php echo e(route('virtualtour')); ?>">Virtual Tour</a></li>
-              <li><a href="<?php echo e(route('forestvideo')); ?>">Forest Video</a></li>
+              <!-- <li><a href="<?php echo e(route('virtualtour')); ?>">Virtual Tour</a></li> -->
+              <li><a href="<?php echo e(route('forestvideo')); ?>">Factory Tour</a></li>
             </ul>
           </li>
           <li>
             <a href="javacript:;">Products</a>
             <ul>
               <?php $__currentLoopData = $get_categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-              <li>
-                <a href="<?php echo e(url($category['category_url'])); ?>"><?php echo e($category['category_name']); ?></a>
+              <li class="mob-has-dropdown">
+                <a href="<?php echo e(url($category['category_url'])); ?>"><?php echo e($category['category_name']); ?><?php echo e($category['category_name']); ?>
+
+                      <?php if(!empty($category['tag'])): ?>
+					  <sup><?php echo e($category['tag']['tag_name']); ?></sup>
+					  <?php endif; ?></a>
                 <?php if(!empty($category['sub_categories'])): ?>
                 <ul>
                   <?php $__currentLoopData = $category['sub_categories']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sub): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                  <li>
+                   <li class="mob-has-dropdown">
                     <a href="<?php echo e(url($sub['category_url'])); ?>">
                       <?php echo e($sub['category_name']); ?>
 
+					  <?php if(!empty($sub['tag'])): ?>
+					  <sup><?php echo e($sub['tag']['tag_name']); ?></sup>
+					  <?php endif; ?>
                     </a>
 
                     <?php if(!empty($sub['sub_categories'])): ?>
                     <ul>
                       <?php $__currentLoopData = $sub['sub_categories']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sub2): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                      <li> <a href="<?php echo e(url($sub2['category_url'])); ?>"><?php echo e($sub2['category_name']); ?></a></li>
+                       <li class="mob-has-dropdown"> <a href="<?php echo e(url($sub2['category_url'])); ?>"><?php echo e($sub2['category_name']); ?> <?php if(!empty($sub2['tag'])): ?>
+					  <sup><?php echo e($sub2['tag']['tag_name']); ?></sup>
+					  <?php endif; ?></a></li>
                       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </ul>
                     <?php endif; ?>
@@ -106,14 +115,14 @@ $agri_categories = Category::agri_categories();
             </span>
             <p class="text-white">C-186-A, Focal Point Phase 6, Focal Point, Ludhiana, Punjab 141003</p>
           </li>
-          <li>
+          <!-- <li>
             <span>
               <i class="fa-solid fa-phone"></i>
             </span>
             <div>
               <a href="tel:+919872923908">+91 98729 23908</a>
             </div>
-          </li>
+          </li> -->
           <li>
             <span>
               <i class="fa-solid fa-envelope"></i>
@@ -160,19 +169,22 @@ $agri_categories = Category::agri_categories();
             <ul class="main-dropdown">
               <li><a href="<?php echo e(route('processes')); ?>">Processes</a></li>
               <li><a href="<?php echo e(route('sustainability')); ?>">Sustainability</a></li>
-              <li><a href="<?php echo e(route('virtualtour')); ?>">Virtual Tour</a></li>
-              <li><a href="<?php echo e(route('forestvideo')); ?>">Forest Video</a></li>
+              <!-- <li><a href="<?php echo e(route('virtualtour')); ?>">Virtual Tour</a></li> -->
+              <li><a href="<?php echo e(route('forestvideo')); ?>">Factory Tour</a></li>
               <li><a href="https://forest-factory.eco/">Forest Factory</a></li>
             </ul>
           </li>
           <li class="has-dropdown">
             <a href="javascript:;">Products</a>
-            <ul class="main-dropdown"> <?php //pd($get_categories); ?>
+            <ul class="main-dropdown"> 
               <?php $__currentLoopData = $get_categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
               <li class="has-sub-dropdown <?php if(!empty($category['sub_categories'])): ?> has-dropdown <?php endif; ?>">
                 <a href="<?php echo e(url($category['category_url'])); ?>">
                   <?php echo e($category['category_name']); ?>
 
+				   <?php if(!empty($category['tag'])): ?>
+					  <sup><?php echo e($category['tag']['tag_name']); ?></sup>
+					  <?php endif; ?>
                 </a>
                 <?php if(!empty($category['sub_categories'])): ?>
                 <ul class="sub-dropdown">
@@ -181,11 +193,19 @@ $agri_categories = Category::agri_categories();
                     <a href="<?php echo e(url($sub['category_url'])); ?>">
                       <?php echo e($sub['category_name']); ?>
 
+                      <?php if(!empty($sub['tag'])): ?>
+					  <sup><?php echo e($sub['tag']['tag_name']); ?></sup>
+					  <?php endif; ?>
                     </a>
                     <?php if(!empty($sub['sub_categories'])): ?>
                     <ul class="sub-dropdown2">
                       <?php $__currentLoopData = $sub['sub_categories']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sub2): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                      <li> <a href="<?php echo e(url($sub2['category_url'])); ?>"><?php echo e($sub2['category_name']); ?></a></li>
+                      <li> <a href="<?php echo e(url($sub2['category_url'])); ?>"><?php echo e($sub2['category_name']); ?>
+
+					  <?php if(!empty($sub2['tag'])): ?>
+					  <sup><?php echo e($sub2['tag']['tag_name']); ?></sup>
+					  <?php endif; ?>
+					  </a></li>
                       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </ul>
                     <?php endif; ?>
