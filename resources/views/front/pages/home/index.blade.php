@@ -115,7 +115,7 @@
       <img src="front/assets/imgs/shape/6.png" alt="img" title="img" class="shape">
    </div>
 </section>
-<section class="counter__area bg-white">
+<section class="counter__area bg-light1">
    <div class="container">
       <div class="row counter__inner g-4 justify-content-center text-center ">
          <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right">
@@ -155,6 +155,12 @@
                class="fa-solid fa-play"></i></span></a>
             <span class="visibleText">Towards Regeneration.</span>
          </h1>
+         <div class="hero__btm">
+         <div class="">
+            <p>From responsible sourcing to eco-conscious packaging, we're driven by purpose and guided by innovation
+            </p>
+         </div>
+      </div>
          <div class="hero__contact cxufadeUp2">
             <a href="https://nneworld.rtpltech.in/sustainability">
             <span><i class="fa-solid fa-arrow-right"></i></span>
@@ -164,13 +170,7 @@
             </div>
          </div>
       </div>
-      <div class="hero__btm">
-         <div class="">
-            <p>We design products and processes that reduce environmental impact and promote a better tomorrow. From
-               responsible sourcing to eco-conscious packaging, we're driven by purpose and guided by innovation.
-            </p>
-         </div>
-      </div>
+      
    </div>
    <div class="modal fade" id="videoPopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">

@@ -12,12 +12,12 @@
                 <div class="col-xxl-12">
                     <div class="breadcrumb__inner">
                         <div class="breadcrumb__left">
-                            <h1 class="breadcrumb__title">Forest Video</h1>
+                            <h1 class="breadcrumb__title">Factory Tour.</h1>
                         </div>
                         <div class="breadcrumb__right">
                             <ul>
 								 <li> <a href="{{ route('aboutus') }}">About</a> </li>
-                                <li> <a href="javascript:;">Forest Video</a> </li>
+                                <li> <a href="javascript:;">Factory Tour.</a> </li>
                             </ul>
                         </div>
                     </div>

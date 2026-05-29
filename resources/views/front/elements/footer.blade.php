@@ -21,11 +21,11 @@
                            <li>
                               <a href="{{ route('sustainability') }}">Sustainability</a>
                            </li>
-						   <li>
+						   <!-- <li>
                               <a href="https://nneworld.com/about-video/">Virtual Tour</a>
-                           </li>
+                           </li> -->
 						   <li>
-                              <a href="https://nneworld.com/forest-video/">Forest Video</a>
+                              <a href="https://nneworld.com/forest-video/">Factory Tour</a>
                            </li>
 						   <li>
                               <a href="https://forest-factory.eco/">Forest Factory</a>
@@ -62,12 +62,12 @@
                               </span>
                               <p>C-186-A, Focal Point Phase 6, Focal Point, Ludhiana, Punjab 141003</p>
                            </li>
-                           <li>
+                           <!-- <li>
                               <span>
                               <i class="fa-solid fa-phone"></i>
                               </span>
                               <a href="tel:+919872923908">+91 98729 23908</a>
-                           </li>
+                           </li> -->
                            <li>
                               <span>
                               <i class="fa-solid fa-envelope"></i>

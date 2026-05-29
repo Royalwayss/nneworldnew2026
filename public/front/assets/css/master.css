@@ -165,7 +165,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
 }
 .hero-shape .overlay {
     content: "";
@@ -2105,7 +2105,8 @@ header.pos-abs {
 .hero__area {
     padding-top: 225px;
     position: relative;
-    background-image: url(../imgs/hero/bg-1.png);
+    background-image: url(../imgs/hero/sus-new.png);
+    background-position: bottom;
 }
 .hero__area.sustain {
     padding: 70px 0 180px 0;
@@ -2516,7 +2517,7 @@ header.pos-abs {
     -ms-flex-align: center;
     align-items: center;
     -ms-grid-columns: 3fr 30px 1fr;
-    grid-template-columns: 3fr 1fr;
+    /* grid-template-columns: 3fr 1fr; */
     padding-left: 140px;
     padding-right: 30px;
 }
@@ -2805,8 +2806,8 @@ header.pos-abs {
     grid-gap: 50px;
     -ms-grid-columns: 300px 50px auto;
     grid-template-columns: 300px auto;
-    margin-left: 280px;
-    padding-top: 70px;
+    /* margin-left: 280px;
+    padding-top: 70px; */
     z-index: 1;
     position: relative;
 }
@@ -11454,4 +11455,7 @@ h2.projectd__details-title {
     body.filter-open {
         overflow: hidden;
     }
+}
+.has-dropdown sup{
+    color: var(--main-color-one)
 }

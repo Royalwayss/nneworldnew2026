@@ -26,8 +26,8 @@ $agri_categories = Category::agri_categories();
             <ul>
               <li><a href="{{ route('processes') }}">Processes</a></li>
               <li><a href="{{ route('sustainability') }}">Sustainability</a></li>
-              <li><a href="{{ route('virtualtour') }}">Virtual Tour</a></li>
-              <li><a href="{{ route('forestvideo') }}">Forest Video</a></li>
+              <!-- <li><a href="{{ route('virtualtour') }}">Virtual Tour</a></li> -->
+              <li><a href="{{ route('forestvideo') }}">Factory Tour</a></li>
             </ul>
           </li>
           <li>
@@ -105,14 +105,14 @@ $agri_categories = Category::agri_categories();
             </span>
             <p class="text-white">C-186-A, Focal Point Phase 6, Focal Point, Ludhiana, Punjab 141003</p>
           </li>
-          <li>
+          <!-- <li>
             <span>
               <i class="fa-solid fa-phone"></i>
             </span>
             <div>
               <a href="tel:+919872923908">+91 98729 23908</a>
             </div>
-          </li>
+          </li> -->
           <li>
             <span>
               <i class="fa-solid fa-envelope"></i>
@@ -159,8 +159,8 @@ $agri_categories = Category::agri_categories();
             <ul class="main-dropdown">
               <li><a href="{{ route('processes') }}">Processes</a></li>
               <li><a href="{{ route('sustainability') }}">Sustainability</a></li>
-              <li><a href="{{ route('virtualtour') }}">Virtual Tour</a></li>
-              <li><a href="{{ route('forestvideo') }}">Forest Video</a></li>
+              <!-- <li><a href="{{ route('virtualtour') }}">Virtual Tour</a></li> -->
+              <li><a href="{{ route('forestvideo') }}">Factory Tour</a></li>
               <li><a href="https://forest-factory.eco/">Forest Factory</a></li>
             </ul>
           </li>
@@ -178,6 +178,7 @@ $agri_categories = Category::agri_categories();
                   <li class="has-sub-dropdown2 @if(!empty($sub['sub_categories'])) has-dropdown @endif">
                     <a href="{{ url($sub['category_url']) }}">
                       {{ $sub['category_name'] }}
+                      <sup>New</sup>
                     </a>
                     @if(!empty($sub['sub_categories']))
                     <ul class="sub-dropdown2">
