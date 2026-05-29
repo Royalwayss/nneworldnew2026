@@ -1500,7 +1500,7 @@ header.pos-abs {
     padding-right: 30px;
 }
 
-.mob-has-dropdown sub,.has-dropdown sup {
+.mob-has-dropdown sub,.has-dropdown sup, .mean-nav sup {
     color: var(--main-color-one);
     animation: slowBlink 1.6s ease-in-out infinite;
 }
@@ -2123,7 +2123,9 @@ header.pos-abs {
     padding-top: 225px;
     position: relative;
     background-image: url(../imgs/hero/sus-new.png);
-    background-position: bottom;
+    background-position: bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .hero__area.sustain {
     padding: 70px 0 180px 0;
@@ -11472,7 +11474,4 @@ h2.projectd__details-title {
     body.filter-open {
         overflow: hidden;
     }
-}
-.has-dropdown sup{
-    color: var(--main-color-one)
 }
