@@ -42,7 +42,7 @@ use App\Models\User;
           <div class="card">
             @if($usersModule['edit_access']==1 || $usersModule['full_access']==1)
             <div class="card-header">
-              <a style="float:right" href="javascript:;" data-module="Add Tag" data-href="{{ route('addedittag') }}" data-modal-type="small" data-id="" class="btn btn-primary addedit-modal"><i class="fa fa-plus" aria-hidden="true"></i> Add Component</a>
+              <a style="float:right" href="javascript:;" data-module="Add Tag" data-href="{{ route('addedittag') }}" data-modal-type="small" data-id="" class="btn btn-primary addedit-modal"><i class="fa fa-plus" aria-hidden="true"></i> Add Tag</a>
             </div>
             @endif
             <!-- /.card-header -->
