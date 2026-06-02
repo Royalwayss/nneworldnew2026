@@ -119,28 +119,42 @@
    <div class="container">
       <div class="row counter__inner g-4 justify-content-center text-center ">
          <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right">
-            <div class="counter__number counter_slow style2">75+
+            <div class="counter__icon">
+               <i class="fa-solid fa-award"></i>
             </div>
+            <div class="counter__number counter_slow style2">75+</div>
             <h3 class="counter__title color-heading">Years of <br> Experience </h3>
          </div>
+
          <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="300">
-            <div class="counter__number counter_slow style2">25+
+            <div class="counter__icon">
+               <i class="fa-solid fa-earth-americas"></i>
             </div>
+            <div class="counter__number counter_slow style2">25+</div>
             <h3 class="counter__title color-heading">Countries <br> Global Footprint</h3>
          </div>
+
          <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="300">
-            <div class="counter__number counter_slow style2">86%
+            <div class="counter__icon">
+               <i class="fa-solid fa-face-smile"></i>
             </div>
+            <div class="counter__number counter_slow style2">86%</div>
             <h3 class="counter__title color-heading">Happiness <br>Index</h3>
          </div>
+
          <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="600">
-            <div class="counter__number counter_slow style2">1000+
+            <div class="counter__icon">
+               <i class="fa-solid fa-users"></i>
             </div>
+            <div class="counter__number counter_slow style2">1000+</div>
             <h3 class="counter__title color-heading">Team <br>Members </h3>
          </div>
+
          <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="600">
-            <div class="counter__number counter_slow style2">40,000+
+            <div class="counter__icon">
+               <i class="fa-solid fa-industry"></i>
             </div>
+            <div class="counter__number counter_slow style2">40,000+</div>
             <h3 class="counter__title color-heading">sq. m <br>Manufacturing Facility </h3>
          </div>
       </div>
@@ -167,7 +181,9 @@
                <span><i class="fa-solid fa-arrow-right"></i></span>
             </a> -->
             <div class="text">
-               <label class="pointer" onclick="window.location.href='https://nneworld.rtpltech.in/sustainability'">Project Paws – To Know More, <strong>Click Here.</strong> 
+               <label class="pointer"
+                  onclick="window.location.href='https://nneworld.rtpltech.in/sustainability'">Project Paws – To Know
+                  More, <strong>Click Here.</strong>
                </label>
             </div>
          </div>

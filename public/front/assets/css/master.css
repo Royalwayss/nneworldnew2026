@@ -1499,6 +1499,19 @@ header.pos-abs {
     position: relative;
     padding-right: 30px;
 }
+.counter__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.counter__icon i {
+    font-size: 30px;
+    color: var(--main-color-one);
+    margin-bottom: 12px;
+}
 
 .mob-has-dropdown sub,.has-dropdown sup, .mean-nav sup {
     color: var(--main-color-one);
@@ -4618,13 +4631,13 @@ header.pos-abs {
 }
 .counter__number {
     font-weight: 700;
-    font-size: 80px;
+    font-size: 50px;
     line-height: 1;
     letter-spacing: -3px;
     color: var(--main-color-one);
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 @media (max-width: 1199px) {
     .counter__number {
