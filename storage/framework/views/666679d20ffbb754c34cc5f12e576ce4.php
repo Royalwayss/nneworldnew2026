@@ -35,7 +35,7 @@ $agri_categories = Category::agri_categories();
             <ul>
               <?php $__currentLoopData = $get_categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
               <li class="mob-has-dropdown">
-                <a href="<?php echo e(url($category['category_url'])); ?>"><?php echo e($category['category_name']); ?><?php echo e($category['category_name']); ?>
+                <a href="<?php echo e(url($category['category_url'])); ?>"><?php echo e($category['category_name']); ?>
 
                       <?php if(!empty($category['tag'])): ?>
 					  <sup><?php echo e($category['tag']['tag_name']); ?></sup>
@@ -76,8 +76,8 @@ $agri_categories = Category::agri_categories();
           <li>
             <a href="javacript:;">Stories</a>
             <ul>
-              <li><a href="https://nneworld.com/stories-omm-holi/">Omm Holii</a></li>
-              <li><a href="https://nneworld.com/article-collaboration/">NNE x CIXI</a></li>
+              <li><a href="<?php echo e(route('stories_omm_holi')); ?>">Omm Holii</a></li>
+              <li><a href="<?php echo e(route('article_collaboration')); ?>">NNE x CIXI</a></li>
             </ul>
           </li>
           <li><a href="<?php echo e(route('contactus')); ?>">Contact Us</a></li>
@@ -222,8 +222,8 @@ $agri_categories = Category::agri_categories();
           <li class="has-dropdown">
             <a href="javacript:;">Stories</a>
             <ul class="main-dropdown">
-              <li><a href="https://nneworld.com/stories-omm-holi">Omm Holii</a></li>
-              <li><a href="https://nneworld.com/article-collaboration">NNE x CIXI</a></li>
+               <li><a href="<?php echo e(route('stories_omm_holi')); ?>">Omm Holii</a></li>
+              <li><a href="<?php echo e(route('article_collaboration')); ?>">NNE x CIXI</a></li>
             </ul>
           </li>
           <li><a href="<?php echo e(route('contactus')); ?>">Contact Us</a></li>

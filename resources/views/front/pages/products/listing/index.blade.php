@@ -40,44 +40,27 @@ if(!empty($selected_filters['component_IDs'])){
   </section>
   <!-- Breadcrumb area end -->
 
-  <!-- Portfolio area start -->
-
+ 
+@if(isset($catdetails['sub_categories']) && !empty($catdetails['sub_categories']))
 <section>
   <div class="container">
     <h3 class="blog__form-title mb-2">Explore by Subcategory</h3>
     <div class="swiper SubSwiper">
       <div class="swiper-wrapper">
-        <!-- Slides with links -->
+       
+       @foreach($catdetails['sub_categories'] as $catdetail)
+	   <!-- Slides with links -->
         <div class="swiper-slide">
-          <a href="link-to-kick-scooters.html">
-            <img src="{{ asset('front/assets/images/products/medium/product-140406.jpg') }}" alt="Kick Scooters">
-            <p>Kick Scooters</p>
+          <a href="{{ $catdetail['category_url'] }}">
+            @if(!empty($catdetail['image']))
+			<img src="{{ asset('front/assets/images/category/'.$catdetail['image']) }}" alt="{{ $catdetail['category_name'] }}">
+            @endif
+			<p>{{ $catdetail['category_name'] }}</p>
           </a>
         </div>
-        <div class="swiper-slide">
-          <a href="link-to-swing-cars.html">
-            <img src="{{asset('front/assets/images/products/medium/product-140406.jpg')}}" alt="Swing Cars">
-            <p>Swing Cars</p>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="link-to-baby-walkers.html">
-            <img src="{{asset('front/assets/images/products/medium/product-140406.jpg')}}" alt="Baby Walkers">
-            <p>Baby Walkers</p>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="link-to-electronic-rideons.html">
-            <img src="{{asset('front/assets/images/products/medium/product-140406.jpg')}}" alt="Electronic Rideons">
-            <p>Electronic Rideons</p>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="link-to-tricycles.html">
-            <img src="{{asset('front/assets/images/products/medium/product-140406.jpg')}}" alt="Tricycles">
-            <p>Tricycles</p>
-          </a>
-        </div>
+       @endforeach
+       
+        
       </div>
       <!-- Navigation arrows -->
       <div class="swiper-button-next"></div>
@@ -85,7 +68,7 @@ if(!empty($selected_filters['component_IDs'])){
     </div>
   </div>
 </section>
-  
+@endif  
   <section class="portfolio__area-6 ">
     <div class="container">
       <div class="row">

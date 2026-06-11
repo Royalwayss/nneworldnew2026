@@ -35,7 +35,7 @@ $agri_categories = Category::agri_categories();
             <ul>
               @foreach($get_categories as $category)
               <li class="mob-has-dropdown">
-                <a href="{{ url($category['category_url']) }}">{{ $category['category_name'] }}{{ $category['category_name'] }}
+                <a href="{{ url($category['category_url']) }}">{{ $category['category_name'] }}
                       @if(!empty($category['tag']))
 					  <sup>{{ $category['tag']['tag_name'] }}</sup>
 					  @endif</a>
