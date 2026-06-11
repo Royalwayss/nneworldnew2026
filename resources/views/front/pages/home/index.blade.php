@@ -579,6 +579,13 @@
                   <div class="swiper-wrapper">
                      <div class="swiper-slide">
                         <div class="brand__slide">
+                           <a href="javascript:;" <?php /*target="_blank" href="https://www.volare-bicycles.com/" */ ?>>
+                              <img src="front/assets/imgs/brand/volare-bicycles.jpeg" alt="img" title="img">
+                           </a>
+                        </div>
+                     </div>
+					 <div class="swiper-slide">
+                        <div class="brand__slide">
                            <a target="_blank" href="https://acerelectric.in/">
                               <img src="front/assets/imgs/brand/acer.svg" alt="img" title="img">
                            </a>

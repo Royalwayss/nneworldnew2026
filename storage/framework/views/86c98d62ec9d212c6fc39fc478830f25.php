@@ -50,7 +50,7 @@
                            </a>
                            <p><?php echo $category['description']; ?></p>
                            <a class="db-btn-arrow" href="<?php echo e(url($category['category_url'])); ?>">Read More <i
-                              class="fa-solid fa-arrow-right"></i>
+                                 class="fa-solid fa-arrow-right"></i>
                            </a>
                         </div>
                      </div>
@@ -75,7 +75,7 @@
                   </div> -->
                <div class="bell">
                   <span>
-                  <i class="fa-regular fa-bell text-white"></i>
+                     <i class="fa-regular fa-bell text-white"></i>
                   </span>
                </div>
                <div class="projects">
@@ -105,7 +105,7 @@
                </div>
                <div data-aos="fade-up" data-aos-delay="300">
                   <a class="db-btn-arrow" href="<?php echo e(route('aboutus')); ?>">More Info <i
-                     class="fa-solid fa-arrow-right"></i>
+                        class="fa-solid fa-arrow-right"></i>
                   </a>
                </div>
             </div>
@@ -118,28 +118,42 @@
    <div class="container">
       <div class="row counter__inner g-4 justify-content-center text-center ">
          <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right">
-            <div class="counter__number counter_slow style2">75+
+            <div class="counter__icon">
+               <i class="fa-solid fa-award"></i>
             </div>
+            <div class="counter__number counter_slow style2">75+</div>
             <h3 class="counter__title color-heading">Years of <br> Experience </h3>
          </div>
+
          <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="300">
-            <div class="counter__number counter_slow style2">25+
+            <div class="counter__icon">
+               <i class="fa-solid fa-earth-americas"></i>
             </div>
+            <div class="counter__number counter_slow style2">25+</div>
             <h3 class="counter__title color-heading">Countries <br> Global Footprint</h3>
          </div>
+
          <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="300">
-            <div class="counter__number counter_slow style2">86%
+            <div class="counter__icon">
+               <i class="fa-solid fa-face-smile"></i>
             </div>
+            <div class="counter__number counter_slow style2">86%</div>
             <h3 class="counter__title color-heading">Happiness <br>Index</h3>
          </div>
+
          <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="600">
-            <div class="counter__number counter_slow style2">1000+
+            <div class="counter__icon">
+               <i class="fa-solid fa-users"></i>
             </div>
+            <div class="counter__number counter_slow style2">1000+</div>
             <h3 class="counter__title color-heading">Team <br>Members </h3>
          </div>
+
          <div class="col-lg-4 col-md-6 col-6 counter__item" data-aos="fade-right" data-aos-delay="600">
-            <div class="counter__number counter_slow style2">40,000+
+            <div class="counter__icon">
+               <i class="fa-solid fa-industry"></i>
             </div>
+            <div class="counter__number counter_slow style2">40,000+</div>
             <h3 class="counter__title color-heading">sq. m <br>Manufacturing Facility </h3>
          </div>
       </div>
@@ -151,25 +165,29 @@
          <h1 class="hero__title" data-aos="fade-up">
             <span class="visibleText">Beyond Sustainability.</span> <br>
             <a href="javascript::void()" data-bs-toggle="modal" data-bs-target="#videoPopup"> <span><i
-               class="fa-solid fa-play"></i></span></a>
+                     class="fa-solid fa-play"></i></span></a>
             <span class="visibleText">Towards Regeneration.</span>
          </h1>
-         <div class="hero__btm">
-         <div class="">
-            <p>From responsible sourcing to eco-conscious packaging, we're driven by purpose and guided by innovation
-            </p>
-         </div>
-      </div>
+         <!-- <div class="hero__btm">
+            <div class="">
+               <p>From responsible sourcing to eco-conscious packaging, we're driven by purpose and guided by innovation
+               </p>
+
+            </div>
+         </div> -->
          <div class="hero__contact cxufadeUp2">
-            <a href="https://nneworld.rtpltech.in/sustainability">
-            <span><i class="fa-solid fa-arrow-right"></i></span>
-            </a>
+            <!-- <a href="https://nneworld.rtpltech.in/sustainability">
+               <span><i class="fa-solid fa-arrow-right"></i></span>
+            </a> -->
             <div class="text">
-               <p class="pointer" onclick="window.location.href='https://nneworld.rtpltech.in/sustainability'">Read More</p>
+               <label class="pointer"
+                  onclick="window.location.href='https://nneworld.rtpltech.in/sustainability'">Project Paws – To Know
+                  More, <strong>Click Here.</strong>
+               </label>
             </div>
          </div>
       </div>
-      
+
    </div>
    <div class="modal fade" id="videoPopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -470,7 +488,9 @@
                         </div>
                         <div class="who__content">
                            <h4 class="title">Product Testing & Validation Facility</h4>
-                           <p>Our fully equipped in-house laboratories validate bicycles and components as per the latest international standards, ensuring performance, safety, and durability before every product reaches the market.
+                           <p>Our fully equipped in-house laboratories validate bicycles and components as per the
+                              latest international standards, ensuring performance, safety, and durability before every
+                              product reaches the market.
                            </p>
                         </div>
                      </div>
@@ -480,7 +500,9 @@
                         </div>
                         <div class="who__content">
                            <h4 class="title">Advanced Robotic & CNC Systems</h4>
-                           <p>With 7-axis robotic welding and 5-axis CNC tubular bending, our precision-driven infrastructure enables high accuracy, repeatability and superior structural integrity across all frames and components.
+                           <p>With 7-axis robotic welding and 5-axis CNC tubular bending, our precision-driven
+                              infrastructure enables high accuracy, repeatability and superior structural integrity
+                              across all frames and components.
                            </p>
                         </div>
                      </div>
@@ -490,7 +512,8 @@
                         </div>
                         <div class="who__content">
                            <h4 class="title">Smart Frame Fabrication Shop</h4>
-                           <p>Integrated TIG/Argon welding lines, automated tube processing, and material-ready workflows streamline fabrication while maintaining strict quality benchmarks.
+                           <p>Integrated TIG/Argon welding lines, automated tube processing, and material-ready
+                              workflows streamline fabrication while maintaining strict quality benchmarks.
                            </p>
                         </div>
                      </div>
@@ -517,7 +540,8 @@
                         </div>
                         <div class="who__content">
                            <h4 class="title">Smart Assembly Lines</h4>
-                           <p>Powered by Industry 4.0 technologies, our wheel and e-bike assembly lines include Asia’s first smart e-bike assembly setup – designed for speed, scalability and precision.
+                           <p>Powered by Industry 4.0 technologies, our wheel and e-bike assembly lines include Asia’s
+                              first smart e-bike assembly setup – designed for speed, scalability and precision.
                            </p>
                         </div>
                      </div>
@@ -527,7 +551,8 @@
                         </div>
                         <div class="who__content">
                            <h4 class="title">Storage & Dispatch</h4>
-                           <p>With optimised warehousing and 40’ container load capabilities, we ensure secure storage, rapid dispatch and seamless global logistics.
+                           <p>With optimised warehousing and 40’ container load capabilities, we ensure secure storage,
+                              rapid dispatch and seamless global logistics.
                            </p>
                         </div>
                      </div>
@@ -553,106 +578,113 @@
                   <div class="swiper-wrapper">
                      <div class="swiper-slide">
                         <div class="brand__slide">
+                           <a href="javascript:;" <?php /*target="_blank" href="https://www.volare-bicycles.com/" */ ?>>
+                              <img src="front/assets/imgs/brand/volare-bicycles.jpeg" alt="img" title="img">
+                           </a>
+                        </div>
+                     </div>
+					 <div class="swiper-slide">
+                        <div class="brand__slide">
                            <a target="_blank" href="https://acerelectric.in/">
-                           <img src="front/assets/imgs/brand/acer.svg" alt="img" title="img">
+                              <img src="front/assets/imgs/brand/acer.svg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.decathlon.in/"> 
-                           <img src="front/assets/imgs/brand/dc.jpg" alt="img" title="img">
+                           <a target="_blank" href="https://www.decathlon.in/">
+                              <img src="front/assets/imgs/brand/dc.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://firefoxlife.com/"> 
-                           <img src="front/assets/imgs/brand/firefox.jpg" alt="img" title="img">
+                           <a target="_blank" href="https://firefoxlife.com/">
+                              <img src="front/assets/imgs/brand/firefox.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
                            <!-- <a target="_blank" href="https://www.huffy.com/">   -->
-                           <a target="_blank" href="javascript::void()">  
-                           <img src="front/assets/imgs/brand/huffy.svg" alt="img" title="img">
+                           <a target="_blank" href="javascript::void()">
+                              <img src="front/assets/imgs/brand/huffy.svg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.herocycles.com/">     
-                           <img src="front/assets/imgs/brand/hero-cycles.jpg" alt="img" title="img">
+                           <a target="_blank" href="https://www.herocycles.com/">
+                              <img src="front/assets/imgs/brand/hero-cycles.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
                            <!-- <a target="_blank" href="https://sunbaby.pl/">       -->
-                           <a target="_blank" href="javascript::void()">      
-                           <img src="front/assets/imgs/brand/sun-baby.png" alt="img" title="img">
+                           <a target="_blank" href="javascript::void()">
+                              <img src="front/assets/imgs/brand/sun-baby.png" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.torontobicycles.com/">  
-                           <img src="front/assets/imgs/brand/toronto.png" alt="img" title="img">
+                           <a target="_blank" href="https://www.torontobicycles.com/">
+                              <img src="front/assets/imgs/brand/toronto.png" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://trinitycyclesindia.com/">   
-                           <img src="front/assets/imgs/brand/trinity.png" alt="img" title="img">
+                           <a target="_blank" href="https://trinitycyclesindia.com/">
+                              <img src="front/assets/imgs/brand/trinity.png" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
                            <!-- <a target="_blank" href="https://www.tgc.bike/">     -->
-                           <a target="_blank" href="javascript::void()">    
-                           <img src="front/assets/imgs/brand/cb.jpg" alt="img" title="img">
+                           <a target="_blank" href="javascript::void()">
+                              <img src="front/assets/imgs/brand/cb.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.emotorad.com/">   
-                           <img src="front/assets/imgs/brand/motorad.jpg" alt="img" title="img">
+                           <a target="_blank" href="https://www.emotorad.com/">
+                              <img src="front/assets/imgs/brand/motorad.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
                            <!-- <a target="_blank" href="https://africrooze.com/">     -->
-                           <a target="_blank" href="javascript::void()">    
-                           <img src="front/assets/imgs/brand/afr.jpg" alt="img" title="img">
+                           <a target="_blank" href="javascript::void()">
+                              <img src="front/assets/imgs/brand/afr.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
-                     
+
                      <div class="swiper-slide">
                         <div class="brand__slide">
                            <!-- <a target="_blank" href="https://www.huffy.com/">    -->
-                           <a target="_blank" href="javascript::void()">   
-                           <img src="front/assets/imgs/brand/disney.jpg" alt="img" title="img">
+                           <a target="_blank" href="javascript::void()">
+                              <img src="front/assets/imgs/brand/disney.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
                            <!-- <a target="_blank" href="https://www.huffy.com/">    -->
-                           <a target="_blank" href="javascript::void()">   
-                           <img src="front/assets/imgs/brand/marvel.jpg" alt="img" title="img">
+                           <a target="_blank" href="javascript::void()">
+                              <img src="front/assets/imgs/brand/marvel.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <a target="_blank" href="https://www.tvsmotor.com/">   
-                           <img src="front/assets/imgs/brand/tvs.jpg" alt="img" title="img">
+                           <a target="_blank" href="https://www.tvsmotor.com/">
+                              <img src="front/assets/imgs/brand/tvs.jpg" alt="img" title="img">
                            </a>
                         </div>
                      </div>
