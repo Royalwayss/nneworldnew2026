@@ -74,8 +74,8 @@ $agri_categories = Category::agri_categories();
           <li>
             <a href="javacript:;">Stories</a>
             <ul>
-              <li><a href="https://nneworld.com/stories-omm-holi/">Omm Holii</a></li>
-              <li><a href="https://nneworld.com/article-collaboration/">NNE x CIXI</a></li>
+              <li><a href="{{ route('stories_omm_holi') }}">Omm Holii</a></li>
+              <li><a href="{{ route('article_collaboration') }}">NNE x CIXI</a></li>
             </ul>
           </li>
           <li><a href="{{ route('contactus') }}">Contact Us</a></li>
@@ -217,8 +217,8 @@ $agri_categories = Category::agri_categories();
           <li class="has-dropdown">
             <a href="javacript:;">Stories</a>
             <ul class="main-dropdown">
-              <li><a href="https://nneworld.com/stories-omm-holi">Omm Holii</a></li>
-              <li><a href="https://nneworld.com/article-collaboration">NNE x CIXI</a></li>
+               <li><a href="{{ route('stories_omm_holi') }}">Omm Holii</a></li>
+              <li><a href="{{ route('article_collaboration') }}">NNE x CIXI</a></li>
             </ul>
           </li>
           <li><a href="{{ route('contactus') }}">Contact Us</a></li>

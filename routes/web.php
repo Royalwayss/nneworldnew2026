@@ -105,6 +105,8 @@ Route::namespace('App\Http\Controllers\Front')->group(function(){
 	 Route::get('/about-us',[IndexController::class,'aboutus'])->name('aboutus');
 	 Route::get('/processes',[IndexController::class,'processes'])->name('processes');
 	 Route::get('/sustainability',[IndexController::class,'sustainability'])->name('sustainability');
+	 Route::get('/stories-omm-holi', [IndexController::class, 'stories_omm_holi'])->name('stories_omm_holi');
+	 Route::get('/article-collaboration', [IndexController::class, 'article_collaboration'])->name('article_collaboration');
 	 Route::get('/virtual-tour',[IndexController::class,'virtualtour'])->name('virtualtour');
 	 Route::get('/forest-video',[IndexController::class,'forestvideo'])->name('forestvideo');
 	 Route::get('/contact-us',[IndexController::class,'contactus'])->name('contactus');

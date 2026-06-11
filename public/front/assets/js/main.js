@@ -483,3 +483,37 @@ document.addEventListener('DOMContentLoaded', function () {
     filterCloseBtn.addEventListener('click', closeFilter);
     filterOverlay.addEventListener('click', closeFilter);
 });
+
+
+const swiper = new Swiper(".SubSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: { slidesPerView: 2 },
+    768: { slidesPerView: 3 },
+    1024: { slidesPerView: 4 },
+  },
+  on: {
+    init: function () {
+      toggleNav(this);
+    },
+    resize: function () {
+      toggleNav(this);
+    }
+  }
+});
+
+// Function to hide arrows if not needed
+function toggleNav(swiper) {
+  const { isBeginning, isEnd } = swiper;
+  const arrows = document.querySelectorAll('.swiper-button-next, .swiper-button-prev');
+  if (swiper.slides.length <= swiper.params.slidesPerView) {
+    arrows.forEach(a => a.style.display = 'none');
+  } else {
+    arrows.forEach(a => a.style.display = 'block');
+  }
+}

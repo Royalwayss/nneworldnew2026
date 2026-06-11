@@ -962,7 +962,15 @@ header.pos-abs {
     padding-bottom: 25px;
 }
 .sus p {
-    margin-bottom: 6px;
+    margin-bottom: 16px;
+}
+.quote {
+    border-left: 5px solid #b69974;
+    padding: 2rem;
+    background: #b6997421;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 .sus .sec-title,
 .sus .sec-subtitle {
@@ -1513,21 +1521,22 @@ header.pos-abs {
     margin-bottom: 12px;
 }
 
-.mob-has-dropdown sub,.has-dropdown sup, .mean-nav sup {
+.mob-has-dropdown sub,
+.has-dropdown sup,
+.mean-nav sup {
     color: var(--main-color-one);
     animation: slowBlink 1.6s ease-in-out infinite;
 }
- 
+
 @keyframes slowBlink {
-    0%, 100% {
+    0%,
+    100% {
         opacity: 1;
     }
     50% {
         opacity: 0.25;
     }
 }
-
-
 
 .main-menu .has-dropdown:hover::after {
     color: var(--main-color-one);
@@ -6731,6 +6740,7 @@ header.pos-abs {
   background-repeat: no-repeat;
   background-size: cover;
 } */
+
 .breadcrumb__area {
     padding-bottom: 30px;
     background-image: url(../imgs/hero/breadcrumb.png);
@@ -6761,6 +6771,21 @@ header.pos-abs {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
+}
+.breadcrumb__area.story {
+    padding-bottom: 30px;
+    background-image: url(../imgs/hero/breadcrumb.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(0);
 }
 @media (max-width: 1199px) {
     .breadcrumb__area {
@@ -11061,6 +11086,9 @@ h2.projectd__details-title {
     line-height: 2;
     color: #67687a;
 }
+.storyImg {
+    margin: 1rem 0;
+}
 .contact__submit {
     display: inline-block;
     padding: 20px 50px;
@@ -11443,8 +11471,9 @@ h2.projectd__details-title {
 @media (max-width: 767px) {
     .filter-toggle-btn {
         display: block;
+        margin-top: 1rem;
     }
-.filter-toggle-btn,
+    .filter-toggle-btn,
     .sort-select {
         width: 100%;
         min-width: auto;
@@ -11487,4 +11516,61 @@ h2.projectd__details-title {
     body.filter-open {
         overflow: hidden;
     }
+}
+
+.SubSwiper a {
+    display: inline-block;
+    background: #f5f5f5;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+}
+section:has(.SubSwiper) {
+    margin-top: 2rem;
+}
+.SubSwiper {
+    padding: 1.2rem;
+    border: 1px solid #b69974;
+    border-radius: 12px;
+}
+.SubSwiper p {
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+.SubSwiper p {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 18px;
+}
+/* Navigation Buttons */
+.SubSwiper .swiper-button-next,
+.SubSwiper .swiper-button-prev {
+    width: 50px;
+    height: 40px;
+    background: #b89b74;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(10%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Remove default Swiper arrow */
+.SubSwiper .swiper-button-next::after,
+.SubSwiper .swiper-button-prev::after {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Optional hover */
+.SubSwiper .swiper-button-next:hover,
+.SubSwiper .swiper-button-prev:hover {
+    background: #a98a63;
 }

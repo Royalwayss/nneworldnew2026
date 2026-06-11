@@ -25,6 +25,10 @@
               <h4>Filters</h4>
               <button type="button" class="filter-close-btn" id="filterCloseBtn">×</button>
             </div>
+              <div class="filter-actions">
+              <button type="button" class="clear-filter-btn">Clear All</button>
+              <button type="submit" class="apply-filter-btn">Apply</button>
+            </div>
             @foreach($filters as $filter)
             <div class="filter-item">
               <button class="filter-title" type="button">
@@ -39,10 +43,7 @@
             </div>
             @endforeach
 
-            <div class="filter-actions">
-              <button type="button" class="clear-filter-btn">Clear All</button>
-              <button type="submit" class="apply-filter-btn">Apply</button>
-            </div>
+          
           </aside>
 		  
         </div>

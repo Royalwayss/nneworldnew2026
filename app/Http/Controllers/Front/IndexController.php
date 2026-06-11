@@ -47,6 +47,14 @@ class IndexController extends Controller
         $meta =  meta('processes');
         return view('front.pages.aboutus.sustainability')->with(compact('meta'));
     } 
+	public function stories_omm_holi(){  
+        $meta =  meta('processes');
+        return view('front.pages.aboutus.stories-omm-holi')->with(compact('meta'));
+    } 
+	public function article_collaboration(){  
+        $meta =  meta('processes');
+        return view('front.pages.aboutus.article-collaboration')->with(compact('meta'));
+    } 
 	  
 	public function virtualtour(){  
         $meta =  meta('virtual-tour');
