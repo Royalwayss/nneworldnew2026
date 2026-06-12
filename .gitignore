@@ -12,6 +12,9 @@
 /public/front/images/sizecharts
 /public/front/images/widgets
 /public/front/videos
+/public/front/assets/images/category
+/public/front/assets/images/products
+composer.lock
 storage/*.key
 storage/framework/sessions
 storage/framework/views
@@ -34,3 +37,4 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+.htaccess
