@@ -13,6 +13,7 @@
 /public/front/images/widgets
 /public/front/videos
 /public/front/assets/images/category
+/public/front/assets/images/category_banner
 /public/front/assets/images/products
 composer.lock
 storage/*.key
