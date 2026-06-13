@@ -788,7 +788,7 @@
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/logo/certified-4.png" alt="img" title="img">
+                           <img src="front/assets/imgs/logo/certified-4_1.png" alt="img" title="img">
                         </div>
                      </div>
                      <div class="swiper-slide">
