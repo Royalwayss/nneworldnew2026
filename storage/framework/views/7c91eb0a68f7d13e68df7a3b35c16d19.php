@@ -81,6 +81,13 @@ Use App\Models\ProductImage;
                            <textarea name="message" id="message" placeholder="Messsage*"></textarea>
                            <p class="error_message" id="input-error-message"></p>
                         </div>
+						<?php if(env('RECAPTCHA_MODE') == 'live'): ?>
+						     <div class="g-recaptcha mb-2" data-sitekey="<?php echo e(env('RECAPTCHA_SITE_KEY')); ?>"></div>
+						     <p class="error_message" id="input-error-g-recaptcha-response"></p>
+						<?php else: ?>
+							<input id="g-recaptcha-response" name="g-recaptcha-response" value="1" type="hidden"/>
+						<?php endif; ?>
+						
                         <div class="contact__submitwrap">
                            <button class="contact__submit btn-rollover" type="submit">Send now <i
                                  class="fa-solid fa-arrow-right"></i></button>
@@ -133,5 +140,8 @@ Use App\Models\ProductImage;
    </section>
    <!-- /contact -->
 </main>
+<?php if(env('RECAPTCHA_MODE') == 'live'): ?>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<?php endif; ?>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('front.layout.layout', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH D:\xampp\htdocs\nneworldnew2026\nneworldnew2026\resources\views/front/pages/contactus/contactus.blade.php ENDPATH**/ ?>

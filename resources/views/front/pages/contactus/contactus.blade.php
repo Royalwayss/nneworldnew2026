@@ -82,6 +82,13 @@ Use App\Models\ProductImage;
                            <textarea name="message" id="message" placeholder="Messsage*"></textarea>
                            <p class="error_message" id="input-error-message"></p>
                         </div>
+						@if(env('RECAPTCHA_MODE') == 'live')
+						     <div class="g-recaptcha mb-2" data-sitekey="{{ env('RECAPTCHA_SITE_KEY') }}"></div>
+						     <p class="error_message" id="input-error-g-recaptcha-response"></p>
+						@else
+							<input id="g-recaptcha-response" name="g-recaptcha-response" value="1" type="hidden"/>
+						@endif
+						
                         <div class="contact__submitwrap">
                            <button class="contact__submit btn-rollover" type="submit">Send now <i
                                  class="fa-solid fa-arrow-right"></i></button>
@@ -133,4 +140,7 @@ Use App\Models\ProductImage;
    </section>
    <!-- /contact -->
 </main>
+@if(env('RECAPTCHA_MODE') == 'live')
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+@endif
 @endsection

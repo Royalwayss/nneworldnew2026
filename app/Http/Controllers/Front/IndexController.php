@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Subscriber;
@@ -118,7 +119,8 @@ class IndexController extends Controller
 			'name' => 'required|string|max:255',
 			 'mobile' => 'required|numeric|digits_between:8,12',
 			'email' => 'required|string|email|max:255',
-			'message' => 'required'
+			'message' => 'required',
+			'g-recaptcha-response' => 'required',
 			], [
 			// Custom messages for 'name'
 			'name.required' => 'Please enter your name',
@@ -138,9 +140,37 @@ class IndexController extends Controller
 
 			// Custom messages for 'message'
 			'message.required' => 'Please enter your message',
+			
+			// Custom messages for CAPTCHA messages
+			'g-recaptcha-response.required' => ' Please complete the CAPTCHA to continue',
 			]);
 
              if ($validator->passes()) {
+				
+				if(env('RECAPTCHA_MODE') == 'live'){
+					
+					$response = Http::asForm()->post(
+						'https://www.google.com/recaptcha/api/siteverify',
+						[
+							'secret' => env('RECAPTCHA_SECRET_KEY'),
+							'response' => $request->input('g-recaptcha-response'),
+							'remoteip' => $request->ip(),
+						]
+					);
+
+					$result = $response->json();
+
+					if (!isset($result['success']) || $result['success'] != true) {
+						$reCAPTCHA_error_meesage['g-recaptcha-response'] = 'reCAPTCHA verification failed. Please try again.';
+						return response()->json(['status' => false,'type' => 'validation','errors' => $reCAPTCHA_error_meesage ]); 
+						exit; die();
+					}
+				
+				
+				}
+				
+				
+				
 				$contact = new Contact;
 				$contact->name = $request->name;
 				$contact->mobile = $request->mobile;
