@@ -631,14 +631,14 @@
                      <div class="swiper-slide">
                         <div class="brand__slide">
                            <a target="_blank" href="https://www.torontobicycles.com/">
-                              <img src="front/assets/imgs/brand/toronto-new.png" alt="img" title="img">
+                              <img src="front/assets/imgs/brand/toronto.png" alt="img" title="img">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
                            <a target="_blank" href="https://trinitycyclesindia.com/">
-                              <img src="front/assets/imgs/brand/trinity.png" alt="img" title="img">
+                              <img src="front/assets/imgs/brand/trinity-new.png" alt="img" title="img">
                            </a>
                         </div>
                      </div>
