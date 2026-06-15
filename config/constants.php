@@ -5,7 +5,7 @@
 		'company_name' => 'NNE World',
 		'invoice_name' => '',
 		'project_email' => 'sales@nneworld.com',
-		'project_mobile' => '+91-123-4567896',
+		'project_mobile' => '',
 		'return_address' => '',
 	];
 ?>
