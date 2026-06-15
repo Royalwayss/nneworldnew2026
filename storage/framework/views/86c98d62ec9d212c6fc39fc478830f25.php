@@ -579,7 +579,7 @@
                      <div class="swiper-slide">
                         <div class="brand__slide">
                            <a href="javascript:;" <?php /*target="_blank" href="https://www.volare-bicycles.com/" */ ?>>
-                              <img src="front/assets/imgs/brand/volare-bicycles.jpeg" alt="img" title="img">
+                              <img src="front/assets/imgs/brand/volare-bicycles.png" alt="img" title="img">
                            </a>
                         </div>
                      </div>
@@ -787,7 +787,7 @@
                      </div>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/logo/certified-4.png" alt="img" title="img">
+                           <img src="front/assets/imgs/logo/certified-4_1.png" alt="img" title="img">
                         </div>
                      </div>
                      <div class="swiper-slide">
