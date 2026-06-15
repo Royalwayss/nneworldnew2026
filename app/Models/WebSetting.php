@@ -18,7 +18,7 @@ class WebSetting extends Model{
 		$websettings['site_logo'] = asset('front/assets/images/logo.png');
 		$websettings['site_name'] = config('constants.project_name');
 		$websettings['site_email'] = config('constants.project_email');
-		$websettings['admin_emails'] =array('rwpttech@gmail.com'); 
+		$websettings['admin_emails'] =array('sales@nneworld.com'); 
 		$websettings['admin_bcc_emails'] = [];
 		return $websettings;
 	}
